@@ -1,0 +1,19 @@
+# Core dependencies for ENTU → MUIS data transformation
+# Python 3.9+ required
+
+# Data processing
+pandas>=2.0.0
+openpyxl>=3.1.0  # For Excel file support
+
+# Data validation
+pydantic>=2.0.0
+
+# Progress tracking
+tqdm>=4.65.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
