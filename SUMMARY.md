@@ -7,6 +7,7 @@ Created comprehensive plan and documentation for extracting Vabamu museum collec
 ## What Was Done
 
 ### 1. Structure Analysis
+
 - **Analyzed ENTU export**: 38 CSV files, 108,867 total records
   - Main table: `eksponaat.csv` with 80,178 museum objects
   - Supporting tables: classifications, persons, locations, acquisition records
@@ -17,6 +18,7 @@ Created comprehensive plan and documentation for extracting Vabamu museum collec
 ### 2. Created Documentation
 
 #### PLAN.md (Comprehensive Implementation Plan)
+
 - **10 development phases** with detailed tasks
 - **Data flow diagrams** showing transformation pipeline
 - **Technical stack recommendations**: Python, pandas, validation frameworks
@@ -24,6 +26,7 @@ Created comprehensive plan and documentation for extracting Vabamu museum collec
 - **Risk mitigation strategies** for each challenge
 
 #### README.md (Project Overview)
+
 - Quick start guide (for future implementation)
 - Project structure
 - Data mapping examples
@@ -34,20 +37,24 @@ Created comprehensive plan and documentation for extracting Vabamu museum collec
 **Major Mapping Challenges Identified:**
 
 1. **Person IDs**
+
    - ENTU: Numeric IDs (e.g., "139862")
    - MUIS: "Perekonnanimi, Eesnimi" format OR MuIS registry ID
    - **Solution**: Pre-coordination strategy (extract all names → get MuIS IDs)
 
 2. **Number Structure**
+
    - ENTU: Simple code like "006562/001"
    - MUIS: 9-column structure (ACR/TRT/TRS/TRJ/TRL/KT/KS/KJ/KL)
    - **Solution**: Pattern parsing with rules
 
 3. **Date Formats**
+
    - ENTU: ISO "2002-12-22"
    - MUIS: Estonian "22.12.2002"
 
 4. **Hierarchical Data**
+
    - Materials (up to 3)
    - Techniques (up to 3)
    - Measurements (up to 4 sets)
@@ -63,19 +70,21 @@ Created comprehensive plan and documentation for extracting Vabamu museum collec
 **Language**: Python 3.8+
 
 **Core Libraries**:
+
 - `pandas` - Data manipulation, CSV I/O
 - `csv` - Standard library CSV handling
 - `datetime` - Date conversion
 - `pathlib` - File operations
 
 **Optional Enhancements**:
+
 - `pydantic` - Data validation models
 - `tqdm` - Progress bars
 - `pytest` - Unit testing
 
 ## Project Structure (To Be Created)
 
-```
+```text
 vabamu/
 ├── scripts/          # Conversion scripts
 │   ├── entu_reader.py
@@ -94,8 +103,10 @@ vabamu/
 
 ## Next Steps (Implementation Phase)
 
-### Immediate Actions:
+### Immediate Actions
+
 1. **Set up Python environment**
+
    ```bash
    python3 -m venv venv
    source venv/bin/activate
@@ -103,17 +114,20 @@ vabamu/
    ```
 
 2. **Create project structure**
+
    ```bash
    mkdir -p scripts tests output mappings
    ```
 
 3. **Start with data exploration**
+
    - Read sample eksponaat records
    - Parse number formats
    - Extract dimension patterns
    - Identify all person fields
 
 4. **Build person extraction script**
+
    - Generate complete list of unique names
    - Create person_ids.csv template
    - Send to Liisi for MuIS ID coordination
@@ -123,7 +137,8 @@ vabamu/
    - Automate for 10 records → validate
    - Scale to full dataset
 
-### Phase Timeline:
+### Phase Timeline
+
 - **Phase 1-2**: 1-2 days (Setup + Reading)
 - **Phase 3-4**: 2-3 days (Mapping + Generation)
 - **Phase 5**: 1 day (Testing)

@@ -9,6 +9,7 @@ This project converts ~80,000 museum object records from Vabamu's ENTU database 
 ## Current Status
 
 **Phase**: Planning & Analysis Complete
+
 - ✅ ENTU data structure analyzed (108,867 total records)
 - ✅ MUIS target format documented
 - ✅ Mapping challenges identified
@@ -17,7 +18,7 @@ This project converts ~80,000 museum object records from Vabamu's ENTU database 
 
 ## Project Structure
 
-```
+```text
 vabamu/
 ├── entust/                    # Source ENTU CSV files (80K+ records)
 ├── kirjavahetus/             # Email correspondence archive
@@ -33,10 +34,12 @@ vabamu/
 ## Quick Start (Planned)
 
 ### Prerequisites
+
 - Python 3.8+
 - pip
 
 ### Installation
+
 ```bash
 # Create virtual environment
 python3 -m venv venv
@@ -47,6 +50,7 @@ pip install -r requirements.txt
 ```
 
 ### Usage (Future)
+
 ```bash
 # Extract all person names for ID coordination
 python scripts/extract_persons.py --output mappings/person_ids.csv
@@ -61,11 +65,13 @@ python scripts/convert.py --input entust/ --output output/muis_import.csv
 ## Data Overview
 
 ### Source Data (ENTU)
+
 - **Main table**: `eksponaat.csv` - 80,178 museum objects
 - **Supporting tables**: 37 additional CSVs (classifications, persons, locations, etc.)
 - **Total records**: 108,867 across all tables
 
 ### Target Format (MUIS)
+
 - **Columns**: 85-88 columns (depending on data)
 - **Structure**: 3-row header (metadata, column names, validation rules)
 - **Format**: CSV with specific field requirements
@@ -74,23 +80,27 @@ python scripts/convert.py --input entust/ --output output/muis_import.csv
 ## Key Features (Planned)
 
 ### Data Transformation
+
 - [x] Parse ENTU object codes → MUIS number structure (ACR/TRT/TRS/TRJ/KT)
 - [x] Convert dates: ISO format → MUIS format (pp.kk.aaaa)
 - [x] Extract dimensions → structured measurements (4 parameter/unit/value sets)
 - [x] Map materials, techniques, classifications to controlled vocabularies
 
 ### Person ID Coordination
+
 - [x] Extract all unique person names from source data
 - [ ] Generate person_ids.csv template for MuIS ID assignment
 - [ ] Implement validated person name lookup (Perekonnanimi, Eesnimi format)
 
 ### Validation & Quality Assurance
+
 - [ ] Required field validation
 - [ ] Format validation (dates, numbers, person names)
 - [ ] Conditional dependency checks
 - [ ] Comprehensive error reporting
 
 ### Batch Processing
+
 - [ ] Process 80K+ records efficiently
 - [ ] Progress monitoring with tqdm
 - [ ] Error recovery and continuation
@@ -107,21 +117,24 @@ python scripts/convert.py --input entust/ --output output/muis_import.csv
 ## Data Mapping Examples
 
 ### Number Format
-```
+
+```text
 ENTU: "006562/001"
   ↓
 MUIS: ACR="VBM", TRT="_", TRS="6562", TRJ="1", KT="D"
 ```
 
 ### Date Format
-```
+
+```text
 ENTU: "2002-12-22"
   ↓
 MUIS: "22.12.2002"
 ```
 
 ### Dimensions Parsing
-```
+
+```text
 ENTU: "ø50;62x70"
   ↓
 MUIS:
@@ -131,7 +144,8 @@ MUIS:
 ```
 
 ### Person Names
-```
+
+```text
 ENTU: Numeric ID (139862) or name
   ↓
 MUIS: "Perekonnanimi, Eesnimi" OR MuIS ID (after coordination)
@@ -169,9 +183,9 @@ This is an internal Vabamu Museum project for ENTU → MUIS migration.
 
 ## Contact
 
-- **Project Lead**: Liisi Ploom (liisi.ploom@vabamu.ee)
+- **Project Lead**: Liisi Ploom (<liisi.ploom@vabamu.ee>)
 - **Developer**: Mihkel Putrinš
-- **Technical Partner**: Argo Roots (argo@roots.ee)
+- **Technical Partner**: Argo Roots (<argo@roots.ee>)
 
 ## License
 

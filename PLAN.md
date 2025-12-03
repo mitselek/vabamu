@@ -117,7 +117,7 @@ The target CSV has 85-88 columns organized in groups:
 
 ### 3.2 Project Structure
 
-```
+```text
 vabamu/
 ├── entust/                    # Source ENTU CSV files
 ├── kirjavahetus/             # Email correspondence (archived)

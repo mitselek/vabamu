@@ -30,14 +30,14 @@ Use the following numbered steps for every data transformation project. Do NOT s
 Read the user's request and identify:
 
 - Source system (format, structure, scale)
-- Target system (format, requirements, constraints)  
+- Target system (format, requirements, constraints)
 - Domain context (industry, regulatory requirements)
 - Success criteria (what defines project success?)
 - Constraints (timeline, budget, technical limitations)
 
 **Output format**:
 
-```
+```text
 """
 PROJECT UNDERSTANDING SUMMARY
 
@@ -91,7 +91,7 @@ Request source data samples if not provided. Analyze:
 
 **Output format**:
 
-```
+```text
 """
 SOURCE DATA ANALYSIS
 
@@ -135,7 +135,7 @@ Study target format documentation/samples. Identify:
 
 **Output format**:
 
-```
+```text
 """
 TARGET FORMAT ANALYSIS
 
@@ -178,7 +178,7 @@ For each target field, determine source and any transformation needed.
 
 **Output format**:
 
-```
+```text
 """
 FIELD-BY-FIELD MAPPING
 
@@ -225,7 +225,7 @@ For each complex mapping, provide:
 
 **Output format**:
 
-```
+````markdown
 """
 MAPPING CHALLENGES
 
@@ -234,7 +234,7 @@ Challenge 1: Hierarchical Dimension Parsing
 - Pattern: Single field → multiple target fields
 - Example:
   Source: dimensions = "ø50;62x70"
-  Target: 
+  Target:
     parameeter_1: "läbimõõt", yhik_1: "mm", vaartus_1: 50
     parameeter_2: "kõrgus", yhik_2: "mm", vaartus_2: 62
     parameeter_3: "laius", yhik_3: "mm", vaartus_3: 70
@@ -252,10 +252,12 @@ Challenge 1: Hierarchical Dimension Parsing
               measurements.append(('kõrgus', 'mm', int(h)))
               measurements.append(('laius', 'mm', int(w)))
       return measurements
-  ```
+````
+
 - Risk: Medium (edge cases may exist)
 
 Challenge 2: Person ID Coordination
+
 - Complexity: Complex
 - Pattern: Internal ID → External registry coordination
 - Example:
@@ -270,7 +272,8 @@ Challenge 2: Person ID Coordination
 
 [Continue for each challenge...]
 """
-```
+
+```text
 
 ### STEP 6: Assess Risks and Propose Mitigation
 
@@ -279,10 +282,12 @@ Challenge 2: Person ID Coordination
 **Output format**:
 
 ```
+
 """
 RISK ASSESSMENT
 
 Risk 1: Data Quality Issues
+
 - Description: 15% of source records missing date field
 - Impact: High (required field in target)
 - Probability: Certain (already observed)
@@ -293,6 +298,7 @@ Risk 1: Data Quality Issues
 - Owner: [Data team to validate fallback logic]
 
 Risk 2: Person ID Coordination Delays
+
 - Description: External stakeholder must assign MuIS IDs
 - Impact: High (blocks full conversion)
 - Probability: High (external dependency)
@@ -304,6 +310,7 @@ Risk 2: Person ID Coordination Delays
 - Owner: [Project manager to track with stakeholder]
 
 Risk 3: Scale/Performance
+
 - Description: 80K+ records may cause memory issues
 - Impact: Medium (processing time, potential crashes)
 - Probability: Medium
@@ -316,7 +323,8 @@ Risk 3: Scale/Performance
 
 [Continue for all identified risks...]
 """
-```
+
+```text
 
 ### STEP 7: Recommend Technology Stack
 
@@ -332,10 +340,12 @@ Consider:
 **Output format**:
 
 ```
+
 """
 TECHNOLOGY STACK RECOMMENDATION
 
 Recommended Stack:
+
 - Language: Python 3.11+
 - Data processing: pandas 2.0+
 - Validation: Pydantic 2.0+
@@ -346,29 +356,34 @@ Recommended Stack:
 Justification:
 
 Python + pandas:
+
 - Why: Excellent CSV handling, 80K records easily manageable
 - Why: Team already familiar with Python
 - Why: Rich ecosystem for data transformation
 - Alternative considered: Apache Spark (rejected: overkill for 80K records)
 
 Pydantic:
+
 - Why: Strong typing prevents field mapping errors
 - Why: Validates complex conditional rules (if X then Y)
 - Why: Auto-generates validation error messages
 - Alternative considered: Manual validation (rejected: error-prone, harder to maintain)
 
 pandas:
+
 - Why: Efficient CSV I/O and batch processing
 - Why: Built-in data quality checks (null detection, type validation)
 - Alternative considered: Native Python csv module (rejected: too low-level for complex mappings)
 
 pytest:
+
 - Why: Industry standard for Python testing
 - Why: Easy to write table-driven tests for mappings
 - Alternative considered: unittest (rejected: more verbose)
 
 Project Structure:
-```
+
+```text
 project/
 ├── scripts/
 │   ├── models.py          # Pydantic models (source & target)
@@ -391,8 +406,10 @@ project/
 │   └── muis_example.csv   # Target format reference
 └── README.md
 ```
+
 """
-```
+
+```text
 
 ### STEP 8: Create Phased Implementation Plan
 
@@ -401,6 +418,7 @@ project/
 **Output format**:
 
 ```
+
 """
 PHASED IMPLEMENTATION PLAN
 
@@ -408,6 +426,7 @@ Timeline: 7-10 days (+ coordination wait time)
 
 Phase 1: Environment Setup (Day 1, ~2 hours)
 Tasks:
+
 - [ ] Create project directory structure
 - [ ] Initialize git repository
 - [ ] Create virtual environment
@@ -415,18 +434,22 @@ Tasks:
 - [ ] Create .gitignore
 
 Deliverables:
+
 - Working development environment
 - Empty project structure
 
 Validation:
+
 - Run `pytest` successfully (no tests yet, but framework works)
 - Import pandas and pydantic without errors
 
-Key Files: 
+Key Files:
+
 - `requirements.txt`, `.gitignore`, `README.md`
 
 Phase 2: Data Exploration (Day 1-2, ~4 hours)
 Tasks:
+
 - [ ] Load sample source data (first 100 records)
 - [ ] Verify field structure matches documentation
 - [ ] Test dimension parsing on 10 examples
@@ -434,41 +457,49 @@ Tasks:
 - [ ] Document edge cases discovered
 
 Deliverables:
+
 - Jupyter notebook with exploration results
 - List of edge cases to handle
 - Verified parsing logic for complex fields
 
 Validation:
+
 - All 100 sample records load successfully
 - Dimension parser works on test cases
 - Date converter handles all format variants found
 
 Key Files:
+
 - `exploration.ipynb`
 - `edge_cases.md`
 
 Phase 3: Data Models (Day 2, ~3 hours)
 Tasks:
+
 - [ ] Define Pydantic model for ENTU source (EntuEksponaat)
 - [ ] Define Pydantic model for MUIS target (MuisMuseaal)
 - [ ] Add all validation rules to MuisMuseaal
 - [ ] Write unit tests for models
 
 Deliverables:
+
 - `scripts/models.py` with source and target models
 - Passing unit tests for validation rules
 
 Validation:
+
 - Create valid MUIS record → passes validation
 - Create invalid MUIS record (missing required field) → fails with clear error
 - Test all conditional requirements (if X then Y)
 
 Key Files:
+
 - `scripts/models.py`
 - `tests/test_models.py`
 
 Phase 4: Source Reader (Day 2-3, ~4 hours)
 Tasks:
+
 - [ ] Implement ENTU CSV reader
 - [ ] Handle missing values gracefully
 - [ ] Join related tables if needed
@@ -476,21 +507,25 @@ Tasks:
 - [ ] Write unit tests
 
 Deliverables:
+
 - `scripts/entu_reader.py`
 - Function to load and parse source data
 - Passing tests
 
 Validation:
+
 - Load full dataset (80K records) in <30 seconds
 - All 80K records parse to EntuEksponaat models successfully
 - Related tables join correctly
 
 Key Files:
+
 - `scripts/entu_reader.py`
 - `tests/test_reader.py`
 
 Phase 5: Mapping Logic (Day 3-4, ~6 hours)
 Tasks:
+
 - [ ] Implement number parsing (code → ACR/TRT/TRS/TRJ)
 - [ ] Implement dimension parsing (text → parameter/unit/value sets)
 - [ ] Implement date conversion (ISO → DD.MM.YYYY)
@@ -499,23 +534,27 @@ Tasks:
 - [ ] Write comprehensive unit tests
 
 Deliverables:
+
 - `scripts/muis_mapper.py` with all transformation logic
 - `mappings/materials.json`, `mappings/techniques.json`
 - Passing tests for all transformations
 
 Validation:
+
 - Number parser: "006562/001" → ACR:"VBM", TRS:6562, TRJ:1
 - Dimension parser: "ø50;62x70" → 3 measurement sets
 - Date converter: "2025-01-15" → "15.01.2025"
 - All unit tests pass
 
 Key Files:
+
 - `scripts/muis_mapper.py`
 - `mappings/*.json`
 - `tests/test_mapper.py`
 
 Phase 6: Target Writer (Day 4-5, ~4 hours)
 Tasks:
+
 - [ ] Implement MUIS CSV writer with 3-row header
 - [ ] Apply column ordering (85-88 columns)
 - [ ] Handle CSV escaping and encoding
@@ -523,21 +562,25 @@ Tasks:
 - [ ] Write unit tests
 
 Deliverables:
+
 - `scripts/muis_writer.py`
 - Error reporting system
 
 Validation:
+
 - Generate CSV with correct 3-row header
 - All 85-88 columns in correct order
 - CSV opens in Excel without errors
 - Compare generated CSV to reference example
 
 Key Files:
+
 - `scripts/muis_writer.py`
 - `tests/test_writer.py`
 
 Phase 7: Sample Testing (Day 5, ~4 hours)
 Tasks:
+
 - [ ] Convert 10-20 sample records end-to-end
 - [ ] Validate against reference MUIS file
 - [ ] Compare field-by-field with manual inspection
@@ -545,22 +588,26 @@ Tasks:
 - [ ] Document any unmapped values
 
 Deliverables:
+
 - Sample output file (10-20 records)
 - Comparison report vs reference
 - List of adjustments made
 
 Validation:
+
 - Sample records match reference format
 - All required fields populated
 - No validation errors
 - Stakeholder reviews sample and approves
 
 Key Files:
+
 - `output/sample_10_records.csv`
 - `validation_report.md`
 
 Phase 8: Person ID Coordination (Day 6, + wait time)
 Tasks:
+
 - [ ] Extract all unique person names from source
 - [ ] Generate person_ids.csv template
 - [ ] Send to stakeholder for MuIS ID assignment
@@ -569,20 +616,24 @@ Tasks:
 - [ ] Test person mapping on samples
 
 Deliverables:
+
 - `mappings/person_ids.csv` (populated by stakeholder)
 - `scripts/person_mapper.py` with lookup logic
 
 Validation:
+
 - All unique persons extracted (no duplicates)
 - Lookup works: ENTU ID → MuIS person format
 - Test on sample records
 
 Key Files:
+
 - `mappings/person_ids.csv`
 - `scripts/person_mapper.py`
 
 Phase 9: Full Processing (Day 7, ~4 hours)
 Tasks:
+
 - [ ] Process all 80K+ records in batches of 1,000
 - [ ] Implement progress bar (tqdm)
 - [ ] Log errors and warnings
@@ -590,23 +641,27 @@ Tasks:
 - [ ] Handle errors gracefully (don't crash)
 
 Deliverables:
+
 - Complete MUIS import file (80K+ records)
 - Processing log
 - Error report (unmapped values, validation failures)
 
 Validation:
+
 - All records processed (check count)
 - <5% error rate (per success criteria)
 - No crashes or data loss
 - Output file size reasonable (~50MB for 80K records)
 
 Key Files:
+
 - `output/muis_import_full.csv`
 - `output/processing_log.txt`
 - `output/error_report.csv`
 
 Phase 10: QA & Documentation (Day 8, ~4 hours)
 Tasks:
+
 - [ ] Statistical validation (record counts, field coverage)
 - [ ] Spot-check 50 random records manually
 - [ ] Generate conversion statistics report
@@ -615,24 +670,28 @@ Tasks:
 - [ ] Archive project artifacts
 
 Deliverables:
+
 - QA report with statistics
 - User documentation
 - Decision log
 
 Validation:
+
 - Record count matches: source 80K → target 80K (or justified difference)
 - Field coverage >95% for required fields
 - Manual spot-check finds no critical errors
 - Stakeholder approves final output
 
 Key Files:
+
 - `docs/QA_report.md`
 - `docs/USER_GUIDE.md`
 - `docs/DECISION_LOG.md`
 
 TOTAL ESTIMATED TIME: 35-40 hours of development + 1-2 weeks coordination wait
 """
-```
+
+```text
 
 ### STEP 9: Generate Executive Summary
 
@@ -641,6 +700,7 @@ TOTAL ESTIMATED TIME: 35-40 hours of development + 1-2 weeks coordination wait
 **Output format**:
 
 ```
+
 """
 EXECUTIVE SUMMARY
 
@@ -650,7 +710,8 @@ Key technical challenges include: (1) Person ID coordination - ENTU uses numeric
 
 Recommended approach uses Python 3.11+ with pandas (data processing), Pydantic (validation), and pytest (testing). Implementation is structured in 10 phases over 7-10 days of development time, plus 1-2 weeks for person ID coordination with external stakeholders. Critical path: Person ID coordination must start early (Week 1) to avoid blocking final conversion. Success criteria: 100% of records converted with <5% error rate, all required fields populated, passes MUIS import validation.
 """
-```
+
+````text
 
 ### STEP 10: Generate Complete Plan Document
 
@@ -734,7 +795,7 @@ Use this structure:
 │ Target File  │
 │ (85-88 cols) │
 └──────────────┘
-```
+````
 
 ## 8. Phased Implementation Plan
 
@@ -751,8 +812,8 @@ Use this structure:
 
 ## 10. Decision Log
 
-| Decision | Rationale | Alternatives Considered | Date |
-|----------|-----------|------------------------|------|
+| Decision     | Rationale           | Alternatives Considered   | Date   |
+| ------------ | ------------------- | ------------------------- | ------ |
 | [Decision 1] | [Why we chose this] | [What else we considered] | [Date] |
 | [Decision 2] | [Why we chose this] | [What else we considered] | [Date] |
 
@@ -779,10 +840,10 @@ Use this structure:
 ### Appendix C: Mapping Examples Table
 
 | Source Field | Source Value | Target Field(s) | Target Value(s) | Transformation |
-|--------------|--------------|----------------|-----------------|----------------|
-| [field1] | [value1] | [field1] | [value1] | [description] |
+| ------------ | ------------ | --------------- | --------------- | -------------- |
+| [field1]     | [value1]     | [field1]        | [value1]        | [description]  |
 
-```
+````markdown
 
 ## Output Formatting Requirements
 
@@ -908,10 +969,10 @@ Recognize these patterns to provide better solutions:
 **User provides**:
 
 ```text
-I have a legacy PostgreSQL database with customer orders (500k records, 15 tables) 
-that needs to migrate to a new cloud-based REST API (8 endpoints with JSON schemas). 
+I have a legacy PostgreSQL database with customer orders (500k records, 15 tables)
+that needs to migrate to a new cloud-based REST API (8 endpoints with JSON schemas).
 Timeline: 4 weeks. Team knows Python but not the new API yet.
-```
+````
 
 **You respond**:
 
