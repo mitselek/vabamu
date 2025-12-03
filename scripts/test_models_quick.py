@@ -14,7 +14,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from models import EntuEksponaat, MuisMuseaal
-from datetime import date as Date
 
 
 def test_entu_basic():
@@ -23,7 +22,7 @@ def test_entu_basic():
     print("TEST 1: EntuEksponaat Basic Instantiation")
     print("=" * 60)
     
-    entu = EntuEksponaat(
+    entu = EntuEksponaat(  # type: ignore[call-arg]
         id="67890abcdef1234567890abc",
         code="006562/001",
         name="Test Object",
@@ -46,7 +45,7 @@ def test_entu_code_format_warning():
     logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
     
     # This should log a warning but still create the object
-    entu = EntuEksponaat(
+    entu = EntuEksponaat(  # type: ignore[call-arg]
         id="67890abcdef1234567890abc",
         code="ABC-123",  # Non-standard format
         name="Non-standard Code Test",
@@ -63,7 +62,7 @@ def test_muis_basic():
     print("TEST 3: MuisMuseaal Basic Instantiation")
     print("=" * 60)
     
-    muis = MuisMuseaal(
+    muis = MuisMuseaal(  # type: ignore[call-arg]
         acr="VBM",
         trt="_",
         trs=1,
@@ -82,7 +81,7 @@ def test_muis_validation_osaleja():
     print("=" * 60)
     
     try:
-        invalid = MuisMuseaal(
+        invalid = MuisMuseaal(  # type: ignore[call-arg]  # noqa: F841
             acr="VBM",
             trt="_",
             trs=1,
@@ -105,7 +104,7 @@ def test_muis_validation_description():
     print("=" * 60)
     
     try:
-        invalid = MuisMuseaal(
+        invalid = MuisMuseaal(  # type: ignore[call-arg]  # noqa: F841
             acr="VBM",
             trt="_",
             trs=1,
@@ -127,7 +126,7 @@ def test_muis_complete():
     print("TEST 6: MuisMuseaal Complete Record")
     print("=" * 60)
     
-    muis = MuisMuseaal(
+    muis = MuisMuseaal(  # type: ignore[call-arg]
         acr="VBM",
         trt="_",
         trs=1,
