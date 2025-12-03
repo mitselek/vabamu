@@ -1,0 +1,880 @@
+{
+  "_metadata": {
+    "source_file": "tabel_3.txt",
+    "column_count": 4,
+    "entry_count": 146,
+    "vocabulary_name": "measurement_units"
+  },
+  "measurement_units": [
+    {
+      "term": "<pikkuse mõõtühikud>",
+      "term_id": "2523",
+      "parent_id": "2521",
+      "muis_id": "1"
+    },
+    {
+      "term": "<kaalu/massi mõõtühikud>",
+      "term_id": "2524",
+      "parent_id": "2521",
+      "muis_id": "2"
+    },
+    {
+      "term": "m",
+      "term_id": "2525",
+      "parent_id": "2523",
+      "muis_id": "3"
+    },
+    {
+      "term": "cm",
+      "term_id": "2526",
+      "parent_id": "2523",
+      "muis_id": "4"
+    },
+    {
+      "term": "km",
+      "term_id": "2527",
+      "parent_id": "2523",
+      "muis_id": "5"
+    },
+    {
+      "term": "mm",
+      "term_id": "2528",
+      "parent_id": "2523",
+      "muis_id": "6"
+    },
+    {
+      "term": "kg",
+      "term_id": "2529",
+      "parent_id": "2524",
+      "muis_id": "7"
+    },
+    {
+      "term": "t",
+      "term_id": "2530",
+      "parent_id": "2524",
+      "muis_id": "8"
+    },
+    {
+      "term": "g",
+      "term_id": "2531",
+      "parent_id": "2524",
+      "muis_id": "9"
+    },
+    {
+      "term": "mg",
+      "term_id": "2532",
+      "parent_id": "2524",
+      "muis_id": "10"
+    },
+    {
+      "term": "<aja mõõtühikud>",
+      "term_id": "2533",
+      "parent_id": "2521",
+      "muis_id": "11"
+    },
+    {
+      "term": "tund",
+      "term_id": "2534",
+      "parent_id": "2533",
+      "muis_id": "12"
+    },
+    {
+      "term": "minut",
+      "term_id": "2535",
+      "parent_id": "2533",
+      "muis_id": "13"
+    },
+    {
+      "term": "sekund",
+      "term_id": "2536",
+      "parent_id": "2533",
+      "muis_id": "14"
+    },
+    {
+      "term": "<ruumala/mahutavuse mõõtühikud>",
+      "term_id": "2537",
+      "parent_id": "2521",
+      "muis_id": "15"
+    },
+    {
+      "term": "m3",
+      "term_id": "2538",
+      "parent_id": "2537",
+      "muis_id": "16"
+    },
+    {
+      "term": "liiter",
+      "term_id": "2539",
+      "parent_id": "2537",
+      "muis_id": "17"
+    },
+    {
+      "term": "samm",
+      "term_id": "2540",
+      "parent_id": "2523",
+      "muis_id": "18"
+    },
+    {
+      "term": "<kirjatöö pikkusmõõdud>",
+      "term_id": "2541",
+      "parent_id": "2521",
+      "muis_id": "19"
+    },
+    {
+      "term": "<vääriskivi mõõtühik>",
+      "term_id": "2542",
+      "parent_id": "2521",
+      "muis_id": "20"
+    },
+    {
+      "term": "karaat",
+      "term_id": "2543",
+      "parent_id": "2542",
+      "muis_id": "21"
+    },
+    {
+      "term": "<pindala mõõtühikud>",
+      "term_id": "2544",
+      "parent_id": "2521",
+      "muis_id": "22"
+    },
+    {
+      "term": "m2",
+      "term_id": "2545",
+      "parent_id": "2544",
+      "muis_id": "23"
+    },
+    {
+      "term": "aar",
+      "term_id": "2546",
+      "parent_id": "2544",
+      "muis_id": "24"
+    },
+    {
+      "term": "hektar",
+      "term_id": "2547",
+      "parent_id": "2544",
+      "muis_id": "25"
+    },
+    {
+      "term": "tsetner",
+      "term_id": "2548",
+      "parent_id": "2524",
+      "muis_id": "26"
+    },
+    {
+      "term": "km2",
+      "term_id": "2549",
+      "parent_id": "2544",
+      "muis_id": "27"
+    },
+    {
+      "term": "õõpäev",
+      "term_id": "2550",
+      "parent_id": "2533",
+      "muis_id": "28"
+    },
+    {
+      "term": "dm3",
+      "term_id": "2551",
+      "parent_id": "2537",
+      "muis_id": "29"
+    },
+    {
+      "term": "<väärtuse mõõtühikud>",
+      "term_id": "2552",
+      "parent_id": "2521",
+      "muis_id": "30"
+    },
+    {
+      "term": "rubla",
+      "term_id": "2553",
+      "parent_id": "2552",
+      "muis_id": "31"
+    },
+    {
+      "term": "kroon",
+      "term_id": "2554",
+      "parent_id": "2552",
+      "muis_id": "32"
+    },
+    {
+      "term": "nädal",
+      "term_id": "2555",
+      "parent_id": "2533",
+      "muis_id": "33"
+    },
+    {
+      "term": "kuu",
+      "term_id": "2556",
+      "parent_id": "2533",
+      "muis_id": "34"
+    },
+    {
+      "term": "aasta",
+      "term_id": "2557",
+      "parent_id": "2533",
+      "muis_id": "35"
+    },
+    {
+      "term": "sajand",
+      "term_id": "2558",
+      "parent_id": "2533",
+      "muis_id": "36"
+    },
+    {
+      "term": "aastatuhat",
+      "term_id": "2559",
+      "parent_id": "2533",
+      "muis_id": "37"
+    },
+    {
+      "term": "autoripoogen",
+      "term_id": "2560",
+      "parent_id": "2541",
+      "muis_id": "38"
+    },
+    {
+      "term": "<väärismetalli proov>",
+      "term_id": "2561",
+      "parent_id": "2521",
+      "muis_id": "39"
+    },
+    {
+      "term": "<riietuse suurused>",
+      "term_id": "2562",
+      "parent_id": "2521",
+      "muis_id": "40"
+    },
+    {
+      "term": "S",
+      "term_id": "2563",
+      "parent_id": "2562",
+      "muis_id": "41"
+    },
+    {
+      "term": "M",
+      "term_id": "2564",
+      "parent_id": "2562",
+      "muis_id": "42"
+    },
+    {
+      "term": "X",
+      "term_id": "2565",
+      "parent_id": "2562",
+      "muis_id": "43"
+    },
+    {
+      "term": "XL",
+      "term_id": "2566",
+      "parent_id": "2562",
+      "muis_id": "44"
+    },
+    {
+      "term": "XXL",
+      "term_id": "2567",
+      "parent_id": "2562",
+      "muis_id": "45"
+    },
+    {
+      "term": "number",
+      "term_id": "2568",
+      "parent_id": "2562",
+      "muis_id": "46"
+    },
+    {
+      "term": "<paberi formaadid>",
+      "term_id": "2569",
+      "parent_id": "2521",
+      "muis_id": "47"
+    },
+    {
+      "term": "A3",
+      "term_id": "2570",
+      "parent_id": "2569",
+      "muis_id": "48"
+    },
+    {
+      "term": "L",
+      "term_id": "2571",
+      "parent_id": "2562",
+      "muis_id": "49"
+    },
+    {
+      "term": "<fotode formaadid>",
+      "term_id": "2572",
+      "parent_id": "2521",
+      "muis_id": "50"
+    },
+    {
+      "term": "10 x 15 cm",
+      "term_id": "2573",
+      "parent_id": "2572",
+      "muis_id": "51"
+    },
+    {
+      "term": "13 x 18 cm",
+      "term_id": "2574",
+      "parent_id": "2572",
+      "muis_id": "52"
+    },
+    {
+      "term": "18 x 24 cm",
+      "term_id": "2575",
+      "parent_id": "2572",
+      "muis_id": "53"
+    },
+    {
+      "term": "24 x 30 cm",
+      "term_id": "2576",
+      "parent_id": "2572",
+      "muis_id": "54"
+    },
+    {
+      "term": "30 x 40 cm",
+      "term_id": "2577",
+      "parent_id": "2572",
+      "muis_id": "55"
+    },
+    {
+      "term": "<videoformaadid>",
+      "term_id": "2578",
+      "parent_id": "2521",
+      "muis_id": "56"
+    },
+    {
+      "term": "<negatiivi formaadid>",
+      "term_id": "2579",
+      "parent_id": "2521",
+      "muis_id": "57"
+    },
+    {
+      "term": "A4",
+      "term_id": "2580",
+      "parent_id": "2569",
+      "muis_id": "58"
+    },
+    {
+      "term": "<filmikaadri tüüpmõõdud>",
+      "term_id": "2581",
+      "parent_id": "2521",
+      "muis_id": "59"
+    },
+    {
+      "term": "24 x 36 mm",
+      "term_id": "2582",
+      "parent_id": "2581",
+      "muis_id": "60"
+    },
+    {
+      "term": "45 x 60 mm",
+      "term_id": "2583",
+      "parent_id": "2581",
+      "muis_id": "61"
+    },
+    {
+      "term": "60 x 60 mm",
+      "term_id": "2584",
+      "parent_id": "2581",
+      "muis_id": "62"
+    },
+    {
+      "term": "60 x 90 mm",
+      "term_id": "2585",
+      "parent_id": "2581",
+      "muis_id": "63"
+    },
+    {
+      "term": "90 x 120 mm",
+      "term_id": "2586",
+      "parent_id": "2581",
+      "muis_id": "64"
+    },
+    {
+      "term": "<kaardi mõõtühik>",
+      "term_id": "2587",
+      "parent_id": "2521",
+      "muis_id": "65"
+    },
+    {
+      "term": "_",
+      "term_id": "2588",
+      "parent_id": "2587",
+      "muis_id": "66"
+    },
+    {
+      "term": "A0",
+      "term_id": "2589",
+      "parent_id": "2569",
+      "muis_id": "67"
+    },
+    {
+      "term": "A1",
+      "term_id": "2590",
+      "parent_id": "2569",
+      "muis_id": "68"
+    },
+    {
+      "term": "A2",
+      "term_id": "2591",
+      "parent_id": "2569",
+      "muis_id": "69"
+    },
+    {
+      "term": "A5",
+      "term_id": "2592",
+      "parent_id": "2569",
+      "muis_id": "70"
+    },
+    {
+      "term": "A6",
+      "term_id": "2593",
+      "parent_id": "2569",
+      "muis_id": "71"
+    },
+    {
+      "term": "<analoog>",
+      "term_id": "2595",
+      "parent_id": "2578",
+      "muis_id": "73"
+    },
+    {
+      "term": "Video8",
+      "term_id": "2596",
+      "parent_id": "2595",
+      "muis_id": "74"
+    },
+    {
+      "term": "Hi-8",
+      "term_id": "2597",
+      "parent_id": "2595",
+      "muis_id": "75"
+    },
+    {
+      "term": "VHS",
+      "term_id": "2598",
+      "parent_id": "2595",
+      "muis_id": "76"
+    },
+    {
+      "term": "S-VHS",
+      "term_id": "2599",
+      "parent_id": "2595",
+      "muis_id": "77"
+    },
+    {
+      "term": "Betacam SP",
+      "term_id": "2600",
+      "parent_id": "2595",
+      "muis_id": "78"
+    },
+    {
+      "term": "Betamax",
+      "term_id": "2601",
+      "parent_id": "2595",
+      "muis_id": "79"
+    },
+    {
+      "term": "U-Matic",
+      "term_id": "2602",
+      "parent_id": "2595",
+      "muis_id": "80"
+    },
+    {
+      "term": "<digitaal>",
+      "term_id": "2603",
+      "parent_id": "2578",
+      "muis_id": "81"
+    },
+    {
+      "term": "DV",
+      "term_id": "2604",
+      "parent_id": "2603",
+      "muis_id": "82"
+    },
+    {
+      "term": "DVCPRO",
+      "term_id": "2605",
+      "parent_id": "2603",
+      "muis_id": "83"
+    },
+    {
+      "term": "Digital-S",
+      "term_id": "2606",
+      "parent_id": "2603",
+      "muis_id": "84"
+    },
+    {
+      "term": "Digital Betacam",
+      "term_id": "2607",
+      "parent_id": "2603",
+      "muis_id": "85"
+    },
+    {
+      "term": "Betacam SX",
+      "term_id": "2608",
+      "parent_id": "2603",
+      "muis_id": "86"
+    },
+    {
+      "term": "Digital-8",
+      "term_id": "2609",
+      "parent_id": "2603",
+      "muis_id": "87"
+    },
+    {
+      "term": "D-VHS",
+      "term_id": "2610",
+      "parent_id": "2603",
+      "muis_id": "88"
+    },
+    {
+      "term": "DVD",
+      "term_id": "2611",
+      "parent_id": "2603",
+      "muis_id": "89"
+    },
+    {
+      "term": "P2",
+      "term_id": "2612",
+      "parent_id": "2603",
+      "muis_id": "90"
+    },
+    {
+      "term": "HDD-1000",
+      "term_id": "2613",
+      "parent_id": "2603",
+      "muis_id": "91"
+    },
+    {
+      "term": "MICROMV",
+      "term_id": "2614",
+      "parent_id": "2603",
+      "muis_id": "92"
+    },
+    {
+      "term": "<filmilindi tüüpmõõdud>",
+      "term_id": "2615",
+      "parent_id": "2521",
+      "muis_id": "93"
+    },
+    {
+      "term": "8 super",
+      "term_id": "2616",
+      "parent_id": "2615",
+      "muis_id": "94"
+    },
+    {
+      "term": "16 super",
+      "term_id": "2617",
+      "parent_id": "2615",
+      "muis_id": "95"
+    },
+    {
+      "term": "35 mm",
+      "term_id": "2618",
+      "parent_id": "2615",
+      "muis_id": "96"
+    },
+    {
+      "term": "16 mm",
+      "term_id": "2619",
+      "parent_id": "2615",
+      "muis_id": "97"
+    },
+    {
+      "term": "8 mm",
+      "term_id": "2620",
+      "parent_id": "2615",
+      "muis_id": "98"
+    },
+    {
+      "term": "6 x 9 cm",
+      "term_id": "2621",
+      "parent_id": "2572",
+      "muis_id": "99"
+    },
+    {
+      "term": "9 x 12 cm",
+      "term_id": "2622",
+      "parent_id": "2572",
+      "muis_id": "100"
+    },
+    {
+      "term": "10 x 13 cm",
+      "term_id": "2623",
+      "parent_id": "2572",
+      "muis_id": "101"
+    },
+    {
+      "term": "25 x 34 cm",
+      "term_id": "2624",
+      "parent_id": "2572",
+      "muis_id": "102"
+    },
+    {
+      "term": "40 x 50 cm",
+      "term_id": "2625",
+      "parent_id": "2572",
+      "muis_id": "103"
+    },
+    {
+      "term": "50 x 60 cm",
+      "term_id": "2626",
+      "parent_id": "2572",
+      "muis_id": "104"
+    },
+    {
+      "term": "24 x 36 mm",
+      "term_id": "2627",
+      "parent_id": "2579",
+      "muis_id": "105"
+    },
+    {
+      "term": "45 x 60 mm",
+      "term_id": "2628",
+      "parent_id": "2579",
+      "muis_id": "106"
+    },
+    {
+      "term": "12 x 18 mm",
+      "term_id": "2629",
+      "parent_id": "2579",
+      "muis_id": "107"
+    },
+    {
+      "term": "mittestandardne",
+      "term_id": "2630",
+      "parent_id": "2572",
+      "muis_id": "108"
+    },
+    {
+      "term": "tähemärk",
+      "term_id": "2631",
+      "parent_id": "2541",
+      "muis_id": "109"
+    },
+    {
+      "term": "leht",
+      "term_id": "2632",
+      "parent_id": "2541",
+      "muis_id": "110"
+    },
+    {
+      "term": "lk",
+      "term_id": "2633",
+      "parent_id": "2541",
+      "muis_id": "111"
+    },
+    {
+      "term": "cm2",
+      "term_id": "2634",
+      "parent_id": "2544",
+      "muis_id": "112"
+    },
+    {
+      "term": "mm2",
+      "term_id": "2635",
+      "parent_id": "2544",
+      "muis_id": "113"
+    },
+    {
+      "term": "XS",
+      "term_id": "2636",
+      "parent_id": "2562",
+      "muis_id": "114"
+    },
+    {
+      "term": "cm3",
+      "term_id": "2637",
+      "parent_id": "2537",
+      "muis_id": "115"
+    },
+    {
+      "term": "dl",
+      "term_id": "2638",
+      "parent_id": "2537",
+      "muis_id": "116"
+    },
+    {
+      "term": "tihumeeter",
+      "term_id": "2639",
+      "parent_id": "2537",
+      "muis_id": "117"
+    },
+    {
+      "term": "kraad",
+      "term_id": "2640",
+      "parent_id": "2561",
+      "muis_id": "118"
+    },
+    {
+      "term": "euro",
+      "term_id": "2641",
+      "parent_id": "2552",
+      "muis_id": "119"
+    },
+    {
+      "term": "mark",
+      "term_id": "2642",
+      "parent_id": "2552",
+      "muis_id": "120"
+    },
+    {
+      "term": "tk",
+      "term_id": "2643",
+      "parent_id": "2521",
+      "muis_id": "121"
+    },
+    {
+      "term": "puud",
+      "term_id": "19373",
+      "parent_id": "2524",
+      "muis_id": "123"
+    },
+    {
+      "term": "salm",
+      "term_id": "23484",
+      "parent_id": "2541",
+      "muis_id": "125"
+    },
+    {
+      "term": "küünar",
+      "term_id": "23485",
+      "parent_id": "2523",
+      "muis_id": "126"
+    },
+    {
+      "term": "toll",
+      "term_id": "23486",
+      "parent_id": "2523",
+      "muis_id": "127"
+    },
+    {
+      "term": "eriti suur formaat",
+      "term_id": "23506",
+      "parent_id": "2572",
+      "muis_id": "129"
+    },
+    {
+      "term": "küünar",
+      "term_id": "23507",
+      "parent_id": "2523",
+      "muis_id": "130"
+    },
+    {
+      "term": "küünar",
+      "term_id": "23618",
+      "parent_id": "2523",
+      "muis_id": "131"
+    },
+    {
+      "term": "toll",
+      "term_id": "23619",
+      "parent_id": "2523",
+      "muis_id": "132"
+    },
+    {
+      "term": "4,5*6",
+      "term_id": "23622",
+      "parent_id": "2579",
+      "muis_id": "133"
+    },
+    {
+      "term": "eriti suur formaat",
+      "term_id": "23623",
+      "parent_id": "2572",
+      "muis_id": "134"
+    },
+    {
+      "term": "nael",
+      "term_id": "23624",
+      "parent_id": "2524",
+      "muis_id": "135"
+    },
+    {
+      "term": "küünar",
+      "term_id": "25976",
+      "parent_id": "2523",
+      "muis_id": "137"
+    },
+    {
+      "term": "küünar",
+      "term_id": "26069",
+      "parent_id": "2523",
+      "muis_id": "139"
+    },
+    {
+      "term": "toll",
+      "term_id": "26070",
+      "parent_id": "2523",
+      "muis_id": "140"
+    },
+    {
+      "term": "eriti suur formaat",
+      "term_id": "28520",
+      "parent_id": "2572",
+      "muis_id": "141"
+    },
+    {
+      "term": "drahm",
+      "term_id": "28526",
+      "parent_id": "2552",
+      "muis_id": "143"
+    },
+    {
+      "term": "18 x 24 mm",
+      "term_id": "29726",
+      "parent_id": "2579",
+      "muis_id": "144"
+    },
+    {
+      "term": "60 x 60 mm",
+      "term_id": "29728",
+      "parent_id": "2579",
+      "muis_id": "146"
+    },
+    {
+      "term": "60 x 95 mm",
+      "term_id": "29729",
+      "parent_id": "2579",
+      "muis_id": "147"
+    },
+    {
+      "term": "90 x 120 mm",
+      "term_id": "29730",
+      "parent_id": "2579",
+      "muis_id": "148"
+    },
+    {
+      "term": "100 x 150 mm",
+      "term_id": "29731",
+      "parent_id": "2579",
+      "muis_id": "149"
+    },
+    {
+      "term": "130 x 180 mm",
+      "term_id": "29732",
+      "parent_id": "2579",
+      "muis_id": "150"
+    },
+    {
+      "term": "180 x 240 mm",
+      "term_id": "29733",
+      "parent_id": "2579",
+      "muis_id": "151"
+    },
+    {
+      "term": "60 x 90 mm",
+      "term_id": "29739",
+      "parent_id": "2572",
+      "muis_id": "157"
+    },
+    {
+      "term": "ml",
+      "term_id": "32227",
+      "parent_id": "2537",
+      "muis_id": "158"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "_metadata": {
+    "source_file": "11",
+    "column_count": 1,
+    "entry_count": 3,
+    "vocabulary_name": "document_types"
+  },
+  "document_types": [
+    {
+      "term": "Ajalooline õiend"
+    },
+    {
+      "term": "Arhiiviallikas"
+    },
+    {
+      "term": "Bibliograafia"
+    }
+  ]
+}

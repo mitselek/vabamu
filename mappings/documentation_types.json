@@ -1,0 +1,110 @@
+{
+  "_metadata": {
+    "source_file": "17",
+    "column_count": 2,
+    "entry_count": 25,
+    "vocabulary_name": "documentation_types"
+  },
+  "documentation_types": [
+    {
+      "term": "ajalooline õiend",
+      "term_id": "5688"
+    },
+    {
+      "term": "arhiiviallikad",
+      "term_id": "5702"
+    },
+    {
+      "term": "dateering",
+      "term_id": "5679"
+    },
+    {
+      "term": "eskiisid/  etüüdid",
+      "term_id": "5685"
+    },
+    {
+      "term": "füüsiline kirjeldus",
+      "term_id": "5692"
+    },
+    {
+      "term": "kommentaar",
+      "term_id": "5693"
+    },
+    {
+      "term": "koopiad",
+      "term_id": "5701"
+    },
+    {
+      "term": "kordustööd",
+      "term_id": "5677"
+    },
+    {
+      "term": "kujutis",
+      "term_id": "5697"
+    },
+    {
+      "term": "KVISi kohakataloogi tekst (mitteavalik)",
+      "term_id": "19085"
+    },
+    {
+      "term": "legend",
+      "term_id": "5695"
+    },
+    {
+      "term": "märkused (mitteavalik)",
+      "term_id": "5696"
+    },
+    {
+      "term": "näitused",
+      "term_id": "5678"
+    },
+    {
+      "term": "originaal",
+      "term_id": "5703"
+    },
+    {
+      "term": "originaali asukoht",
+      "term_id": "23383"
+    },
+    {
+      "term": "pealkiri",
+      "term_id": "5680"
+    },
+    {
+      "term": "reproduktsioonid",
+      "term_id": "5687"
+    },
+    {
+      "term": "restaureerimised (mitteavalik)",
+      "term_id": "5689"
+    },
+    {
+      "term": "seeriad",
+      "term_id": "5700"
+    },
+    {
+      "term": "signatuur/ meistrimärk",
+      "term_id": "5682"
+    },
+    {
+      "term": "sisu kirjeldus",
+      "term_id": "5698"
+    },
+    {
+      "term": "tekst objektil",
+      "term_id": "5683"
+    },
+    {
+      "term": "tempel/ etikett/ märk",
+      "term_id": "5681"
+    },
+    {
+      "term": "variandid",
+      "term_id": "5686"
+    },
+    {
+      "term": "viited",
+      "term_id": "5694"
+    }
+  ]
+}

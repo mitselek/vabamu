@@ -1,0 +1,1006 @@
+{
+  "_metadata": {
+    "source_file": "tabel_2.txt",
+    "column_count": 4,
+    "entry_count": 167,
+    "vocabulary_name": "colors"
+  },
+  "colors": [
+    {
+      "term": "roosa",
+      "term_id": "1479",
+      "parent_id": "3",
+      "muis_id": "51"
+    },
+    {
+      "term": "ereroosa",
+      "term_id": "1480",
+      "parent_id": "1479",
+      "muis_id": "52"
+    },
+    {
+      "term": "tugevroosa",
+      "term_id": "1482",
+      "parent_id": "1479",
+      "muis_id": "53"
+    },
+    {
+      "term": "sügavroosa",
+      "term_id": "1483",
+      "parent_id": "1479",
+      "muis_id": "54"
+    },
+    {
+      "term": "heleroosa",
+      "term_id": "1484",
+      "parent_id": "1479",
+      "muis_id": "55"
+    },
+    {
+      "term": "tumeroosa",
+      "term_id": "1485",
+      "parent_id": "1479",
+      "muis_id": "56"
+    },
+    {
+      "term": "kahvaturoosa",
+      "term_id": "1486",
+      "parent_id": "1479",
+      "muis_id": "57"
+    },
+    {
+      "term": "hallikasroosa",
+      "term_id": "1487",
+      "parent_id": "1479",
+      "muis_id": "58"
+    },
+    {
+      "term": "roosakasvalge",
+      "term_id": "1488",
+      "parent_id": "1479",
+      "muis_id": "59"
+    },
+    {
+      "term": "roosakashall",
+      "term_id": "1489",
+      "parent_id": "1479",
+      "muis_id": "60"
+    },
+    {
+      "term": "lillakasroosa",
+      "term_id": "1490",
+      "parent_id": "1479",
+      "muis_id": "61"
+    },
+    {
+      "term": "kollakasroosa",
+      "term_id": "1491",
+      "parent_id": "1479",
+      "muis_id": "62"
+    },
+    {
+      "term": "pruunikasroosa",
+      "term_id": "1492",
+      "parent_id": "1479",
+      "muis_id": "63"
+    },
+    {
+      "term": "punane",
+      "term_id": "1493",
+      "parent_id": "3",
+      "muis_id": "64"
+    },
+    {
+      "term": "erepunane",
+      "term_id": "1494",
+      "parent_id": "1493",
+      "muis_id": "65"
+    },
+    {
+      "term": "tugevpunane",
+      "term_id": "1495",
+      "parent_id": "1493",
+      "muis_id": "66"
+    },
+    {
+      "term": "sügavpunane",
+      "term_id": "1496",
+      "parent_id": "1493",
+      "muis_id": "67"
+    },
+    {
+      "term": "tumepunane",
+      "term_id": "1497",
+      "parent_id": "1493",
+      "muis_id": "68"
+    },
+    {
+      "term": "hallikaspunane",
+      "term_id": "1498",
+      "parent_id": "1493",
+      "muis_id": "69"
+    },
+    {
+      "term": "mustjaspunane",
+      "term_id": "1499",
+      "parent_id": "1493",
+      "muis_id": "70"
+    },
+    {
+      "term": "punakashall",
+      "term_id": "1500",
+      "parent_id": "1493",
+      "muis_id": "71"
+    },
+    {
+      "term": "punakasmust",
+      "term_id": "1501",
+      "parent_id": "1493",
+      "muis_id": "72"
+    },
+    {
+      "term": "purpurpunane",
+      "term_id": "1502",
+      "parent_id": "1493",
+      "muis_id": "73"
+    },
+    {
+      "term": "oranž",
+      "term_id": "1503",
+      "parent_id": "3",
+      "muis_id": "74"
+    },
+    {
+      "term": "ereoranzh",
+      "term_id": "1504",
+      "parent_id": "1503",
+      "muis_id": "75"
+    },
+    {
+      "term": "briljantoranzh",
+      "term_id": "1505",
+      "parent_id": "1503",
+      "muis_id": "76"
+    },
+    {
+      "term": "tugevoranzh",
+      "term_id": "1506",
+      "parent_id": "1503",
+      "muis_id": "77"
+    },
+    {
+      "term": "sügavoranzh",
+      "term_id": "1507",
+      "parent_id": "1503",
+      "muis_id": "78"
+    },
+    {
+      "term": "heleoranzh",
+      "term_id": "1508",
+      "parent_id": "1503",
+      "muis_id": "79"
+    },
+    {
+      "term": "punakasoranzh",
+      "term_id": "1509",
+      "parent_id": "1503",
+      "muis_id": "80"
+    },
+    {
+      "term": "pruunikasoranzh",
+      "term_id": "1510",
+      "parent_id": "1503",
+      "muis_id": "81"
+    },
+    {
+      "term": "pruun",
+      "term_id": "1511",
+      "parent_id": "3",
+      "muis_id": "82"
+    },
+    {
+      "term": "tugevpruun",
+      "term_id": "1512",
+      "parent_id": "1511",
+      "muis_id": "83"
+    },
+    {
+      "term": "sügavpruun",
+      "term_id": "1513",
+      "parent_id": "1511",
+      "muis_id": "84"
+    },
+    {
+      "term": "helepruun",
+      "term_id": "1514",
+      "parent_id": "1511",
+      "muis_id": "85"
+    },
+    {
+      "term": "tumepruun",
+      "term_id": "1515",
+      "parent_id": "1511",
+      "muis_id": "86"
+    },
+    {
+      "term": "hallikaspruun",
+      "term_id": "1516",
+      "parent_id": "1511",
+      "muis_id": "87"
+    },
+    {
+      "term": "pruunikashall",
+      "term_id": "1517",
+      "parent_id": "1511",
+      "muis_id": "88"
+    },
+    {
+      "term": "pruunikasmust",
+      "term_id": "1518",
+      "parent_id": "1511",
+      "muis_id": "89"
+    },
+    {
+      "term": "punakaspruun",
+      "term_id": "1519",
+      "parent_id": "1511",
+      "muis_id": "90"
+    },
+    {
+      "term": "kollakaspruun",
+      "term_id": "1520",
+      "parent_id": "1511",
+      "muis_id": "91"
+    },
+    {
+      "term": "oliivpruun",
+      "term_id": "1521",
+      "parent_id": "1511",
+      "muis_id": "92"
+    },
+    {
+      "term": "kollane",
+      "term_id": "1522",
+      "parent_id": "3",
+      "muis_id": "93"
+    },
+    {
+      "term": "erekollane",
+      "term_id": "1523",
+      "parent_id": "1522",
+      "muis_id": "94"
+    },
+    {
+      "term": "briljantkollane",
+      "term_id": "1524",
+      "parent_id": "1522",
+      "muis_id": "95"
+    },
+    {
+      "term": "tugevkollane",
+      "term_id": "1525",
+      "parent_id": "1522",
+      "muis_id": "96"
+    },
+    {
+      "term": "sügavkollane",
+      "term_id": "1526",
+      "parent_id": "1522",
+      "muis_id": "97"
+    },
+    {
+      "term": "helekollane",
+      "term_id": "1527",
+      "parent_id": "1522",
+      "muis_id": "98"
+    },
+    {
+      "term": "tumekollane",
+      "term_id": "1528",
+      "parent_id": "1522",
+      "muis_id": "99"
+    },
+    {
+      "term": "kahvatukollane",
+      "term_id": "1529",
+      "parent_id": "1522",
+      "muis_id": "100"
+    },
+    {
+      "term": "hallikaskollane",
+      "term_id": "1530",
+      "parent_id": "1522",
+      "muis_id": "101"
+    },
+    {
+      "term": "kollakasvalge",
+      "term_id": "1531",
+      "parent_id": "1522",
+      "muis_id": "102"
+    },
+    {
+      "term": "kollakashall",
+      "term_id": "1532",
+      "parent_id": "1522",
+      "muis_id": "103"
+    },
+    {
+      "term": "oranžikaskollane",
+      "term_id": "1533",
+      "parent_id": "1522",
+      "muis_id": "104"
+    },
+    {
+      "term": "rohekaskollane",
+      "term_id": "1534",
+      "parent_id": "1522",
+      "muis_id": "105"
+    },
+    {
+      "term": "oliivroheline",
+      "term_id": "1535",
+      "parent_id": "3",
+      "muis_id": "106"
+    },
+    {
+      "term": "heleoliivroheline",
+      "term_id": "1536",
+      "parent_id": "1535",
+      "muis_id": "107"
+    },
+    {
+      "term": "tume oliivroheline",
+      "term_id": "1537",
+      "parent_id": "1535",
+      "muis_id": "108"
+    },
+    {
+      "term": "hallikas-oliivroheline",
+      "term_id": "1538",
+      "parent_id": "1535",
+      "muis_id": "109"
+    },
+    {
+      "term": "oliivrohekashall",
+      "term_id": "1539",
+      "parent_id": "1535",
+      "muis_id": "110"
+    },
+    {
+      "term": "oliivrohekasmust",
+      "term_id": "1540",
+      "parent_id": "1535",
+      "muis_id": "111"
+    },
+    {
+      "term": "kollakas roheline",
+      "term_id": "1541",
+      "parent_id": "1549",
+      "muis_id": "112"
+    },
+    {
+      "term": "erekollakasroheline",
+      "term_id": "1542",
+      "parent_id": "1541",
+      "muis_id": "113"
+    },
+    {
+      "term": "briljantkollakasroheline",
+      "term_id": "1543",
+      "parent_id": "1541",
+      "muis_id": "114"
+    },
+    {
+      "term": "tugevkollakasroheline",
+      "term_id": "1544",
+      "parent_id": "1541",
+      "muis_id": "115"
+    },
+    {
+      "term": "sügavkollakasroheline",
+      "term_id": "1545",
+      "parent_id": "1541",
+      "muis_id": "116"
+    },
+    {
+      "term": "helekollakasroheline",
+      "term_id": "1546",
+      "parent_id": "1541",
+      "muis_id": "117"
+    },
+    {
+      "term": "kahvatukollakasroheline",
+      "term_id": "1547",
+      "parent_id": "1541",
+      "muis_id": "118"
+    },
+    {
+      "term": "hallikaskollakasroheline",
+      "term_id": "1548",
+      "parent_id": "1541",
+      "muis_id": "119"
+    },
+    {
+      "term": "roheline",
+      "term_id": "1549",
+      "parent_id": "3",
+      "muis_id": "120"
+    },
+    {
+      "term": "ereroheline",
+      "term_id": "1550",
+      "parent_id": "1549",
+      "muis_id": "121"
+    },
+    {
+      "term": "briljantroheline",
+      "term_id": "1551",
+      "parent_id": "1549",
+      "muis_id": "122"
+    },
+    {
+      "term": "tugevroheline",
+      "term_id": "1552",
+      "parent_id": "1549",
+      "muis_id": "123"
+    },
+    {
+      "term": "sügavroheline",
+      "term_id": "1553",
+      "parent_id": "1549",
+      "muis_id": "124"
+    },
+    {
+      "term": "heleroheline",
+      "term_id": "1554",
+      "parent_id": "1549",
+      "muis_id": "125"
+    },
+    {
+      "term": "tumeroheline",
+      "term_id": "1555",
+      "parent_id": "1549",
+      "muis_id": "126"
+    },
+    {
+      "term": "kahvatu roheline",
+      "term_id": "1556",
+      "parent_id": "1549",
+      "muis_id": "127"
+    },
+    {
+      "term": "hallikasroheline",
+      "term_id": "1557",
+      "parent_id": "1549",
+      "muis_id": "128"
+    },
+    {
+      "term": "mustjasroheline",
+      "term_id": "1558",
+      "parent_id": "1549",
+      "muis_id": "129"
+    },
+    {
+      "term": "rohekasvalge",
+      "term_id": "1559",
+      "parent_id": "1549",
+      "muis_id": "130"
+    },
+    {
+      "term": "rohekashall",
+      "term_id": "1560",
+      "parent_id": "1549",
+      "muis_id": "131"
+    },
+    {
+      "term": "helerohekashall",
+      "term_id": "1561",
+      "parent_id": "1549",
+      "muis_id": "132"
+    },
+    {
+      "term": "tumerohekashall",
+      "term_id": "1562",
+      "parent_id": "1549",
+      "muis_id": "133"
+    },
+    {
+      "term": "rohekasmust",
+      "term_id": "1563",
+      "parent_id": "1549",
+      "muis_id": "134"
+    },
+    {
+      "term": "kollakasroheline",
+      "term_id": "1564",
+      "parent_id": "1549",
+      "muis_id": "135"
+    },
+    {
+      "term": "sinakasroheline",
+      "term_id": "1565",
+      "parent_id": "1549",
+      "muis_id": "136"
+    },
+    {
+      "term": "oliivroheline",
+      "term_id": "1566",
+      "parent_id": "1549",
+      "muis_id": "137"
+    },
+    {
+      "term": "sinine",
+      "term_id": "1567",
+      "parent_id": "3",
+      "muis_id": "138"
+    },
+    {
+      "term": "eresinine",
+      "term_id": "1568",
+      "parent_id": "1567",
+      "muis_id": "139"
+    },
+    {
+      "term": "briljantsinine",
+      "term_id": "1569",
+      "parent_id": "1567",
+      "muis_id": "140"
+    },
+    {
+      "term": "tugevsinine",
+      "term_id": "1570",
+      "parent_id": "1567",
+      "muis_id": "141"
+    },
+    {
+      "term": "sügavsinine",
+      "term_id": "1571",
+      "parent_id": "1567",
+      "muis_id": "142"
+    },
+    {
+      "term": "helesinine",
+      "term_id": "1572",
+      "parent_id": "1567",
+      "muis_id": "143"
+    },
+    {
+      "term": "tumesinine",
+      "term_id": "1573",
+      "parent_id": "1567",
+      "muis_id": "144"
+    },
+    {
+      "term": "kahvatusinine",
+      "term_id": "1574",
+      "parent_id": "1567",
+      "muis_id": "145"
+    },
+    {
+      "term": "hallikassinine",
+      "term_id": "1575",
+      "parent_id": "1567",
+      "muis_id": "146"
+    },
+    {
+      "term": "mustjassinine",
+      "term_id": "1576",
+      "parent_id": "1567",
+      "muis_id": "147"
+    },
+    {
+      "term": "sinakasvalge",
+      "term_id": "1577",
+      "parent_id": "1567",
+      "muis_id": "148"
+    },
+    {
+      "term": "sinakashall",
+      "term_id": "1578",
+      "parent_id": "1567",
+      "muis_id": "149"
+    },
+    {
+      "term": "helesinakashall",
+      "term_id": "1579",
+      "parent_id": "1567",
+      "muis_id": "150"
+    },
+    {
+      "term": "tumesinakashall",
+      "term_id": "1580",
+      "parent_id": "1567",
+      "muis_id": "151"
+    },
+    {
+      "term": "sinakasmust",
+      "term_id": "1581",
+      "parent_id": "1567",
+      "muis_id": "152"
+    },
+    {
+      "term": "rohekassinine",
+      "term_id": "1582",
+      "parent_id": "1567",
+      "muis_id": "153"
+    },
+    {
+      "term": "lillakassinine",
+      "term_id": "1583",
+      "parent_id": "1567",
+      "muis_id": "154"
+    },
+    {
+      "term": "violett",
+      "term_id": "1584",
+      "parent_id": "1567",
+      "muis_id": "155"
+    },
+    {
+      "term": "purpurpunane",
+      "term_id": "1585",
+      "parent_id": "3",
+      "muis_id": "156"
+    },
+    {
+      "term": "erepurpurpunane",
+      "term_id": "1586",
+      "parent_id": "1585",
+      "muis_id": "157"
+    },
+    {
+      "term": "briljantne purpurpunane",
+      "term_id": "1587",
+      "parent_id": "1585",
+      "muis_id": "158"
+    },
+    {
+      "term": "tugevpurpurpunane",
+      "term_id": "1588",
+      "parent_id": "1585",
+      "muis_id": "159"
+    },
+    {
+      "term": "sügav purpurpunane",
+      "term_id": "1589",
+      "parent_id": "1585",
+      "muis_id": "160"
+    },
+    {
+      "term": "hele purpurpunane",
+      "term_id": "1590",
+      "parent_id": "1585",
+      "muis_id": "161"
+    },
+    {
+      "term": "tume purpurpunane",
+      "term_id": "1591",
+      "parent_id": "1585",
+      "muis_id": "162"
+    },
+    {
+      "term": "kahvatu purpurpunane",
+      "term_id": "1592",
+      "parent_id": "1585",
+      "muis_id": "163"
+    },
+    {
+      "term": "hallikas purpurpunane",
+      "term_id": "1593",
+      "parent_id": "1585",
+      "muis_id": "164"
+    },
+    {
+      "term": "mustjas purpurpunane",
+      "term_id": "1594",
+      "parent_id": "1585",
+      "muis_id": "165"
+    },
+    {
+      "term": "purpurpunakas valge",
+      "term_id": "1595",
+      "parent_id": "1585",
+      "muis_id": "166"
+    },
+    {
+      "term": "purpurpunakas hall",
+      "term_id": "1596",
+      "parent_id": "1585",
+      "muis_id": "167"
+    },
+    {
+      "term": "hele purpurpunakas hall",
+      "term_id": "1597",
+      "parent_id": "1585",
+      "muis_id": "168"
+    },
+    {
+      "term": "tume-purpurpunakas-hall",
+      "term_id": "1598",
+      "parent_id": "1585",
+      "muis_id": "169"
+    },
+    {
+      "term": "purpurpunakas must",
+      "term_id": "1599",
+      "parent_id": "1585",
+      "muis_id": "170"
+    },
+    {
+      "term": "punakas purpurpunane",
+      "term_id": "1600",
+      "parent_id": "1585",
+      "muis_id": "171"
+    },
+    {
+      "term": "hall",
+      "term_id": "1601",
+      "parent_id": "3",
+      "muis_id": "172"
+    },
+    {
+      "term": "helehall",
+      "term_id": "1602",
+      "parent_id": "1601",
+      "muis_id": "173"
+    },
+    {
+      "term": "tumehall",
+      "term_id": "1603",
+      "parent_id": "1601",
+      "muis_id": "174"
+    },
+    {
+      "term": "valge",
+      "term_id": "1604",
+      "parent_id": "3",
+      "muis_id": "175"
+    },
+    {
+      "term": "must",
+      "term_id": "1605",
+      "parent_id": "3",
+      "muis_id": "176"
+    },
+    {
+      "term": "mitmevärviline",
+      "term_id": "1606",
+      "parent_id": "3",
+      "muis_id": "177"
+    },
+    {
+      "term": "triibuline",
+      "term_id": "1607",
+      "parent_id": "1616",
+      "muis_id": "178"
+    },
+    {
+      "term": "pikitriibuline",
+      "term_id": "1608",
+      "parent_id": "1607",
+      "muis_id": "179"
+    },
+    {
+      "term": "põikitriibuline",
+      "term_id": "1609",
+      "parent_id": "1607",
+      "muis_id": "180"
+    },
+    {
+      "term": "ristitriibuline",
+      "term_id": "1610",
+      "parent_id": "1607",
+      "muis_id": "181"
+    },
+    {
+      "term": "täpiline",
+      "term_id": "1611",
+      "parent_id": "1616",
+      "muis_id": "182"
+    },
+    {
+      "term": "ruuduline",
+      "term_id": "1612",
+      "parent_id": "1616",
+      "muis_id": "183"
+    },
+    {
+      "term": "lilleline",
+      "term_id": "1613",
+      "parent_id": "1616",
+      "muis_id": "184"
+    },
+    {
+      "term": "hõbedane",
+      "term_id": "1614",
+      "parent_id": "3",
+      "muis_id": "185"
+    },
+    {
+      "term": "kuldne",
+      "term_id": "1615",
+      "parent_id": "3",
+      "muis_id": "186"
+    },
+    {
+      "term": "<mustriline>",
+      "term_id": "1616",
+      "parent_id": "3",
+      "muis_id": "187"
+    },
+    {
+      "term": "ühevärviline",
+      "term_id": "1617",
+      "parent_id": "3",
+      "muis_id": "188"
+    },
+    {
+      "term": "mustvalge",
+      "term_id": "29681",
+      "parent_id": "3",
+      "muis_id": "194"
+    },
+    {
+      "term": "madarapunane",
+      "term_id": "29682",
+      "parent_id": "1493",
+      "muis_id": "195"
+    },
+    {
+      "term": "läbipaistev",
+      "term_id": "29696",
+      "parent_id": "3",
+      "muis_id": "196"
+    },
+    {
+      "term": "beež",
+      "term_id": "33413",
+      "parent_id": "3",
+      "muis_id": "204"
+    },
+    {
+      "term": "lilla",
+      "term_id": "33414",
+      "parent_id": "3",
+      "muis_id": "205"
+    },
+    {
+      "term": "ooker",
+      "term_id": "33415",
+      "parent_id": "1522",
+      "muis_id": "206"
+    },
+    {
+      "term": "hallikasmust",
+      "term_id": "33416",
+      "parent_id": "1605",
+      "muis_id": "207"
+    },
+    {
+      "term": "helepunane",
+      "term_id": "33417",
+      "parent_id": "1493",
+      "muis_id": "208"
+    },
+    {
+      "term": "heletürkiis",
+      "term_id": "33418",
+      "parent_id": "1567",
+      "muis_id": "209"
+    },
+    {
+      "term": "karmiinpunane",
+      "term_id": "33419",
+      "parent_id": "1493",
+      "muis_id": "210"
+    },
+    {
+      "term": "karmiinroosa",
+      "term_id": "33420",
+      "parent_id": "1479",
+      "muis_id": "211"
+    },
+    {
+      "term": "kiltkivihall",
+      "term_id": "33421",
+      "parent_id": "1601",
+      "muis_id": "212"
+    },
+    {
+      "term": "kuldkollane",
+      "term_id": "33422",
+      "parent_id": "1522",
+      "muis_id": "213"
+    },
+    {
+      "term": "lillakaskarmiin",
+      "term_id": "33423",
+      "parent_id": "1493",
+      "muis_id": "214"
+    },
+    {
+      "term": "lillakaspunane",
+      "term_id": "33424",
+      "parent_id": "1493",
+      "muis_id": "215"
+    },
+    {
+      "term": "läikivpunane",
+      "term_id": "33425",
+      "parent_id": "1493",
+      "muis_id": "216"
+    },
+    {
+      "term": "mustjaspruun",
+      "term_id": "33426",
+      "parent_id": "1511",
+      "muis_id": "217"
+    },
+    {
+      "term": "oranžikaspunane",
+      "term_id": "33427",
+      "parent_id": "1493",
+      "muis_id": "218"
+    },
+    {
+      "term": "pruunikaskollane",
+      "term_id": "33428",
+      "parent_id": "1522",
+      "muis_id": "219"
+    },
+    {
+      "term": "pruunikaslilla",
+      "term_id": "33429",
+      "parent_id": "33414",
+      "muis_id": "220"
+    },
+    {
+      "term": "pruunikaspunane",
+      "term_id": "33430",
+      "parent_id": "1493",
+      "muis_id": "221"
+    },
+    {
+      "term": "punakaslilla",
+      "term_id": "33431",
+      "parent_id": "33414",
+      "muis_id": "222"
+    },
+    {
+      "term": "sinkjasroheline",
+      "term_id": "33432",
+      "parent_id": "1549",
+      "muis_id": "223"
+    },
+    {
+      "term": "sirelililla",
+      "term_id": "33433",
+      "parent_id": "33414",
+      "muis_id": "224"
+    },
+    {
+      "term": "telliskivipunane",
+      "term_id": "33434",
+      "parent_id": "1493",
+      "muis_id": "225"
+    },
+    {
+      "term": "tumekarmiinpunane",
+      "term_id": "33435",
+      "parent_id": "33419",
+      "muis_id": "226"
+    },
+    {
+      "term": "tsüaansinine",
+      "term_id": "33436",
+      "parent_id": "1567",
+      "muis_id": "227"
+    },
+    {
+      "term": "ultramariin",
+      "term_id": "33437",
+      "parent_id": "1567",
+      "muis_id": "228"
+    }
+  ]
+}

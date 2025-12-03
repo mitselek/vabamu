@@ -1,0 +1,478 @@
+{
+  "_metadata": {
+    "source_file": "18",
+    "column_count": 2,
+    "entry_count": 117,
+    "vocabulary_name": "settlements"
+  },
+  "settlements": [
+    {
+      "term": "Ambla",
+      "term_id": "5089"
+    },
+    {
+      "term": "Anna",
+      "term_id": "5090"
+    },
+    {
+      "term": "Anseküla",
+      "term_id": "5097"
+    },
+    {
+      "term": "Audru",
+      "term_id": "5110"
+    },
+    {
+      "term": "Avinurme",
+      "term_id": "5120"
+    },
+    {
+      "term": "Emmaste",
+      "term_id": "5136"
+    },
+    {
+      "term": "Hageri",
+      "term_id": "5153"
+    },
+    {
+      "term": "Haljala",
+      "term_id": "5165"
+    },
+    {
+      "term": "Halliste",
+      "term_id": "5176"
+    },
+    {
+      "term": "Halliste",
+      "term_id": "5111"
+    },
+    {
+      "term": "Hanila",
+      "term_id": "5137"
+    },
+    {
+      "term": "Hargla",
+      "term_id": "5177"
+    },
+    {
+      "term": "Harju-Jaani",
+      "term_id": "5154"
+    },
+    {
+      "term": "Harju-Madise",
+      "term_id": "5155"
+    },
+    {
+      "term": "Harjumaa",
+      "term_id": "5084"
+    },
+    {
+      "term": "Helme",
+      "term_id": "5178"
+    },
+    {
+      "term": "Häädemeeste",
+      "term_id": "5112"
+    },
+    {
+      "term": "Iisaku",
+      "term_id": "5175"
+    },
+    {
+      "term": "Jaani",
+      "term_id": "5098"
+    },
+    {
+      "term": "Juuru",
+      "term_id": "5156"
+    },
+    {
+      "term": "Jämaja",
+      "term_id": "5099"
+    },
+    {
+      "term": "Järva-Jaani",
+      "term_id": "5091"
+    },
+    {
+      "term": "Järva-Madise",
+      "term_id": "5092"
+    },
+    {
+      "term": "Järvamaa",
+      "term_id": "5079"
+    },
+    {
+      "term": "Jõelähtme",
+      "term_id": "5164"
+    },
+    {
+      "term": "Jõhvi",
+      "term_id": "5166"
+    },
+    {
+      "term": "Jüri",
+      "term_id": "5157"
+    },
+    {
+      "term": "Kaarma",
+      "term_id": "5100"
+    },
+    {
+      "term": "Kadrina",
+      "term_id": "5167"
+    },
+    {
+      "term": "Kambja",
+      "term_id": "5121"
+    },
+    {
+      "term": "Kanepi",
+      "term_id": "5190"
+    },
+    {
+      "term": "Karja",
+      "term_id": "5101"
+    },
+    {
+      "term": "Karksi",
+      "term_id": "5181"
+    },
+    {
+      "term": "Karula",
+      "term_id": "5179"
+    },
+    {
+      "term": "Karuse",
+      "term_id": "5138"
+    },
+    {
+      "term": "Keila",
+      "term_id": "5158"
+    },
+    {
+      "term": "Kihelkonna",
+      "term_id": "5102"
+    },
+    {
+      "term": "Kirbla",
+      "term_id": "5139"
+    },
+    {
+      "term": "Kodavere",
+      "term_id": "5122"
+    },
+    {
+      "term": "Koeru",
+      "term_id": "5093"
+    },
+    {
+      "term": "Kolga-Jaani",
+      "term_id": "5182"
+    },
+    {
+      "term": "Kose",
+      "term_id": "5159"
+    },
+    {
+      "term": "Kullamaa",
+      "term_id": "5140"
+    },
+    {
+      "term": "Kursi",
+      "term_id": "5123"
+    },
+    {
+      "term": "Kuusalu",
+      "term_id": "5160"
+    },
+    {
+      "term": "Käina",
+      "term_id": "5141"
+    },
+    {
+      "term": "Kärla",
+      "term_id": "5103"
+    },
+    {
+      "term": "Kõpu",
+      "term_id": "5183"
+    },
+    {
+      "term": "Laiuse",
+      "term_id": "5124"
+    },
+    {
+      "term": "Lihula",
+      "term_id": "5142"
+    },
+    {
+      "term": "Lääne-Nigula",
+      "term_id": "5143"
+    },
+    {
+      "term": "Läänemaa",
+      "term_id": "5083"
+    },
+    {
+      "term": "Lüganuse",
+      "term_id": "5168"
+    },
+    {
+      "term": "Maarja-Magdaleena",
+      "term_id": "5125"
+    },
+    {
+      "term": "Martna",
+      "term_id": "5144"
+    },
+    {
+      "term": "Mihkli",
+      "term_id": "5113"
+    },
+    {
+      "term": "Muhu",
+      "term_id": "5104"
+    },
+    {
+      "term": "Mustjala",
+      "term_id": "5105"
+    },
+    {
+      "term": "Märjamaa",
+      "term_id": "5145"
+    },
+    {
+      "term": "Nissi",
+      "term_id": "5161"
+    },
+    {
+      "term": "Noarootsi",
+      "term_id": "5146"
+    },
+    {
+      "term": "Nõo",
+      "term_id": "5126"
+    },
+    {
+      "term": "Otepää",
+      "term_id": "5127"
+    },
+    {
+      "term": "Paide",
+      "term_id": "5094"
+    },
+    {
+      "term": "Paistu",
+      "term_id": "5184"
+    },
+    {
+      "term": "Palamuse",
+      "term_id": "5128"
+    },
+    {
+      "term": "Peetri",
+      "term_id": "5095"
+    },
+    {
+      "term": "Pilistvere",
+      "term_id": "5185"
+    },
+    {
+      "term": "Puhja",
+      "term_id": "5129"
+    },
+    {
+      "term": "Pärnu",
+      "term_id": "5114"
+    },
+    {
+      "term": "Pärnu-Jaagupi",
+      "term_id": "5115"
+    },
+    {
+      "term": "Pärnumaa",
+      "term_id": "5081"
+    },
+    {
+      "term": "Põltsamaa",
+      "term_id": "5186"
+    },
+    {
+      "term": "Põlva",
+      "term_id": "5191"
+    },
+    {
+      "term": "Pöide",
+      "term_id": "5106"
+    },
+    {
+      "term": "Püha",
+      "term_id": "5107"
+    },
+    {
+      "term": "Pühalepa",
+      "term_id": "5147"
+    },
+    {
+      "term": "Rakvere",
+      "term_id": "5169"
+    },
+    {
+      "term": "Rannu",
+      "term_id": "5130"
+    },
+    {
+      "term": "Rapla",
+      "term_id": "5162"
+    },
+    {
+      "term": "Reigi",
+      "term_id": "5148"
+    },
+    {
+      "term": "Ridala",
+      "term_id": "5149"
+    },
+    {
+      "term": "Risti",
+      "term_id": "5163"
+    },
+    {
+      "term": "Ruhnu",
+      "term_id": "5108"
+    },
+    {
+      "term": "Räpina",
+      "term_id": "5193"
+    },
+    {
+      "term": "Rõngu",
+      "term_id": "5131"
+    },
+    {
+      "term": "Rõuge",
+      "term_id": "5192"
+    },
+    {
+      "term": "Saarde",
+      "term_id": "5116"
+    },
+    {
+      "term": "Saaremaa",
+      "term_id": "5080"
+    },
+    {
+      "term": "Sangaste",
+      "term_id": "5180"
+    },
+    {
+      "term": "Simuna",
+      "term_id": "5170"
+    },
+    {
+      "term": "Suure-Jaani",
+      "term_id": "5187"
+    },
+    {
+      "term": "Tartu-Maarja",
+      "term_id": "5132"
+    },
+    {
+      "term": "Tartumaa",
+      "term_id": "5082"
+    },
+    {
+      "term": "Tarvastu",
+      "term_id": "5188"
+    },
+    {
+      "term": "Tori",
+      "term_id": "5117"
+    },
+    {
+      "term": "Torma",
+      "term_id": "5133"
+    },
+    {
+      "term": "Tõstamaa",
+      "term_id": "5118"
+    },
+    {
+      "term": "Türi",
+      "term_id": "5096"
+    },
+    {
+      "term": "Urvaste",
+      "term_id": "5194"
+    },
+    {
+      "term": "Vaivara",
+      "term_id": "5171"
+    },
+    {
+      "term": "Valgamaa",
+      "term_id": "5086"
+    },
+    {
+      "term": "Valjala",
+      "term_id": "5109"
+    },
+    {
+      "term": "Varbla",
+      "term_id": "5150"
+    },
+    {
+      "term": "Vastseliina",
+      "term_id": "5195"
+    },
+    {
+      "term": "Vigala",
+      "term_id": "5151"
+    },
+    {
+      "term": "Viljandi",
+      "term_id": "5189"
+    },
+    {
+      "term": "Viljandimaa",
+      "term_id": "5087"
+    },
+    {
+      "term": "Viru-Jaagupi",
+      "term_id": "5172"
+    },
+    {
+      "term": "Viru-Nigula",
+      "term_id": "5173"
+    },
+    {
+      "term": "Virumaa",
+      "term_id": "5085"
+    },
+    {
+      "term": "Vormsi",
+      "term_id": "5152"
+    },
+    {
+      "term": "Väike-Maarja",
+      "term_id": "5174"
+    },
+    {
+      "term": "Vändra",
+      "term_id": "5119"
+    },
+    {
+      "term": "Võnnu",
+      "term_id": "5134"
+    },
+    {
+      "term": "Võrumaa",
+      "term_id": "5088"
+    },
+    {
+      "term": "Äksi",
+      "term_id": "5135"
+    }
+  ]
+}

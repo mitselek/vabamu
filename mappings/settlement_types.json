@@ -1,0 +1,54 @@
+{
+  "_metadata": {
+    "source_file": "19",
+    "column_count": 2,
+    "entry_count": 11,
+    "vocabulary_name": "settlement_types"
+  },
+  "settlement_types": [
+    {
+      "term": "alev",
+      "term_id": "6216"
+    },
+    {
+      "term": "alevik",
+      "term_id": "6213"
+    },
+    {
+      "term": "asum",
+      "term_id": "6217"
+    },
+    {
+      "term": "kihelkond",
+      "term_id": "6215"
+    },
+    {
+      "term": "küla",
+      "term_id": "6214"
+    },
+    {
+      "term": "linn",
+      "term_id": "6210"
+    },
+    {
+      "term": "linna osa",
+      "term_id": "6212"
+    },
+    {
+      "term": "maakond",
+      "term_id": "6208"
+    },
+    {
+      "term": "tundmatu",
+      "term_id": "6211"
+    },
+    {
+      "term": "vald",
+      "term_id": "6207"
+    },
+    {
+      "term": "väike linn",
+      "term_id": "6209"
+    }
+  ]
+}

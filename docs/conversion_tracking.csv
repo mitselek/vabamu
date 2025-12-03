@@ -1,0 +1,4 @@
+record_number,entu_code,issue_found,solution_applied,needs_review,time_spent_min
+1,020027/117,Person name format (Firstname Lastname),Reversed to Lastname Firstname,yes - confirm format,20
+2,020082/000,,,ongoing,
+3,019813/014,,,not started,

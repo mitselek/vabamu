@@ -1,0 +1,238 @@
+{
+  "_metadata": {
+    "source_file": "table7",
+    "column_count": 2,
+    "entry_count": 57,
+    "vocabulary_name": "geographic_types"
+  },
+  "geographic_types": [
+    {
+      "term": "aadress",
+      "term_id": "1885"
+    },
+    {
+      "term": "administratiivne üksus",
+      "term_id": "1889"
+    },
+    {
+      "term": "alev",
+      "term_id": "1881"
+    },
+    {
+      "term": "alevik",
+      "term_id": "33330"
+    },
+    {
+      "term": "allikas",
+      "term_id": "32046"
+    },
+    {
+      "term": "asula",
+      "term_id": "1890"
+    },
+    {
+      "term": "asum",
+      "term_id": "33331"
+    },
+    {
+      "term": "filmi võttekoht",
+      "term_id": "30213"
+    },
+    {
+      "term": "hoone - rajatis",
+      "term_id": "1911"
+    },
+    {
+      "term": "järv",
+      "term_id": "1903"
+    },
+    {
+      "term": "jõgi",
+      "term_id": "1902"
+    },
+    {
+      "term": "kalmistu",
+      "term_id": "32286"
+    },
+    {
+      "term": "kanal",
+      "term_id": "33459"
+    },
+    {
+      "term": "karjäär",
+      "term_id": "32221"
+    },
+    {
+      "term": "kihelkond",
+      "term_id": "1877"
+    },
+    {
+      "term": "kolhoos",
+      "term_id": "1894"
+    },
+    {
+      "term": "krai",
+      "term_id": "32067"
+    },
+    {
+      "term": "kreis",
+      "term_id": "32042"
+    },
+    {
+      "term": "kubermang",
+      "term_id": "1899"
+    },
+    {
+      "term": "küla",
+      "term_id": "1882"
+    },
+    {
+      "term": "külanõukogu",
+      "term_id": "1888"
+    },
+    {
+      "term": "laht",
+      "term_id": "30153"
+    },
+    {
+      "term": "laid",
+      "term_id": "30154"
+    },
+    {
+      "term": "linn",
+      "term_id": "1846"
+    },
+    {
+      "term": "linnamägi",
+      "term_id": "32047"
+    },
+    {
+      "term": "linnaosa",
+      "term_id": "1883"
+    },
+    {
+      "term": "linnus",
+      "term_id": "32048"
+    },
+    {
+      "term": "maakond",
+      "term_id": "1876"
+    },
+    {
+      "term": "madalik",
+      "term_id": "32267"
+    },
+    {
+      "term": "majand",
+      "term_id": "1896"
+    },
+    {
+      "term": "manner",
+      "term_id": "32285"
+    },
+    {
+      "term": "meri",
+      "term_id": "1904"
+    },
+    {
+      "term": "mets",
+      "term_id": "32043"
+    },
+    {
+      "term": "metskond",
+      "term_id": "32044"
+    },
+    {
+      "term": "mägi",
+      "term_id": "1905"
+    },
+    {
+      "term": "määramata",
+      "term_id": "1893"
+    },
+    {
+      "term": "mõis",
+      "term_id": "1897"
+    },
+    {
+      "term": "neem",
+      "term_id": "33216"
+    },
+    {
+      "term": "oblast",
+      "term_id": "1898"
+    },
+    {
+      "term": "oja",
+      "term_id": "1906"
+    },
+    {
+      "term": "ookean",
+      "term_id": "32268"
+    },
+    {
+      "term": "osariik",
+      "term_id": "1892"
+    },
+    {
+      "term": "piirkond",
+      "term_id": "32045"
+    },
+    {
+      "term": "poolsaar",
+      "term_id": "30463"
+    },
+    {
+      "term": "rajoon",
+      "term_id": "1891"
+    },
+    {
+      "term": "rand - rannik",
+      "term_id": "1908"
+    },
+    {
+      "term": "riik",
+      "term_id": "1842"
+    },
+    {
+      "term": "saar",
+      "term_id": "1909"
+    },
+    {
+      "term": "sadam",
+      "term_id": "1900"
+    },
+    {
+      "term": "soo/raba",
+      "term_id": "32049"
+    },
+    {
+      "term": "sovhoos",
+      "term_id": "1895"
+    },
+    {
+      "term": "talu",
+      "term_id": "1887"
+    },
+    {
+      "term": "tänav",
+      "term_id": "1884"
+    },
+    {
+      "term": "vabariik",
+      "term_id": "1886"
+    },
+    {
+      "term": "vald",
+      "term_id": "1878"
+    },
+    {
+      "term": "veekogu",
+      "term_id": "1901"
+    },
+    {
+      "term": "väin",
+      "term_id": "30152"
+    }
+  ]
+}

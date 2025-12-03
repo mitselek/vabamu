@@ -1,0 +1,106 @@
+{
+  "_metadata": {
+    "source_file": "15",
+    "column_count": 2,
+    "entry_count": 24,
+    "vocabulary_name": "identifier_types"
+  },
+  "identifier_types": [
+    {
+      "term": "arhiivi number",
+      "term_id": "5208"
+    },
+    {
+      "term": "autori algne number",
+      "term_id": "5210"
+    },
+    {
+      "term": "deposiidi number",
+      "term_id": "32183"
+    },
+    {
+      "term": "diarium",
+      "term_id": "28290"
+    },
+    {
+      "term": "endine inventarinumber",
+      "term_id": "5205"
+    },
+    {
+      "term": "foto number",
+      "term_id": "5213"
+    },
+    {
+      "term": "hõbedakogu inv.nr",
+      "term_id": "28291"
+    },
+    {
+      "term": "inventarinumber",
+      "term_id": "23409"
+    },
+    {
+      "term": "juurdekasvunumber",
+      "term_id": "23408"
+    },
+    {
+      "term": "korjamisraamatu number",
+      "term_id": "5211"
+    },
+    {
+      "term": "leiunumber",
+      "term_id": "33561"
+    },
+    {
+      "term": "MPT korjamisraamatu nr.",
+      "term_id": "5207"
+    },
+    {
+      "term": "mälestise registri number",
+      "term_id": "30467"
+    },
+    {
+      "term": "negatiivi number",
+      "term_id": "5214"
+    },
+    {
+      "term": "number eelmises muuseumis",
+      "term_id": "32199"
+    },
+    {
+      "term": "omaniku number",
+      "term_id": "5212"
+    },
+    {
+      "term": "peakataloog",
+      "term_id": "28289"
+    },
+    {
+      "term": "registreerimise number",
+      "term_id": "5215"
+    },
+    {
+      "term": "relva number",
+      "term_id": "33533"
+    },
+    {
+      "term": "sarjanumber",
+      "term_id": "1277"
+    },
+    {
+      "term": "toote artikkel",
+      "term_id": "5206"
+    },
+    {
+      "term": "tulmenumber",
+      "term_id": "23492"
+    },
+    {
+      "term": "tõmmisenumber",
+      "term_id": "1278"
+    },
+    {
+      "term": "vana petrograafiakogu nr",
+      "term_id": "26426"
+    }
+  ]
+}

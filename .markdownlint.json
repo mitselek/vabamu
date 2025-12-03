@@ -3,6 +3,7 @@
   "MD003": {
     "style": "atx"
   },
+  "MD010": false,
   "MD013": false,
   "MD022": {
     "lines_above": 1,

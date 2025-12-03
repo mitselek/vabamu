@@ -1,0 +1,2476 @@
+{
+  "_metadata": {
+    "source_file": "tabel_1.txt",
+    "column_count": 4,
+    "entry_count": 411,
+    "vocabulary_name": "techniques"
+  },
+  "techniques": [
+    {
+      "term": "aaderdamine",
+      "term_id": "32792",
+      "parent_id": "32791",
+      "muis_id": "677"
+    },
+    {
+      "term": "anodeerimine",
+      "term_id": "32793",
+      "parent_id": "32791",
+      "muis_id": "678"
+    },
+    {
+      "term": "aplitseerimine",
+      "term_id": "32794",
+      "parent_id": "32791",
+      "muis_id": "679"
+    },
+    {
+      "term": "autoritehnika",
+      "term_id": "32795",
+      "parent_id": "32791",
+      "muis_id": "680"
+    },
+    {
+      "term": "dekoreerimine",
+      "term_id": "32796",
+      "parent_id": "32791",
+      "muis_id": "681"
+    },
+    {
+      "term": "emailimine",
+      "term_id": "32797",
+      "parent_id": "32791",
+      "muis_id": "682"
+    },
+    {
+      "term": "eritöötlemine",
+      "term_id": "32798",
+      "parent_id": "32791",
+      "muis_id": "683"
+    },
+    {
+      "term": "freesimine",
+      "term_id": "32799",
+      "parent_id": "32791",
+      "muis_id": "684"
+    },
+    {
+      "term": "granuleerimine",
+      "term_id": "32800",
+      "parent_id": "32791",
+      "muis_id": "685"
+    },
+    {
+      "term": "graveerimine",
+      "term_id": "32801",
+      "parent_id": "32791",
+      "muis_id": "686"
+    },
+    {
+      "term": "hööveldamine",
+      "term_id": "32802",
+      "parent_id": "32791",
+      "muis_id": "687"
+    },
+    {
+      "term": "imiteerimine",
+      "term_id": "32803",
+      "parent_id": "32791",
+      "muis_id": "688"
+    },
+    {
+      "term": "immutamine",
+      "term_id": "32804",
+      "parent_id": "32791",
+      "muis_id": "689"
+    },
+    {
+      "term": "inkrusteerimine",
+      "term_id": "32805",
+      "parent_id": "32791",
+      "muis_id": "690"
+    },
+    {
+      "term": "karastamine",
+      "term_id": "32806",
+      "parent_id": "32791",
+      "muis_id": "691"
+    },
+    {
+      "term": "katmine",
+      "term_id": "32807",
+      "parent_id": "32791",
+      "muis_id": "692"
+    },
+    {
+      "term": "keemiline töötlemine",
+      "term_id": "32808",
+      "parent_id": "32791",
+      "muis_id": "693"
+    },
+    {
+      "term": "kiilumine",
+      "term_id": "32809",
+      "parent_id": "32791",
+      "muis_id": "694"
+    },
+    {
+      "term": "kittimine",
+      "term_id": "32810",
+      "parent_id": "32791",
+      "muis_id": "695"
+    },
+    {
+      "term": "klišeerimine",
+      "term_id": "32811",
+      "parent_id": "32791",
+      "muis_id": "696"
+    },
+    {
+      "term": "koloreerimine",
+      "term_id": "32812",
+      "parent_id": "32791",
+      "muis_id": "697"
+    },
+    {
+      "term": "kraapimine",
+      "term_id": "32813",
+      "parent_id": "32791",
+      "muis_id": "698"
+    },
+    {
+      "term": "kraklee valmistamine",
+      "term_id": "32814",
+      "parent_id": "32791",
+      "muis_id": "699"
+    },
+    {
+      "term": "krohvimine",
+      "term_id": "32815",
+      "parent_id": "32791",
+      "muis_id": "700"
+    },
+    {
+      "term": "krookimine",
+      "term_id": "32816",
+      "parent_id": "32791",
+      "muis_id": "701"
+    },
+    {
+      "term": "kruntimine",
+      "term_id": "32817",
+      "parent_id": "32791",
+      "muis_id": "702"
+    },
+    {
+      "term": "kuldamine",
+      "term_id": "32818",
+      "parent_id": "32791",
+      "muis_id": "703"
+    },
+    {
+      "term": "kuumtöötlemine",
+      "term_id": "32819",
+      "parent_id": "32791",
+      "muis_id": "704"
+    },
+    {
+      "term": "käsitöö",
+      "term_id": "32820",
+      "parent_id": "32791",
+      "muis_id": "705"
+    },
+    {
+      "term": "külmtöötlemine",
+      "term_id": "32821",
+      "parent_id": "32791",
+      "muis_id": "706"
+    },
+    {
+      "term": "tööstuslik tootmine",
+      "term_id": "32822",
+      "parent_id": "32791",
+      "muis_id": "707"
+    },
+    {
+      "term": "köitmine",
+      "term_id": "32823",
+      "parent_id": "32791",
+      "muis_id": "708"
+    },
+    {
+      "term": "kõvakaaneline köide",
+      "term_id": "32824",
+      "parent_id": "32823",
+      "muis_id": "709"
+    },
+    {
+      "term": "pehmekaaneline köide",
+      "term_id": "32825",
+      "parent_id": "32823",
+      "muis_id": "710"
+    },
+    {
+      "term": "poolnahkköide",
+      "term_id": "32826",
+      "parent_id": "32823",
+      "muis_id": "711"
+    },
+    {
+      "term": "täisnahkköide",
+      "term_id": "32827",
+      "parent_id": "32823",
+      "muis_id": "712"
+    },
+    {
+      "term": "pärgamentköide",
+      "term_id": "32828",
+      "parent_id": "32823",
+      "muis_id": "713"
+    },
+    {
+      "term": "spiraalköide",
+      "term_id": "32829",
+      "parent_id": "32823",
+      "muis_id": "714"
+    },
+    {
+      "term": "liimköide",
+      "term_id": "32830",
+      "parent_id": "32823",
+      "muis_id": "715"
+    },
+    {
+      "term": "traatköide",
+      "term_id": "32831",
+      "parent_id": "32823",
+      "muis_id": "716"
+    },
+    {
+      "term": "lakkimine",
+      "term_id": "32832",
+      "parent_id": "32791",
+      "muis_id": "717"
+    },
+    {
+      "term": "lamineerimine",
+      "term_id": "32833",
+      "parent_id": "32791",
+      "muis_id": "718"
+    },
+    {
+      "term": "lihvimine",
+      "term_id": "32834",
+      "parent_id": "32791",
+      "muis_id": "719"
+    },
+    {
+      "term": "lõikamine",
+      "term_id": "32835",
+      "parent_id": "32791",
+      "muis_id": "720"
+    },
+    {
+      "term": "lõõmutamine",
+      "term_id": "32836",
+      "parent_id": "32791",
+      "muis_id": "721"
+    },
+    {
+      "term": "modelleerimine",
+      "term_id": "32837",
+      "parent_id": "32791",
+      "muis_id": "722"
+    },
+    {
+      "term": "naelutamine",
+      "term_id": "32838",
+      "parent_id": "32791",
+      "muis_id": "723"
+    },
+    {
+      "term": "neetimine",
+      "term_id": "32839",
+      "parent_id": "32791",
+      "muis_id": "724"
+    },
+    {
+      "term": "nikerdamine",
+      "term_id": "32840",
+      "parent_id": "32791",
+      "muis_id": "725"
+    },
+    {
+      "term": "nõeltöötlemine",
+      "term_id": "32841",
+      "parent_id": "32791",
+      "muis_id": "726"
+    },
+    {
+      "term": "pahteldamine",
+      "term_id": "32842",
+      "parent_id": "32791",
+      "muis_id": "727"
+    },
+    {
+      "term": "painutamine",
+      "term_id": "32843",
+      "parent_id": "32791",
+      "muis_id": "728"
+    },
+    {
+      "term": "patineerimine",
+      "term_id": "32844",
+      "parent_id": "32791",
+      "muis_id": "729"
+    },
+    {
+      "term": "panustamine",
+      "term_id": "32845",
+      "parent_id": "32791",
+      "muis_id": "730"
+    },
+    {
+      "term": "parkimine",
+      "term_id": "32846",
+      "parent_id": "32791",
+      "muis_id": "731"
+    },
+    {
+      "term": "peitsimine",
+      "term_id": "32847",
+      "parent_id": "32791",
+      "muis_id": "732"
+    },
+    {
+      "term": "pihustamine",
+      "term_id": "32848",
+      "parent_id": "32791",
+      "muis_id": "733"
+    },
+    {
+      "term": "pintseldamine",
+      "term_id": "32849",
+      "parent_id": "32791",
+      "muis_id": "734"
+    },
+    {
+      "term": "pitseerimine",
+      "term_id": "32850",
+      "parent_id": "32791",
+      "muis_id": "735"
+    },
+    {
+      "term": "poleerimine",
+      "term_id": "32851",
+      "parent_id": "32791",
+      "muis_id": "736"
+    },
+    {
+      "term": "polsterdamine",
+      "term_id": "32852",
+      "parent_id": "32791",
+      "muis_id": "737"
+    },
+    {
+      "term": "pressimine",
+      "term_id": "32853",
+      "parent_id": "32791",
+      "muis_id": "738"
+    },
+    {
+      "term": "pritsimine",
+      "term_id": "32854",
+      "parent_id": "32791",
+      "muis_id": "739"
+    },
+    {
+      "term": "pulveriseerimine",
+      "term_id": "32855",
+      "parent_id": "32791",
+      "muis_id": "740"
+    },
+    {
+      "term": "punseldamine",
+      "term_id": "32856",
+      "parent_id": "32791",
+      "muis_id": "741"
+    },
+    {
+      "term": "punumine",
+      "term_id": "32857",
+      "parent_id": "32791",
+      "muis_id": "742"
+    },
+    {
+      "term": "puurimine",
+      "term_id": "32858",
+      "parent_id": "32791",
+      "muis_id": "743"
+    },
+    {
+      "term": "põimimine",
+      "term_id": "32859",
+      "parent_id": "32791",
+      "muis_id": "744"
+    },
+    {
+      "term": "põletamine",
+      "term_id": "32860",
+      "parent_id": "32791",
+      "muis_id": "745"
+    },
+    {
+      "term": "raiumine",
+      "term_id": "32861",
+      "parent_id": "32791",
+      "muis_id": "746"
+    },
+    {
+      "term": "rebimine",
+      "term_id": "32862",
+      "parent_id": "32791",
+      "muis_id": "747"
+    },
+    {
+      "term": "reljeef",
+      "term_id": "32863",
+      "parent_id": "32791",
+      "muis_id": "748"
+    },
+    {
+      "term": "madalreljeef",
+      "term_id": "32864",
+      "parent_id": "32863",
+      "muis_id": "749"
+    },
+    {
+      "term": "kõrgreljeef",
+      "term_id": "32865",
+      "parent_id": "32863",
+      "muis_id": "750"
+    },
+    {
+      "term": "retuššimine",
+      "term_id": "32866",
+      "parent_id": "32791",
+      "muis_id": "751"
+    },
+    {
+      "term": "rihveldamine",
+      "term_id": "32867",
+      "parent_id": "32791",
+      "muis_id": "752"
+    },
+    {
+      "term": "saagimine",
+      "term_id": "32868",
+      "parent_id": "32791",
+      "muis_id": "753"
+    },
+    {
+      "term": "segatehnika",
+      "term_id": "32869",
+      "parent_id": "32791",
+      "muis_id": "754"
+    },
+    {
+      "term": "sidumine",
+      "term_id": "32870",
+      "parent_id": "32791",
+      "muis_id": "755"
+    },
+    {
+      "term": "spoonimine",
+      "term_id": "32871",
+      "parent_id": "32791",
+      "muis_id": "756"
+    },
+    {
+      "term": "stantsimine",
+      "term_id": "32872",
+      "parent_id": "32791",
+      "muis_id": "757"
+    },
+    {
+      "term": "stukkimine",
+      "term_id": "32873",
+      "parent_id": "32791",
+      "muis_id": "758"
+    },
+    {
+      "term": "sulatamine",
+      "term_id": "32874",
+      "parent_id": "32791",
+      "muis_id": "759"
+    },
+    {
+      "term": "surumine",
+      "term_id": "32875",
+      "parent_id": "32791",
+      "muis_id": "760"
+    },
+    {
+      "term": "sõlmimine",
+      "term_id": "32876",
+      "parent_id": "32791",
+      "muis_id": "761"
+    },
+    {
+      "term": "sälgutamine",
+      "term_id": "32877",
+      "parent_id": "32791",
+      "muis_id": "762"
+    },
+    {
+      "term": "söövitamine",
+      "term_id": "32878",
+      "parent_id": "32791",
+      "muis_id": "763"
+    },
+    {
+      "term": "süvistamine",
+      "term_id": "32879",
+      "parent_id": "32791",
+      "muis_id": "764"
+    },
+    {
+      "term": "takutamine",
+      "term_id": "32880",
+      "parent_id": "32791",
+      "muis_id": "765"
+    },
+    {
+      "term": "tappimine",
+      "term_id": "32881",
+      "parent_id": "32791",
+      "muis_id": "766"
+    },
+    {
+      "term": "teipimine",
+      "term_id": "32882",
+      "parent_id": "32791",
+      "muis_id": "767"
+    },
+    {
+      "term": "teppimine",
+      "term_id": "32883",
+      "parent_id": "32791",
+      "muis_id": "768"
+    },
+    {
+      "term": "tinutamine",
+      "term_id": "32884",
+      "parent_id": "32791",
+      "muis_id": "769"
+    },
+    {
+      "term": "toonimine",
+      "term_id": "32885",
+      "parent_id": "32791",
+      "muis_id": "770"
+    },
+    {
+      "term": "traageldamine",
+      "term_id": "32886",
+      "parent_id": "32791",
+      "muis_id": "771"
+    },
+    {
+      "term": "treimine",
+      "term_id": "32887",
+      "parent_id": "32791",
+      "muis_id": "772"
+    },
+    {
+      "term": "tsementeerimine",
+      "term_id": "32888",
+      "parent_id": "32791",
+      "muis_id": "773"
+    },
+    {
+      "term": "tõmbamine",
+      "term_id": "32889",
+      "parent_id": "32791",
+      "muis_id": "774"
+    },
+    {
+      "term": "täksimine",
+      "term_id": "32890",
+      "parent_id": "32791",
+      "muis_id": "775"
+    },
+    {
+      "term": "tüübeldamine",
+      "term_id": "32891",
+      "parent_id": "32791",
+      "muis_id": "776"
+    },
+    {
+      "term": "vahatamine",
+      "term_id": "32892",
+      "parent_id": "32791",
+      "muis_id": "777"
+    },
+    {
+      "term": "valamine",
+      "term_id": "32893",
+      "parent_id": "32791",
+      "muis_id": "778"
+    },
+    {
+      "term": "vasardamine",
+      "term_id": "32894",
+      "parent_id": "32791",
+      "muis_id": "779"
+    },
+    {
+      "term": "vedrustamine",
+      "term_id": "32895",
+      "parent_id": "32791",
+      "muis_id": "780"
+    },
+    {
+      "term": "vineerimine",
+      "term_id": "32896",
+      "parent_id": "32791",
+      "muis_id": "781"
+    },
+    {
+      "term": "voltimine",
+      "term_id": "32897",
+      "parent_id": "32791",
+      "muis_id": "782"
+    },
+    {
+      "term": "voolimine",
+      "term_id": "32898",
+      "parent_id": "32791",
+      "muis_id": "783"
+    },
+    {
+      "term": "vormimine",
+      "term_id": "32899",
+      "parent_id": "32791",
+      "muis_id": "784"
+    },
+    {
+      "term": "värvimine",
+      "term_id": "32900",
+      "parent_id": "32791",
+      "muis_id": "785"
+    },
+    {
+      "term": "reservtrükk",
+      "term_id": "32901",
+      "parent_id": "32900",
+      "muis_id": "786"
+    },
+    {
+      "term": "batik",
+      "term_id": "32902",
+      "parent_id": "32900",
+      "muis_id": "787"
+    },
+    {
+      "term": "õmblemine",
+      "term_id": "32903",
+      "parent_id": "32791",
+      "muis_id": "788"
+    },
+    {
+      "term": "käsitsi õmblemine",
+      "term_id": "32904",
+      "parent_id": "32903",
+      "muis_id": "789"
+    },
+    {
+      "term": "masinõmblemine",
+      "term_id": "32905",
+      "parent_id": "32903",
+      "muis_id": "790"
+    },
+    {
+      "term": "õõnestamine",
+      "term_id": "32906",
+      "parent_id": "32791",
+      "muis_id": "791"
+    },
+    {
+      "term": "ühendamine",
+      "term_id": "32907",
+      "parent_id": "32791",
+      "muis_id": "792"
+    },
+    {
+      "term": "monteerimine",
+      "term_id": "32908",
+      "parent_id": "32907",
+      "muis_id": "793"
+    },
+    {
+      "term": "kleepimine",
+      "term_id": "32909",
+      "parent_id": "32907",
+      "muis_id": "794"
+    },
+    {
+      "term": "liimimine",
+      "term_id": "32910",
+      "parent_id": "32909",
+      "muis_id": "795"
+    },
+    {
+      "term": "liitmine",
+      "term_id": "32911",
+      "parent_id": "32907",
+      "muis_id": "796"
+    },
+    {
+      "term": "kinnitamine",
+      "term_id": "32912",
+      "parent_id": "32907",
+      "muis_id": "797"
+    },
+    {
+      "term": "vitsutamine",
+      "term_id": "32913",
+      "parent_id": "32912",
+      "muis_id": "798"
+    },
+    {
+      "term": "klammerdamine",
+      "term_id": "32914",
+      "parent_id": "32912",
+      "muis_id": "799"
+    },
+    {
+      "term": "kruvimine",
+      "term_id": "32915",
+      "parent_id": "32912",
+      "muis_id": "800"
+    },
+    {
+      "term": "tikutamine",
+      "term_id": "32916",
+      "parent_id": "32912",
+      "muis_id": "801"
+    },
+    {
+      "term": "mosaiik",
+      "term_id": "32917",
+      "parent_id": "32791",
+      "muis_id": "802"
+    },
+    {
+      "term": "intarsia",
+      "term_id": "32918",
+      "parent_id": "32791",
+      "muis_id": "803"
+    },
+    {
+      "term": "assamblaaž",
+      "term_id": "32919",
+      "parent_id": "32791",
+      "muis_id": "804"
+    },
+    {
+      "term": "marketrii",
+      "term_id": "32920",
+      "parent_id": "32791",
+      "muis_id": "805"
+    },
+    {
+      "term": "ready-made",
+      "term_id": "32921",
+      "parent_id": "32791",
+      "muis_id": "806"
+    },
+    {
+      "term": "plastika",
+      "term_id": "32922",
+      "parent_id": "32791",
+      "muis_id": "807"
+    },
+    {
+      "term": "tekstiilitehnika",
+      "term_id": "32923",
+      "parent_id": "122",
+      "muis_id": "808"
+    },
+    {
+      "term": "kudumine",
+      "term_id": "32924",
+      "parent_id": "32923",
+      "muis_id": "809"
+    },
+    {
+      "term": "telgedel kudumine",
+      "term_id": "32925",
+      "parent_id": "32924",
+      "muis_id": "810"
+    },
+    {
+      "term": "labane sidus",
+      "term_id": "32926",
+      "parent_id": "32925",
+      "muis_id": "811"
+    },
+    {
+      "term": "toimne sidus",
+      "term_id": "32927",
+      "parent_id": "32925",
+      "muis_id": "812"
+    },
+    {
+      "term": "atlasssidus",
+      "term_id": "32928",
+      "parent_id": "32925",
+      "muis_id": "813"
+    },
+    {
+      "term": "ripssidus",
+      "term_id": "32929",
+      "parent_id": "32925",
+      "muis_id": "814"
+    },
+    {
+      "term": "liitsidus",
+      "term_id": "32930",
+      "parent_id": "32925",
+      "muis_id": "815"
+    },
+    {
+      "term": "gobelään",
+      "term_id": "32931",
+      "parent_id": "32930",
+      "muis_id": "816"
+    },
+    {
+      "term": "kaaspõime",
+      "term_id": "32932",
+      "parent_id": "32930",
+      "muis_id": "817"
+    },
+    {
+      "term": "keerdpõime",
+      "term_id": "32933",
+      "parent_id": "32930",
+      "muis_id": "818"
+    },
+    {
+      "term": "pindpõime",
+      "term_id": "32934",
+      "parent_id": "32930",
+      "muis_id": "819"
+    },
+    {
+      "term": "naastpõime",
+      "term_id": "32935",
+      "parent_id": "32930",
+      "muis_id": "820"
+    },
+    {
+      "term": "pärlpõime",
+      "term_id": "32936",
+      "parent_id": "32930",
+      "muis_id": "821"
+    },
+    {
+      "term": "rüiu",
+      "term_id": "32937",
+      "parent_id": "32930",
+      "muis_id": "822"
+    },
+    {
+      "term": "narmaspõime",
+      "term_id": "32938",
+      "parent_id": "32930",
+      "muis_id": "823"
+    },
+    {
+      "term": "flossa",
+      "term_id": "32939",
+      "parent_id": "32930",
+      "muis_id": "824"
+    },
+    {
+      "term": "pilupõime",
+      "term_id": "32940",
+      "parent_id": "32930",
+      "muis_id": "825"
+    },
+    {
+      "term": "korjatud põime",
+      "term_id": "32941",
+      "parent_id": "32930",
+      "muis_id": "826"
+    },
+    {
+      "term": "kõladega kudumine",
+      "term_id": "32942",
+      "parent_id": "32924",
+      "muis_id": "827"
+    },
+    {
+      "term": "silmuskudumine",
+      "term_id": "32943",
+      "parent_id": "32924",
+      "muis_id": "828"
+    },
+    {
+      "term": "roosimine",
+      "term_id": "32944",
+      "parent_id": "32943",
+      "muis_id": "829"
+    },
+    {
+      "term": "kirjamine",
+      "term_id": "32945",
+      "parent_id": "32943",
+      "muis_id": "830"
+    },
+    {
+      "term": "koemustriline kude",
+      "term_id": "32946",
+      "parent_id": "32943",
+      "muis_id": "831"
+    },
+    {
+      "term": "pitskude",
+      "term_id": "32947",
+      "parent_id": "32946",
+      "muis_id": "832"
+    },
+    {
+      "term": "palmikkude",
+      "term_id": "32948",
+      "parent_id": "32946",
+      "muis_id": "833"
+    },
+    {
+      "term": "pahempidine kude",
+      "term_id": "32949",
+      "parent_id": "32946",
+      "muis_id": "834"
+    },
+    {
+      "term": "parempidine kude",
+      "term_id": "32950",
+      "parent_id": "32946",
+      "muis_id": "835"
+    },
+    {
+      "term": "patentkude",
+      "term_id": "32951",
+      "parent_id": "32946",
+      "muis_id": "836"
+    },
+    {
+      "term": "ripskude",
+      "term_id": "32952",
+      "parent_id": "32946",
+      "muis_id": "837"
+    },
+    {
+      "term": "narmaline kude",
+      "term_id": "32953",
+      "parent_id": "32946",
+      "muis_id": "838"
+    },
+    {
+      "term": "nupuline kude",
+      "term_id": "32954",
+      "parent_id": "32946",
+      "muis_id": "839"
+    },
+    {
+      "term": "vitskude",
+      "term_id": "32955",
+      "parent_id": "32946",
+      "muis_id": "840"
+    },
+    {
+      "term": "vikeldamine",
+      "term_id": "32956",
+      "parent_id": "32946",
+      "muis_id": "841"
+    },
+    {
+      "term": "niplamine",
+      "term_id": "32957",
+      "parent_id": "32923",
+      "muis_id": "842"
+    },
+    {
+      "term": "nõeltehnika",
+      "term_id": "32958",
+      "parent_id": "32923",
+      "muis_id": "843"
+    },
+    {
+      "term": "heegeldamine",
+      "term_id": "32959",
+      "parent_id": "32923",
+      "muis_id": "844"
+    },
+    {
+      "term": "tuniis",
+      "term_id": "32960",
+      "parent_id": "32959",
+      "muis_id": "845"
+    },
+    {
+      "term": "Iiri pits",
+      "term_id": "32961",
+      "parent_id": "32959",
+      "muis_id": "846"
+    },
+    {
+      "term": "hargipits",
+      "term_id": "32962",
+      "parent_id": "32959",
+      "muis_id": "847"
+    },
+    {
+      "term": "fileeheegeldus",
+      "term_id": "32963",
+      "parent_id": "32959",
+      "muis_id": "848"
+    },
+    {
+      "term": "Brügge pits",
+      "term_id": "32964",
+      "parent_id": "32959",
+      "muis_id": "849"
+    },
+    {
+      "term": "makramee",
+      "term_id": "32965",
+      "parent_id": "32923",
+      "muis_id": "850"
+    },
+    {
+      "term": "filee",
+      "term_id": "32966",
+      "parent_id": "32923",
+      "muis_id": "851"
+    },
+    {
+      "term": "tikkimine",
+      "term_id": "32967",
+      "parent_id": "32923",
+      "muis_id": "852"
+    },
+    {
+      "term": "käsitsi tikkimine",
+      "term_id": "32968",
+      "parent_id": "32967",
+      "muis_id": "853"
+    },
+    {
+      "term": "rokokootikand",
+      "term_id": "32970",
+      "parent_id": "32969",
+      "muis_id": "855"
+    },
+    {
+      "term": "hääbetikand",
+      "term_id": "32971",
+      "parent_id": "32969",
+      "muis_id": "856"
+    },
+    {
+      "term": "madalpistetikand",
+      "term_id": "32972",
+      "parent_id": "32969",
+      "muis_id": "857"
+    },
+    {
+      "term": "kõrgtikand",
+      "term_id": "32973",
+      "parent_id": "32969",
+      "muis_id": "858"
+    },
+    {
+      "term": "auktikand e broderii",
+      "term_id": "32974",
+      "parent_id": "32969",
+      "muis_id": "859"
+    },
+    {
+      "term": "rišeljöötikand",
+      "term_id": "32975",
+      "parent_id": "32969",
+      "muis_id": "860"
+    },
+    {
+      "term": "hedebotikand",
+      "term_id": "32976",
+      "parent_id": "32969",
+      "muis_id": "861"
+    },
+    {
+      "term": "varjutikand",
+      "term_id": "32977",
+      "parent_id": "32969",
+      "muis_id": "862"
+    },
+    {
+      "term": "tülltikand",
+      "term_id": "32978",
+      "parent_id": "32969",
+      "muis_id": "863"
+    },
+    {
+      "term": "ažuurtikand",
+      "term_id": "32979",
+      "parent_id": "32969",
+      "muis_id": "864"
+    },
+    {
+      "term": "aplikatsioontikand",
+      "term_id": "32980",
+      "parent_id": "32969",
+      "muis_id": "865"
+    },
+    {
+      "term": "vatitikand",
+      "term_id": "32981",
+      "parent_id": "32969",
+      "muis_id": "866"
+    },
+    {
+      "term": "pärl- e helmestikand",
+      "term_id": "32982",
+      "parent_id": "32969",
+      "muis_id": "867"
+    },
+    {
+      "term": "valgetikand",
+      "term_id": "32983",
+      "parent_id": "32969",
+      "muis_id": "868"
+    },
+    {
+      "term": "tikkpiste",
+      "term_id": "32985",
+      "parent_id": "32984",
+      "muis_id": "870"
+    },
+    {
+      "term": "järelpiste",
+      "term_id": "32986",
+      "parent_id": "32984",
+      "muis_id": "871"
+    },
+    {
+      "term": "liivapiste",
+      "term_id": "32987",
+      "parent_id": "32984",
+      "muis_id": "872"
+    },
+    {
+      "term": "ristpiste",
+      "term_id": "32988",
+      "parent_id": "32984",
+      "muis_id": "873"
+    },
+    {
+      "term": "aedpiste",
+      "term_id": "32989",
+      "parent_id": "32984",
+      "muis_id": "874"
+    },
+    {
+      "term": "ristikpiste",
+      "term_id": "32990",
+      "parent_id": "32984",
+      "muis_id": "875"
+    },
+    {
+      "term": "sidepiste",
+      "term_id": "32991",
+      "parent_id": "32984",
+      "muis_id": "876"
+    },
+    {
+      "term": "madalpiste",
+      "term_id": "32992",
+      "parent_id": "32984",
+      "muis_id": "877"
+    },
+    {
+      "term": "punuspiste",
+      "term_id": "32993",
+      "parent_id": "32984",
+      "muis_id": "878"
+    },
+    {
+      "term": "varspiste",
+      "term_id": "32994",
+      "parent_id": "32984",
+      "muis_id": "879"
+    },
+    {
+      "term": "ahelpiste",
+      "term_id": "32995",
+      "parent_id": "32984",
+      "muis_id": "880"
+    },
+    {
+      "term": "linnusilmpiste",
+      "term_id": "32996",
+      "parent_id": "32984",
+      "muis_id": "881"
+    },
+    {
+      "term": "varesejalgpiste",
+      "term_id": "32997",
+      "parent_id": "32984",
+      "muis_id": "882"
+    },
+    {
+      "term": "sämppiste",
+      "term_id": "32998",
+      "parent_id": "32984",
+      "muis_id": "883"
+    },
+    {
+      "term": "silmuspiste",
+      "term_id": "32999",
+      "parent_id": "32984",
+      "muis_id": "884"
+    },
+    {
+      "term": "nööpaugupiste",
+      "term_id": "33000",
+      "parent_id": "32984",
+      "muis_id": "885"
+    },
+    {
+      "term": "sõlmpisted",
+      "term_id": "33001",
+      "parent_id": "32984",
+      "muis_id": "886"
+    },
+    {
+      "term": "nöörpiste",
+      "term_id": "33002",
+      "parent_id": "32984",
+      "muis_id": "887"
+    },
+    {
+      "term": "lehtpiste",
+      "term_id": "33003",
+      "parent_id": "32984",
+      "muis_id": "888"
+    },
+    {
+      "term": "hääbepiste",
+      "term_id": "33004",
+      "parent_id": "32984",
+      "muis_id": "889"
+    },
+    {
+      "term": "kastpiste",
+      "term_id": "33005",
+      "parent_id": "32984",
+      "muis_id": "890"
+    },
+    {
+      "term": "põlvikpiste",
+      "term_id": "33006",
+      "parent_id": "32984",
+      "muis_id": "891"
+    },
+    {
+      "term": "püvisilmpiste",
+      "term_id": "33007",
+      "parent_id": "32984",
+      "muis_id": "892"
+    },
+    {
+      "term": "võrkpisted",
+      "term_id": "33008",
+      "parent_id": "32984",
+      "muis_id": "893"
+    },
+    {
+      "term": "gobeläänpiste",
+      "term_id": "33009",
+      "parent_id": "32984",
+      "muis_id": "894"
+    },
+    {
+      "term": "pärlpiste",
+      "term_id": "33010",
+      "parent_id": "32984",
+      "muis_id": "895"
+    },
+    {
+      "term": "keelimpiste",
+      "term_id": "33011",
+      "parent_id": "32984",
+      "muis_id": "896"
+    },
+    {
+      "term": "masintikkimine",
+      "term_id": "33012",
+      "parent_id": "32967",
+      "muis_id": "897"
+    },
+    {
+      "term": "pilutamine",
+      "term_id": "33013",
+      "parent_id": "32923",
+      "muis_id": "898"
+    },
+    {
+      "term": "ühesuunaline pilu",
+      "term_id": "33014",
+      "parent_id": "33013",
+      "muis_id": "899"
+    },
+    {
+      "term": "lihtpilu",
+      "term_id": "33015",
+      "parent_id": "33014",
+      "muis_id": "900"
+    },
+    {
+      "term": "pistepilu",
+      "term_id": "33016",
+      "parent_id": "33014",
+      "muis_id": "901"
+    },
+    {
+      "term": "keerdpilu",
+      "term_id": "33017",
+      "parent_id": "33014",
+      "muis_id": "902"
+    },
+    {
+      "term": "sõlmpilu",
+      "term_id": "33018",
+      "parent_id": "33014",
+      "muis_id": "903"
+    },
+    {
+      "term": "põimpilu",
+      "term_id": "33019",
+      "parent_id": "33014",
+      "muis_id": "904"
+    },
+    {
+      "term": "mähkpilu",
+      "term_id": "33020",
+      "parent_id": "33014",
+      "muis_id": "905"
+    },
+    {
+      "term": "kahesuunaline e.võrkpilu",
+      "term_id": "33021",
+      "parent_id": "33013",
+      "muis_id": "906"
+    },
+    {
+      "term": "tekstiili värvimistehnika: sidumistehnika",
+      "term_id": "33023",
+      "parent_id": "33022",
+      "muis_id": "908"
+    },
+    {
+      "term": "tekstiili värvimistehnika: ikat",
+      "term_id": "33024",
+      "parent_id": "33022",
+      "muis_id": "909"
+    },
+    {
+      "term": "vanutamine",
+      "term_id": "33025",
+      "parent_id": "32923",
+      "muis_id": "910"
+    },
+    {
+      "term": "viltimine",
+      "term_id": "33026",
+      "parent_id": "32923",
+      "muis_id": "911"
+    },
+    {
+      "term": "märgviltimine",
+      "term_id": "33027",
+      "parent_id": "33026",
+      "muis_id": "912"
+    },
+    {
+      "term": "nõelviltimine",
+      "term_id": "33028",
+      "parent_id": "33026",
+      "muis_id": "913"
+    },
+    {
+      "term": "kraasimine",
+      "term_id": "33029",
+      "parent_id": "32923",
+      "muis_id": "914"
+    },
+    {
+      "term": "drapeerimine",
+      "term_id": "33030",
+      "parent_id": "32923",
+      "muis_id": "915"
+    },
+    {
+      "term": "plisseerimine",
+      "term_id": "33031",
+      "parent_id": "32923",
+      "muis_id": "916"
+    },
+    {
+      "term": "kurrutamine",
+      "term_id": "33032",
+      "parent_id": "32923",
+      "muis_id": "917"
+    },
+    {
+      "term": "ketramine",
+      "term_id": "33033",
+      "parent_id": "32923",
+      "muis_id": "918"
+    },
+    {
+      "term": "korrutamine",
+      "term_id": "33034",
+      "parent_id": "32923",
+      "muis_id": "919"
+    },
+    {
+      "term": "apreteerimine",
+      "term_id": "33035",
+      "parent_id": "32923",
+      "muis_id": "920"
+    },
+    {
+      "term": "tärgeldamine",
+      "term_id": "33036",
+      "parent_id": "33035",
+      "muis_id": "921"
+    },
+    {
+      "term": "kujutise loomine",
+      "term_id": "33037",
+      "parent_id": "122",
+      "muis_id": "922"
+    },
+    {
+      "term": "elektrooniline kujutise loomine",
+      "term_id": "33038",
+      "parent_id": "33037",
+      "muis_id": "923"
+    },
+    {
+      "term": "fotograafia",
+      "term_id": "33039",
+      "parent_id": "33037",
+      "muis_id": "924"
+    },
+    {
+      "term": "mustvalge fotograafia",
+      "term_id": "33040",
+      "parent_id": "33039",
+      "muis_id": "925"
+    },
+    {
+      "term": "dagerrotüüpia",
+      "term_id": "33041",
+      "parent_id": "33040",
+      "muis_id": "926"
+    },
+    {
+      "term": "märg-kolloodiummenetlus",
+      "term_id": "33042",
+      "parent_id": "33040",
+      "muis_id": "927"
+    },
+    {
+      "term": "ambrotüüpia",
+      "term_id": "33043",
+      "parent_id": "33042",
+      "muis_id": "928"
+    },
+    {
+      "term": "ferrotüüpia",
+      "term_id": "33044",
+      "parent_id": "33042",
+      "muis_id": "929"
+    },
+    {
+      "term": "pannotüüpia",
+      "term_id": "33045",
+      "parent_id": "33042",
+      "muis_id": "930"
+    },
+    {
+      "term": "rauasoola-menetlus",
+      "term_id": "33046",
+      "parent_id": "33040",
+      "muis_id": "931"
+    },
+    {
+      "term": "tsüanotüüpia",
+      "term_id": "33047",
+      "parent_id": "33046",
+      "muis_id": "932"
+    },
+    {
+      "term": "pigmentmenetlus",
+      "term_id": "33048",
+      "parent_id": "33040",
+      "muis_id": "933"
+    },
+    {
+      "term": "dikromaatmenetlus",
+      "term_id": "33049",
+      "parent_id": "33048",
+      "muis_id": "934"
+    },
+    {
+      "term": "süsitrükk",
+      "term_id": "33050",
+      "parent_id": "33049",
+      "muis_id": "935"
+    },
+    {
+      "term": "kummi-dikromaatmenetlus",
+      "term_id": "33051",
+      "parent_id": "33049",
+      "muis_id": "936"
+    },
+    {
+      "term": "broomõlimenetlus",
+      "term_id": "33052",
+      "parent_id": "33049",
+      "muis_id": "937"
+    },
+    {
+      "term": "värvifotograafia",
+      "term_id": "33053",
+      "parent_id": "33039",
+      "muis_id": "938"
+    },
+    {
+      "term": "autokroomia",
+      "term_id": "33054",
+      "parent_id": "33053",
+      "muis_id": "939"
+    },
+    {
+      "term": "kromogeenmenetlus",
+      "term_id": "33055",
+      "parent_id": "33053",
+      "muis_id": "940"
+    },
+    {
+      "term": "värviline difusioonmenetlus",
+      "term_id": "33056",
+      "parent_id": "33053",
+      "muis_id": "941"
+    },
+    {
+      "term": "digitaalfotograafia",
+      "term_id": "33057",
+      "parent_id": "33039",
+      "muis_id": "942"
+    },
+    {
+      "term": "fotomontaaž",
+      "term_id": "33058",
+      "parent_id": "33039",
+      "muis_id": "943"
+    },
+    {
+      "term": "foto toonimine",
+      "term_id": "33059",
+      "parent_id": "33039",
+      "muis_id": "944"
+    },
+    {
+      "term": "filmimine",
+      "term_id": "33060",
+      "parent_id": "33037",
+      "muis_id": "945"
+    },
+    {
+      "term": "tembeldamine",
+      "term_id": "33061",
+      "parent_id": "33037",
+      "muis_id": "946"
+    },
+    {
+      "term": "illustreerimine",
+      "term_id": "33062",
+      "parent_id": "33037",
+      "muis_id": "947"
+    },
+    {
+      "term": "trükkimine",
+      "term_id": "33063",
+      "parent_id": "33037",
+      "muis_id": "948"
+    },
+    {
+      "term": "graafika",
+      "term_id": "33064",
+      "parent_id": "33063",
+      "muis_id": "949"
+    },
+    {
+      "term": "sügavtrükk",
+      "term_id": "33065",
+      "parent_id": "33064",
+      "muis_id": "950"
+    },
+    {
+      "term": "vasegravüür",
+      "term_id": "33066",
+      "parent_id": "33065",
+      "muis_id": "951"
+    },
+    {
+      "term": "kuivnõel",
+      "term_id": "33067",
+      "parent_id": "33065",
+      "muis_id": "952"
+    },
+    {
+      "term": "metsotinto",
+      "term_id": "33068",
+      "parent_id": "33065",
+      "muis_id": "953"
+    },
+    {
+      "term": "ofort",
+      "term_id": "33069",
+      "parent_id": "33065",
+      "muis_id": "954"
+    },
+    {
+      "term": "söövitus",
+      "term_id": "33070",
+      "parent_id": "33065",
+      "muis_id": "955"
+    },
+    {
+      "term": "pehmelakk",
+      "term_id": "33071",
+      "parent_id": "33065",
+      "muis_id": "956"
+    },
+    {
+      "term": "akvatinta",
+      "term_id": "33072",
+      "parent_id": "33065",
+      "muis_id": "957"
+    },
+    {
+      "term": "terasegravüür",
+      "term_id": "33073",
+      "parent_id": "33065",
+      "muis_id": "958"
+    },
+    {
+      "term": "lametrükk",
+      "term_id": "33074",
+      "parent_id": "33064",
+      "muis_id": "959"
+    },
+    {
+      "term": "monotüüpia",
+      "term_id": "33075",
+      "parent_id": "33074",
+      "muis_id": "960"
+    },
+    {
+      "term": "litograafia",
+      "term_id": "33076",
+      "parent_id": "33074",
+      "muis_id": "961"
+    },
+    {
+      "term": "serigraafia",
+      "term_id": "33077",
+      "parent_id": "33074",
+      "muis_id": "962"
+    },
+    {
+      "term": "koopiatrükk",
+      "term_id": "33078",
+      "parent_id": "33074",
+      "muis_id": "963"
+    },
+    {
+      "term": "kõrgtrükk",
+      "term_id": "33079",
+      "parent_id": "33064",
+      "muis_id": "964"
+    },
+    {
+      "term": "linoollõige",
+      "term_id": "33080",
+      "parent_id": "33079",
+      "muis_id": "965"
+    },
+    {
+      "term": "puulõige",
+      "term_id": "33081",
+      "parent_id": "33079",
+      "muis_id": "966"
+    },
+    {
+      "term": "puugravüür",
+      "term_id": "33082",
+      "parent_id": "33079",
+      "muis_id": "967"
+    },
+    {
+      "term": "plastikaatlõige",
+      "term_id": "33083",
+      "parent_id": "33079",
+      "muis_id": "968"
+    },
+    {
+      "term": "pimetrükk",
+      "term_id": "33084",
+      "parent_id": "33079",
+      "muis_id": "969"
+    },
+    {
+      "term": "klišee",
+      "term_id": "33085",
+      "parent_id": "33079",
+      "muis_id": "970"
+    },
+    {
+      "term": "templitrükk",
+      "term_id": "33086",
+      "parent_id": "33063",
+      "muis_id": "971"
+    },
+    {
+      "term": "söövitustrükk",
+      "term_id": "33087",
+      "parent_id": "33063",
+      "muis_id": "972"
+    },
+    {
+      "term": "pakutrükk",
+      "term_id": "33088",
+      "parent_id": "33063",
+      "muis_id": "973"
+    },
+    {
+      "term": "fotomehaaniline trükk",
+      "term_id": "33089",
+      "parent_id": "33063",
+      "muis_id": "974"
+    },
+    {
+      "term": "fotogravüür",
+      "term_id": "33090",
+      "parent_id": "33089",
+      "muis_id": "975"
+    },
+    {
+      "term": "rotogravüür",
+      "term_id": "33091",
+      "parent_id": "33090",
+      "muis_id": "976"
+    },
+    {
+      "term": "fotopolümeergravüür",
+      "term_id": "33092",
+      "parent_id": "33090",
+      "muis_id": "977"
+    },
+    {
+      "term": "fotolitograafia",
+      "term_id": "33093",
+      "parent_id": "33089",
+      "muis_id": "978"
+    },
+    {
+      "term": "kollotüüpia",
+      "term_id": "33094",
+      "parent_id": "33093",
+      "muis_id": "979"
+    },
+    {
+      "term": "rasterklišeega kõrgtrükk",
+      "term_id": "33095",
+      "parent_id": "33089",
+      "muis_id": "980"
+    },
+    {
+      "term": "ofsettrükk",
+      "term_id": "33096",
+      "parent_id": "33089",
+      "muis_id": "981"
+    },
+    {
+      "term": "digitaaltrükk",
+      "term_id": "33097",
+      "parent_id": "33063",
+      "muis_id": "982"
+    },
+    {
+      "term": "lasertükk",
+      "term_id": "33098",
+      "parent_id": "33097",
+      "muis_id": "983"
+    },
+    {
+      "term": "tinditrükk",
+      "term_id": "33099",
+      "parent_id": "33097",
+      "muis_id": "984"
+    },
+    {
+      "term": "pigmenttrükk",
+      "term_id": "33100",
+      "parent_id": "33099",
+      "muis_id": "985"
+    },
+    {
+      "term": "termotrükk",
+      "term_id": "33101",
+      "parent_id": "33097",
+      "muis_id": "986"
+    },
+    {
+      "term": "joonistamine",
+      "term_id": "33102",
+      "parent_id": "33037",
+      "muis_id": "987"
+    },
+    {
+      "term": "pliiats",
+      "term_id": "33103",
+      "parent_id": "33102",
+      "muis_id": "988"
+    },
+    {
+      "term": "grafiit",
+      "term_id": "33104",
+      "parent_id": "33102",
+      "muis_id": "989"
+    },
+    {
+      "term": "süsi",
+      "term_id": "33105",
+      "parent_id": "33102",
+      "muis_id": "990"
+    },
+    {
+      "term": "itaalia pliiats",
+      "term_id": "33106",
+      "parent_id": "33102",
+      "muis_id": "991"
+    },
+    {
+      "term": "pastapliiats",
+      "term_id": "33107",
+      "parent_id": "33102",
+      "muis_id": "992"
+    },
+    {
+      "term": "viltpliiats",
+      "term_id": "33108",
+      "parent_id": "33102",
+      "muis_id": "993"
+    },
+    {
+      "term": "keemiline pliiats",
+      "term_id": "33109",
+      "parent_id": "33102",
+      "muis_id": "994"
+    },
+    {
+      "term": "kriit",
+      "term_id": "33110",
+      "parent_id": "33102",
+      "muis_id": "995"
+    },
+    {
+      "term": "šoušš",
+      "term_id": "33111",
+      "parent_id": "33102",
+      "muis_id": "996"
+    },
+    {
+      "term": "sangviin",
+      "term_id": "33112",
+      "parent_id": "33102",
+      "muis_id": "997"
+    },
+    {
+      "term": "krokii",
+      "term_id": "33113",
+      "parent_id": "33102",
+      "muis_id": "998"
+    },
+    {
+      "term": "tint",
+      "term_id": "33114",
+      "parent_id": "33102",
+      "muis_id": "999"
+    },
+    {
+      "term": "seepia",
+      "term_id": "33115",
+      "parent_id": "33102",
+      "muis_id": "1000"
+    },
+    {
+      "term": "joonestamine",
+      "term_id": "33116",
+      "parent_id": "33037",
+      "muis_id": "1001"
+    },
+    {
+      "term": "kirjutamine",
+      "term_id": "33117",
+      "parent_id": "33037",
+      "muis_id": "1002"
+    },
+    {
+      "term": "masinal kirjutamine",
+      "term_id": "33118",
+      "parent_id": "33117",
+      "muis_id": "1003"
+    },
+    {
+      "term": "käsitsi kirjutamine",
+      "term_id": "33119",
+      "parent_id": "33117",
+      "muis_id": "1004"
+    },
+    {
+      "term": "maalimine",
+      "term_id": "33120",
+      "parent_id": "33037",
+      "muis_id": "1005"
+    },
+    {
+      "term": "tušš",
+      "term_id": "33121",
+      "parent_id": "33120",
+      "muis_id": "1006"
+    },
+    {
+      "term": "akvarell",
+      "term_id": "33122",
+      "parent_id": "33120",
+      "muis_id": "1007"
+    },
+    {
+      "term": "guašš",
+      "term_id": "33123",
+      "parent_id": "33120",
+      "muis_id": "1008"
+    },
+    {
+      "term": "pastell",
+      "term_id": "33124",
+      "parent_id": "33120",
+      "muis_id": "1009"
+    },
+    {
+      "term": "tempera",
+      "term_id": "33125",
+      "parent_id": "33120",
+      "muis_id": "1010"
+    },
+    {
+      "term": "õli",
+      "term_id": "33126",
+      "parent_id": "33120",
+      "muis_id": "1011"
+    },
+    {
+      "term": "akrüül",
+      "term_id": "33127",
+      "parent_id": "33120",
+      "muis_id": "1012"
+    },
+    {
+      "term": "laseerimine",
+      "term_id": "33128",
+      "parent_id": "33120",
+      "muis_id": "1013"
+    },
+    {
+      "term": "marmoreerimine",
+      "term_id": "33129",
+      "parent_id": "33120",
+      "muis_id": "1014"
+    },
+    {
+      "term": "dekoorimaal",
+      "term_id": "33130",
+      "parent_id": "33120",
+      "muis_id": "1015"
+    },
+    {
+      "term": "emailmaal",
+      "term_id": "33131",
+      "parent_id": "33120",
+      "muis_id": "1016"
+    },
+    {
+      "term": "emulsioonmaal",
+      "term_id": "33132",
+      "parent_id": "33120",
+      "muis_id": "1017"
+    },
+    {
+      "term": "glasuurimaal",
+      "term_id": "33133",
+      "parent_id": "33120",
+      "muis_id": "1018"
+    },
+    {
+      "term": "glasuurialune maal",
+      "term_id": "33134",
+      "parent_id": "33120",
+      "muis_id": "1019"
+    },
+    {
+      "term": "glasuuripealne maal",
+      "term_id": "33135",
+      "parent_id": "33120",
+      "muis_id": "1020"
+    },
+    {
+      "term": "vitraažmaal",
+      "term_id": "33136",
+      "parent_id": "33120",
+      "muis_id": "1021"
+    },
+    {
+      "term": "krohvimaal",
+      "term_id": "33137",
+      "parent_id": "33120",
+      "muis_id": "1022"
+    },
+    {
+      "term": "orgaanilise materjaliga maal",
+      "term_id": "33138",
+      "parent_id": "33120",
+      "muis_id": "1023"
+    },
+    {
+      "term": "polükroomia",
+      "term_id": "33139",
+      "parent_id": "33120",
+      "muis_id": "1024"
+    },
+    {
+      "term": "lüstertehnika",
+      "term_id": "33140",
+      "parent_id": "33139",
+      "muis_id": "1025"
+    },
+    {
+      "term": "sgrafiito",
+      "term_id": "33141",
+      "parent_id": "33120",
+      "muis_id": "1026"
+    },
+    {
+      "term": "visandamine",
+      "term_id": "33142",
+      "parent_id": "33037",
+      "muis_id": "1027"
+    },
+    {
+      "term": "kopeerimine",
+      "term_id": "33143",
+      "parent_id": "33037",
+      "muis_id": "1028"
+    },
+    {
+      "term": "kserokopeerimine",
+      "term_id": "33144",
+      "parent_id": "33143",
+      "muis_id": "1029"
+    },
+    {
+      "term": "grisaille",
+      "term_id": "33145",
+      "parent_id": "33037",
+      "muis_id": "1030"
+    },
+    {
+      "term": "kollaaž",
+      "term_id": "33146",
+      "parent_id": "33037",
+      "muis_id": "1031"
+    },
+    {
+      "term": "keraamika",
+      "term_id": "33147",
+      "parent_id": "122",
+      "muis_id": "1032"
+    },
+    {
+      "term": "glasuurimine",
+      "term_id": "33148",
+      "parent_id": "33147",
+      "muis_id": "1033"
+    },
+    {
+      "term": "fotokeraamika",
+      "term_id": "33149",
+      "parent_id": "33147",
+      "muis_id": "1034"
+    },
+    {
+      "term": "abstrükk",
+      "term_id": "33150",
+      "parent_id": "33147",
+      "muis_id": "1035"
+    },
+    {
+      "term": "pottsepis",
+      "term_id": "33151",
+      "parent_id": "33147",
+      "muis_id": "1036"
+    },
+    {
+      "term": "ahjukeraamika",
+      "term_id": "33152",
+      "parent_id": "33147",
+      "muis_id": "1037"
+    },
+    {
+      "term": "rakukeraamika",
+      "term_id": "33153",
+      "parent_id": "33147",
+      "muis_id": "1038"
+    },
+    {
+      "term": "kammkeraamika",
+      "term_id": "33154",
+      "parent_id": "33147",
+      "muis_id": "1039"
+    },
+    {
+      "term": "nöörkeraamika",
+      "term_id": "33155",
+      "parent_id": "33147",
+      "muis_id": "1040"
+    },
+    {
+      "term": "riipekeraamika",
+      "term_id": "33156",
+      "parent_id": "33147",
+      "muis_id": "1041"
+    },
+    {
+      "term": "tekstiilkeraamika",
+      "term_id": "33157",
+      "parent_id": "33147",
+      "muis_id": "1042"
+    },
+    {
+      "term": "klaasitehnika",
+      "term_id": "33158",
+      "parent_id": "122",
+      "muis_id": "1043"
+    },
+    {
+      "term": "klaasipuhumine",
+      "term_id": "33159",
+      "parent_id": "33158",
+      "muis_id": "1044"
+    },
+    {
+      "term": "vitraaž",
+      "term_id": "33160",
+      "parent_id": "33158",
+      "muis_id": "1045"
+    },
+    {
+      "term": "metallitehnika",
+      "term_id": "33161",
+      "parent_id": "122",
+      "muis_id": "1046"
+    },
+    {
+      "term": "filigraantehnika",
+      "term_id": "33162",
+      "parent_id": "33161",
+      "muis_id": "1047"
+    },
+    {
+      "term": "trugimine",
+      "term_id": "33163",
+      "parent_id": "33161",
+      "muis_id": "1048"
+    },
+    {
+      "term": "valtsimine",
+      "term_id": "33164",
+      "parent_id": "33161",
+      "muis_id": "1049"
+    },
+    {
+      "term": "sepistamine",
+      "term_id": "33165",
+      "parent_id": "33161",
+      "muis_id": "1050"
+    },
+    {
+      "term": "kummimine",
+      "term_id": "33166",
+      "parent_id": "33161",
+      "muis_id": "1051"
+    },
+    {
+      "term": "sepakeevitus",
+      "term_id": "33167",
+      "parent_id": "33161",
+      "muis_id": "1052"
+    },
+    {
+      "term": "keevitamine",
+      "term_id": "33168",
+      "parent_id": "33161",
+      "muis_id": "1053"
+    },
+    {
+      "term": "jootmine",
+      "term_id": "33169",
+      "parent_id": "33161",
+      "muis_id": "1054"
+    },
+    {
+      "term": "metallivalu",
+      "term_id": "33170",
+      "parent_id": "33161",
+      "muis_id": "1055"
+    },
+    {
+      "term": "taondamine",
+      "term_id": "33171",
+      "parent_id": "33161",
+      "muis_id": "1056"
+    },
+    {
+      "term": "kohrutamine",
+      "term_id": "33172",
+      "parent_id": "33161",
+      "muis_id": "1057"
+    },
+    {
+      "term": "viilimine",
+      "term_id": "33173",
+      "parent_id": "33161",
+      "muis_id": "1058"
+    },
+    {
+      "term": "tsiseleerimine",
+      "term_id": "33174",
+      "parent_id": "33161",
+      "muis_id": "1059"
+    },
+    {
+      "term": "oksüdeerimine",
+      "term_id": "33175",
+      "parent_id": "33161",
+      "muis_id": "1060"
+    },
+    {
+      "term": "galvaaniline katmine",
+      "term_id": "33176",
+      "parent_id": "33161",
+      "muis_id": "1061"
+    },
+    {
+      "term": "hõbetamine",
+      "term_id": "33177",
+      "parent_id": "33161",
+      "muis_id": "1062"
+    },
+    {
+      "term": "tsinkimine",
+      "term_id": "33178",
+      "parent_id": "33161",
+      "muis_id": "1063"
+    },
+    {
+      "term": "nikeldamine",
+      "term_id": "33179",
+      "parent_id": "33161",
+      "muis_id": "1064"
+    },
+    {
+      "term": "kroomimine",
+      "term_id": "33180",
+      "parent_id": "33161",
+      "muis_id": "1065"
+    },
+    {
+      "term": "galvanoplastika",
+      "term_id": "33181",
+      "parent_id": "33161",
+      "muis_id": "1066"
+    },
+    {
+      "term": "traatimine",
+      "term_id": "33183",
+      "parent_id": "33161",
+      "muis_id": "1068"
+    },
+    {
+      "term": "vermimine",
+      "term_id": "33184",
+      "parent_id": "33161",
+      "muis_id": "1069"
+    },
+    {
+      "term": "plakeerimine",
+      "term_id": "33185",
+      "parent_id": "33161",
+      "muis_id": "1070"
+    },
+    {
+      "term": "pronksimine",
+      "term_id": "33186",
+      "parent_id": "33161",
+      "muis_id": "1071"
+    },
+    {
+      "term": "metalliseerimine",
+      "term_id": "33187",
+      "parent_id": "33161",
+      "muis_id": "1072"
+    },
+    {
+      "term": "metalli töötlemine",
+      "term_id": "33188",
+      "parent_id": "33161",
+      "muis_id": "1073"
+    },
+    {
+      "term": "metalliga katmine",
+      "term_id": "33189",
+      "parent_id": "33161",
+      "muis_id": "1074"
+    },
+    {
+      "term": "puidutehnika",
+      "term_id": "33190",
+      "parent_id": "122",
+      "muis_id": "1075"
+    },
+    {
+      "term": "tisleritöö",
+      "term_id": "33191",
+      "parent_id": "33190",
+      "muis_id": "1076"
+    },
+    {
+      "term": "määramata",
+      "term_id": "33192",
+      "parent_id": "122",
+      "muis_id": "1077"
+    },
+    {
+      "term": "salvestamine",
+      "term_id": "33194",
+      "parent_id": "32791",
+      "muis_id": "1079"
+    },
+    {
+      "term": "vineerlõige",
+      "term_id": "33337",
+      "parent_id": "33079",
+      "muis_id": "1080"
+    },
+    {
+      "term": "linoolgravüür",
+      "term_id": "33338",
+      "parent_id": "33079",
+      "muis_id": "1081"
+    },
+    {
+      "term": "käsitsikeraamika",
+      "term_id": "33442",
+      "parent_id": "33147",
+      "muis_id": "1082"
+    },
+    {
+      "term": "kedrakeraamika",
+      "term_id": "33443",
+      "parent_id": "33147",
+      "muis_id": "1083"
+    },
+    {
+      "term": "tahumine",
+      "term_id": "33444",
+      "parent_id": "33190",
+      "muis_id": "1084"
+    },
+    {
+      "term": "lõhestamine",
+      "term_id": "33445",
+      "parent_id": "33190",
+      "muis_id": "1085"
+    },
+    {
+      "term": "diasotüüpia",
+      "term_id": "33482",
+      "parent_id": "33143",
+      "muis_id": "1086"
+    },
+    {
+      "term": "reljeeftrükk",
+      "term_id": "33559",
+      "parent_id": "33065",
+      "muis_id": "1088"
+    },
+    {
+      "term": "värviline pliiats",
+      "term_id": "33560",
+      "parent_id": "33102",
+      "muis_id": "1089"
+    },
+    {
+      "term": "lapitehnika",
+      "term_id": "33573",
+      "parent_id": "32923",
+      "muis_id": "1090"
+    },
+    {
+      "term": "perforeerimine",
+      "term_id": "33589",
+      "parent_id": "32791",
+      "muis_id": "1092"
+    },
+    {
+      "term": "käsiladu",
+      "term_id": "33610",
+      "parent_id": "33079",
+      "muis_id": "1094"
+    },
+    {
+      "term": "masinladu",
+      "term_id": "33611",
+      "parent_id": "33079",
+      "muis_id": "1095"
+    }
+  ]
+}

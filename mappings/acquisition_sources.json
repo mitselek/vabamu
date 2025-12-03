@@ -1,0 +1,34 @@
+{
+  "_metadata": {
+    "source_file": "tabel_5.txt",
+    "column_count": 2,
+    "entry_count": 6,
+    "vocabulary_name": "acquisition_sources"
+  },
+  "acquisition_sources": [
+    {
+      "term": "saadud annetusena",
+      "term_id": "1012"
+    },
+    {
+      "term": "saadud kogumistegevusest",
+      "term_id": "1014"
+    },
+    {
+      "term": "saadud ostuna",
+      "term_id": "1015"
+    },
+    {
+      "term": "saadud tellimustööna",
+      "term_id": "1016"
+    },
+    {
+      "term": "saadud varade üleandmisel",
+      "term_id": "1017"
+    },
+    {
+      "term": "saadud stipendiumi alusel",
+      "term_id": "1018"
+    }
+  ]
+}

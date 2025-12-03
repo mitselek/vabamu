@@ -1,0 +1,235 @@
+{
+  "_metadata": {
+    "source_file": "tabel_4.txt",
+    "column_count": 3,
+    "entry_count": 46,
+    "vocabulary_name": "measurement_types"
+  },
+  "measurement_types": [
+    {
+      "term": "filmilindi formaat",
+      "term_id": "2486",
+      "parent_id": "59"
+    },
+    {
+      "term": "juveeli kaal/kvaliteet",
+      "term_id": "2488",
+      "parent_id": "59"
+    },
+    {
+      "term": "aeg/ kestus",
+      "term_id": "2490",
+      "parent_id": "59"
+    },
+    {
+      "term": "<ruumala/mahutavuse mõõt>",
+      "term_id": "2491",
+      "parent_id": "59"
+    },
+    {
+      "term": "kirjatöö maht",
+      "term_id": "2492",
+      "parent_id": "59"
+    },
+    {
+      "term": "<pikkuse mõõt>",
+      "term_id": "2496",
+      "parent_id": "59"
+    },
+    {
+      "term": "pindala",
+      "term_id": "2497",
+      "parent_id": "59"
+    },
+    {
+      "term": "maht",
+      "term_id": "2498",
+      "parent_id": "59"
+    },
+    {
+      "term": "väärtus",
+      "term_id": "2501",
+      "parent_id": "59"
+    },
+    {
+      "term": "kogus",
+      "term_id": "2503",
+      "parent_id": "59"
+    },
+    {
+      "term": "paberi formaat",
+      "term_id": "2504",
+      "parent_id": "59"
+    },
+    {
+      "term": "suurus (riietus)",
+      "term_id": "2505",
+      "parent_id": "59"
+    },
+    {
+      "term": "foto formaat",
+      "term_id": "2507",
+      "parent_id": "59"
+    },
+    {
+      "term": "videoformaat",
+      "term_id": "2508",
+      "parent_id": "59"
+    },
+    {
+      "term": "dokumendi maht",
+      "term_id": "2510",
+      "parent_id": "59"
+    },
+    {
+      "term": "negatiivi formaat",
+      "term_id": "2511",
+      "parent_id": "59"
+    },
+    {
+      "term": "filmikaader",
+      "term_id": "2512",
+      "parent_id": "59"
+    },
+    {
+      "term": "<kaardi mõõt>",
+      "term_id": "2514",
+      "parent_id": "59"
+    },
+    {
+      "term": "väärismetalli proov",
+      "term_id": "2517",
+      "parent_id": "59"
+    },
+    {
+      "term": "raamatu maht",
+      "term_id": "2518",
+      "parent_id": "59"
+    },
+    {
+      "term": "kaliiber",
+      "term_id": "2519",
+      "parent_id": "59"
+    },
+    {
+      "term": "trükise maht",
+      "term_id": "2520",
+      "parent_id": "59"
+    },
+    {
+      "term": "suurus (jalanõud)",
+      "term_id": "23475",
+      "parent_id": "59"
+    },
+    {
+      "term": "lehe kõrgus",
+      "term_id": "28282",
+      "parent_id": "59"
+    },
+    {
+      "term": "lehe laius",
+      "term_id": "28283",
+      "parent_id": "59"
+    },
+    {
+      "term": "kujutise kõrgus",
+      "term_id": "28284",
+      "parent_id": "59"
+    },
+    {
+      "term": "kujutise laius",
+      "term_id": "28285",
+      "parent_id": "59"
+    },
+    {
+      "term": "kaal",
+      "term_id": "2487",
+      "parent_id": "2491"
+    },
+    {
+      "term": "puidu maht",
+      "term_id": "2493",
+      "parent_id": "2491"
+    },
+    {
+      "term": "vedeliku maht",
+      "term_id": "2494",
+      "parent_id": "2491"
+    },
+    {
+      "term": "ruumala",
+      "term_id": "2495",
+      "parent_id": "2491"
+    },
+    {
+      "term": "mass",
+      "term_id": "2516",
+      "parent_id": "2491"
+    },
+    {
+      "term": "pikkus",
+      "term_id": "2484",
+      "parent_id": "2496"
+    },
+    {
+      "term": "laius",
+      "term_id": "2485",
+      "parent_id": "2496"
+    },
+    {
+      "term": "läbimõõt",
+      "term_id": "2499",
+      "parent_id": "2496"
+    },
+    {
+      "term": "kaugus",
+      "term_id": "2500",
+      "parent_id": "2496"
+    },
+    {
+      "term": "ümbermõõt",
+      "term_id": "2502",
+      "parent_id": "2496"
+    },
+    {
+      "term": "kõrgus",
+      "term_id": "2506",
+      "parent_id": "2496"
+    },
+    {
+      "term": "sügavus",
+      "term_id": "2509",
+      "parent_id": "2496"
+    },
+    {
+      "term": "paksus",
+      "term_id": "23472",
+      "parent_id": "2496"
+    },
+    {
+      "term": "graafikaplaadi kõrgus",
+      "term_id": "28286",
+      "parent_id": "2496"
+    },
+    {
+      "term": "graafikaplaadi laius",
+      "term_id": "28287",
+      "parent_id": "2496"
+    },
+    {
+      "term": "diameeter",
+      "term_id": "29662",
+      "parent_id": "2496"
+    },
+    {
+      "term": "tiraaž",
+      "term_id": "2513",
+      "parent_id": "2503"
+    },
+    {
+      "term": "kaart 1:",
+      "term_id": "2515",
+      "parent_id": "2514"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "_metadata": {
+    "source_file": "16",
+    "column_count": 2,
+    "entry_count": 8,
+    "vocabulary_name": "name_types"
+  },
+  "name_types": [
+    {
+      "term": "endine nimetus",
+      "term_id": "2648"
+    },
+    {
+      "term": "kohalik nimetus",
+      "term_id": "2650"
+    },
+    {
+      "term": "ladinakeelne nimetus",
+      "term_id": "2646"
+    },
+    {
+      "term": "lisanimi määramata",
+      "term_id": "2647"
+    },
+    {
+      "term": "nimetus lähtedokumendil",
+      "term_id": "2651"
+    },
+    {
+      "term": "sünonüüm",
+      "term_id": "2652"
+    },
+    {
+      "term": "teaduslik nimetus",
+      "term_id": "2644"
+    },
+    {
+      "term": "valmistaja nimetus",
+      "term_id": "2649"
+    }
+  ]
+}

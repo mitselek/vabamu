@@ -1,0 +1,26 @@
+{
+  "_metadata": {
+    "source_file": "13",
+    "column_count": 2,
+    "entry_count": 4,
+    "vocabulary_name": "acquisition_methods"
+  },
+  "acquisition_methods": [
+    {
+      "term": "arheoloogiline kaevamine",
+      "term_id": "1222"
+    },
+    {
+      "term": "inspektsioon",
+      "term_id": "30465"
+    },
+    {
+      "term": "juhuleid",
+      "term_id": "1221"
+    },
+    {
+      "term": "peitleid",
+      "term_id": "30249"
+    }
+  ]
+}

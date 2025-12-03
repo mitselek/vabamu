@@ -1,0 +1,1954 @@
+{
+  "_metadata": {
+    "source_file": "table_6.txt",
+    "column_count": 2,
+    "entry_count": 487,
+    "vocabulary_name": "materials"
+  },
+  "materials": [
+    {
+      "term": "aafrika pähkel",
+      "term_id": "32354"
+    },
+    {
+      "term": "Ag 875",
+      "term_id": "32683"
+    },
+    {
+      "term": "Ag 900",
+      "term_id": "32682"
+    },
+    {
+      "term": "Ag 925",
+      "term_id": "32681"
+    },
+    {
+      "term": "Ag 950",
+      "term_id": "32680"
+    },
+    {
+      "term": "ahhaat",
+      "term_id": "32633"
+    },
+    {
+      "term": "ajalehepaber",
+      "term_id": "32524"
+    },
+    {
+      "term": "akrüül",
+      "term_id": "32450"
+    },
+    {
+      "term": "akrüül",
+      "term_id": "32709"
+    },
+    {
+      "term": "akrüülvärv",
+      "term_id": "32724"
+    },
+    {
+      "term": "akvarellpaber",
+      "term_id": "32515"
+    },
+    {
+      "term": "akvarellvärv",
+      "term_id": "32725"
+    },
+    {
+      "term": "alabaster",
+      "term_id": "32621"
+    },
+    {
+      "term": "albumiinpaber",
+      "term_id": "32381"
+    },
+    {
+      "term": "alkaal-glasuur",
+      "term_id": "32578"
+    },
+    {
+      "term": "alpaka",
+      "term_id": "32421"
+    },
+    {
+      "term": "alumiinium",
+      "term_id": "32668"
+    },
+    {
+      "term": "amalgaan",
+      "term_id": "32652"
+    },
+    {
+      "term": "ameerika pähkel",
+      "term_id": "32352"
+    },
+    {
+      "term": "ametüst",
+      "term_id": "32641"
+    },
+    {
+      "term": "angoob",
+      "term_id": "32592"
+    },
+    {
+      "term": "angoora",
+      "term_id": "32418"
+    },
+    {
+      "term": "aniliinvärv",
+      "term_id": "32730"
+    },
+    {
+      "term": "anorgaaniline aine",
+      "term_id": "32763"
+    },
+    {
+      "term": "anorgaaniline keemiline kiud",
+      "term_id": "32453"
+    },
+    {
+      "term": "asbest",
+      "term_id": "32614"
+    },
+    {
+      "term": "atsetaat",
+      "term_id": "32437"
+    },
+    {
+      "term": "atsetaattselluloos",
+      "term_id": "32701"
+    },
+    {
+      "term": "atsetaattselluloosfilm",
+      "term_id": "32388"
+    },
+    {
+      "term": "Au 333",
+      "term_id": "32676"
+    },
+    {
+      "term": "Au 585",
+      "term_id": "32673"
+    },
+    {
+      "term": "Au 750",
+      "term_id": "32672"
+    },
+    {
+      "term": "baika (riidesort)",
+      "term_id": "32489"
+    },
+    {
+      "term": "bakeliit",
+      "term_id": "32706"
+    },
+    {
+      "term": "bambus",
+      "term_id": "32371"
+    },
+    {
+      "term": "batist (riidesort)",
+      "term_id": "32459"
+    },
+    {
+      "term": "bemberg (riidesort)",
+      "term_id": "32460"
+    },
+    {
+      "term": "berber (riidesort)",
+      "term_id": "32467"
+    },
+    {
+      "term": "berüll",
+      "term_id": "32630"
+    },
+    {
+      "term": "betoon",
+      "term_id": "32644"
+    },
+    {
+      "term": "biljon",
+      "term_id": "32650"
+    },
+    {
+      "term": "biskviitportselan",
+      "term_id": "32571"
+    },
+    {
+      "term": "bjass (riidesort)",
+      "term_id": "32462"
+    },
+    {
+      "term": "brokaat (riidesort)",
+      "term_id": "32480"
+    },
+    {
+      "term": "buklee (riidesort)",
+      "term_id": "32471"
+    },
+    {
+      "term": "dagerrotüüp",
+      "term_id": "32377"
+    },
+    {
+      "term": "Damaskuse teras",
+      "term_id": "32656"
+    },
+    {
+      "term": "damast (riidesort)",
+      "term_id": "32479"
+    },
+    {
+      "term": "diffusioonpaber",
+      "term_id": "32382"
+    },
+    {
+      "term": "dolomiit",
+      "term_id": "32607"
+    },
+    {
+      "term": "drapp (riidesort)",
+      "term_id": "32494"
+    },
+    {
+      "term": "drell (riidesort)",
+      "term_id": "32481"
+    },
+    {
+      "term": "duralumiinium",
+      "term_id": "32669"
+    },
+    {
+      "term": "džuut",
+      "term_id": "32403"
+    },
+    {
+      "term": "eboniit",
+      "term_id": "32789"
+    },
+    {
+      "term": "eebenipuu",
+      "term_id": "32370"
+    },
+    {
+      "term": "elastaan",
+      "term_id": "32445"
+    },
+    {
+      "term": "elavhõbe",
+      "term_id": "32651"
+    },
+    {
+      "term": "elevandiluu",
+      "term_id": "32767"
+    },
+    {
+      "term": "email",
+      "term_id": "32579"
+    },
+    {
+      "term": "emailvärv",
+      "term_id": "32729"
+    },
+    {
+      "term": "eterniit",
+      "term_id": "32645"
+    },
+    {
+      "term": "fajanss",
+      "term_id": "32562"
+    },
+    {
+      "term": "FB fotopaber",
+      "term_id": "32380"
+    },
+    {
+      "term": "fenoplast",
+      "term_id": "32705"
+    },
+    {
+      "term": "film",
+      "term_id": "32387"
+    },
+    {
+      "term": "filterpaber",
+      "term_id": "32521"
+    },
+    {
+      "term": "flanell (riidesort)",
+      "term_id": "32487"
+    },
+    {
+      "term": "fliis (riidesort)",
+      "term_id": "32507"
+    },
+    {
+      "term": "foolium",
+      "term_id": "32712"
+    },
+    {
+      "term": "fotoemulsioon",
+      "term_id": "32392"
+    },
+    {
+      "term": "fotomaterjal",
+      "term_id": "32376"
+    },
+    {
+      "term": "fotopaber",
+      "term_id": "32378"
+    },
+    {
+      "term": "fotoplaat",
+      "term_id": "32391"
+    },
+    {
+      "term": "frittglasuur",
+      "term_id": "32586"
+    },
+    {
+      "term": "frotee (riidesort)",
+      "term_id": "32500"
+    },
+    {
+      "term": "glasuur",
+      "term_id": "32577"
+    },
+    {
+      "term": "grafiit",
+      "term_id": "32624"
+    },
+    {
+      "term": "granaat",
+      "term_id": "32640"
+    },
+    {
+      "term": "graniit",
+      "term_id": "32604"
+    },
+    {
+      "term": "guaššvärv",
+      "term_id": "32726"
+    },
+    {
+      "term": "haab",
+      "term_id": "32358"
+    },
+    {
+      "term": "hammas",
+      "term_id": "32771"
+    },
+    {
+      "term": "harilik kirss",
+      "term_id": "32344"
+    },
+    {
+      "term": "harilik pöök",
+      "term_id": "32359"
+    },
+    {
+      "term": "harjas",
+      "term_id": "32413"
+    },
+    {
+      "term": "hein",
+      "term_id": "32777"
+    },
+    {
+      "term": "hõbe",
+      "term_id": "32678"
+    },
+    {
+      "term": "hõbedasulam",
+      "term_id": "32679"
+    },
+    {
+      "term": "hõbeleht",
+      "term_id": "32684"
+    },
+    {
+      "term": "hõbeželatiinemulsioon",
+      "term_id": "32393"
+    },
+    {
+      "term": "hõbeželatiinpaber",
+      "term_id": "32383"
+    },
+    {
+      "term": "jadeiit",
+      "term_id": "32636"
+    },
+    {
+      "term": "jalakas",
+      "term_id": "32362"
+    },
+    {
+      "term": "jaspis",
+      "term_id": "32634"
+    },
+    {
+      "term": "jersey (riidesort)",
+      "term_id": "32504"
+    },
+    {
+      "term": "jugapuu",
+      "term_id": "32334"
+    },
+    {
+      "term": "juur",
+      "term_id": "32308"
+    },
+    {
+      "term": "juus",
+      "term_id": "32774"
+    },
+    {
+      "term": "jäneseliim",
+      "term_id": "32719"
+    },
+    {
+      "term": "jõhv",
+      "term_id": "32412"
+    },
+    {
+      "term": "jõupaber",
+      "term_id": "32525"
+    },
+    {
+      "term": "kaameli vill",
+      "term_id": "32420"
+    },
+    {
+      "term": "kadakas",
+      "term_id": "32333"
+    },
+    {
+      "term": "kalaliim",
+      "term_id": "32718"
+    },
+    {
+      "term": "kalanahk",
+      "term_id": "32542"
+    },
+    {
+      "term": "kalev (riidesort)",
+      "term_id": "32491"
+    },
+    {
+      "term": "kalka",
+      "term_id": "32519"
+    },
+    {
+      "term": "kaltsupaber",
+      "term_id": "32513"
+    },
+    {
+      "term": "kampol",
+      "term_id": "32760"
+    },
+    {
+      "term": "kanep",
+      "term_id": "32402"
+    },
+    {
+      "term": "kanvaa (riidesort)",
+      "term_id": "32490"
+    },
+    {
+      "term": "karjala kask",
+      "term_id": "32349"
+    },
+    {
+      "term": "kartong",
+      "term_id": "32527"
+    },
+    {
+      "term": "karusloomavill",
+      "term_id": "32423"
+    },
+    {
+      "term": "karusnahk",
+      "term_id": "32545"
+    },
+    {
+      "term": "karv",
+      "term_id": "32411"
+    },
+    {
+      "term": "kaseiinkiud",
+      "term_id": "32439"
+    },
+    {
+      "term": "kaseiinplast",
+      "term_id": "32702"
+    },
+    {
+      "term": "kask",
+      "term_id": "32348"
+    },
+    {
+      "term": "kastan",
+      "term_id": "32350"
+    },
+    {
+      "term": "kautšuk",
+      "term_id": "32786"
+    },
+    {
+      "term": "kašmiir",
+      "term_id": "32419"
+    },
+    {
+      "term": "keemiline kiud",
+      "term_id": "32431"
+    },
+    {
+      "term": "keraamika",
+      "term_id": "32558"
+    },
+    {
+      "term": "keraamiline kiud",
+      "term_id": "32456"
+    },
+    {
+      "term": "kilpkonnaluu",
+      "term_id": "32768"
+    },
+    {
+      "term": "kips",
+      "term_id": "32615"
+    },
+    {
+      "term": "kirjutusmasinavärv",
+      "term_id": "32721"
+    },
+    {
+      "term": "kirss",
+      "term_id": "32343"
+    },
+    {
+      "term": "kitsevill",
+      "term_id": "32416"
+    },
+    {
+      "term": "kivikeraamika",
+      "term_id": "32564"
+    },
+    {
+      "term": "kivim",
+      "term_id": "32603"
+    },
+    {
+      "term": "klaas",
+      "term_id": "32593"
+    },
+    {
+      "term": "klaaskiud",
+      "term_id": "32454"
+    },
+    {
+      "term": "klinker",
+      "term_id": "32569"
+    },
+    {
+      "term": "kolloodiumemulsioon",
+      "term_id": "32394"
+    },
+    {
+      "term": "kolloodiumpaber",
+      "term_id": "32386"
+    },
+    {
+      "term": "kondiliim",
+      "term_id": "32717"
+    },
+    {
+      "term": "kondiportselan",
+      "term_id": "32573"
+    },
+    {
+      "term": "koobaltglasuur",
+      "term_id": "32591"
+    },
+    {
+      "term": "kookoskiud",
+      "term_id": "32409"
+    },
+    {
+      "term": "koorik ja koorikuaines",
+      "term_id": "32785"
+    },
+    {
+      "term": "korall",
+      "term_id": "32773"
+    },
+    {
+      "term": "kraaterglasuur",
+      "term_id": "32581"
+    },
+    {
+      "term": "kreeka pähkel",
+      "term_id": "32353"
+    },
+    {
+      "term": "krepp (riidesort)",
+      "term_id": "32482"
+    },
+    {
+      "term": "krepp-paber",
+      "term_id": "32518"
+    },
+    {
+      "term": "kriit",
+      "term_id": "32736"
+    },
+    {
+      "term": "kriit",
+      "term_id": "32609"
+    },
+    {
+      "term": "kriitpaber",
+      "term_id": "32532"
+    },
+    {
+      "term": "krimpleen (riidesort)",
+      "term_id": "32492"
+    },
+    {
+      "term": "kristall",
+      "term_id": "32596"
+    },
+    {
+      "term": "kristallglasuur",
+      "term_id": "32582"
+    },
+    {
+      "term": "krohv",
+      "term_id": "32647"
+    },
+    {
+      "term": "kromogeenemulsioon",
+      "term_id": "32395"
+    },
+    {
+      "term": "kromogeenpaber",
+      "term_id": "32384"
+    },
+    {
+      "term": "kroom",
+      "term_id": "32691"
+    },
+    {
+      "term": "kroomparknahk",
+      "term_id": "32548"
+    },
+    {
+      "term": "kuivatuspaber",
+      "term_id": "32520"
+    },
+    {
+      "term": "kuld",
+      "term_id": "32670"
+    },
+    {
+      "term": "kullasulam",
+      "term_id": "32671"
+    },
+    {
+      "term": "kunstnahk",
+      "term_id": "32704"
+    },
+    {
+      "term": "kunstsarv",
+      "term_id": "32703"
+    },
+    {
+      "term": "kunstsiid",
+      "term_id": "32694"
+    },
+    {
+      "term": "kuslapuu",
+      "term_id": "32361"
+    },
+    {
+      "term": "kuusk",
+      "term_id": "32330"
+    },
+    {
+      "term": "kvarts",
+      "term_id": "32619"
+    },
+    {
+      "term": "käsitsi valmistatud paber",
+      "term_id": "32533"
+    },
+    {
+      "term": "kõrgkuumuskeraamika",
+      "term_id": "32563"
+    },
+    {
+      "term": "kõrs",
+      "term_id": "32781"
+    },
+    {
+      "term": "kõvafajanss",
+      "term_id": "32568"
+    },
+    {
+      "term": "kõvaportselan",
+      "term_id": "32574"
+    },
+    {
+      "term": "künnapuu",
+      "term_id": "32363"
+    },
+    {
+      "term": "laama",
+      "term_id": "32422"
+    },
+    {
+      "term": "laast",
+      "term_id": "32328"
+    },
+    {
+      "term": "lakk",
+      "term_id": "32744"
+    },
+    {
+      "term": "lakknahk",
+      "term_id": "32557"
+    },
+    {
+      "term": "lambavill",
+      "term_id": "32415"
+    },
+    {
+      "term": "lasuriit",
+      "term_id": "32635"
+    },
+    {
+      "term": "lateksvärv",
+      "term_id": "32732"
+    },
+    {
+      "term": "laud",
+      "term_id": "32324"
+    },
+    {
+      "term": "lausmaterjal (riidesort)",
+      "term_id": "32509"
+    },
+    {
+      "term": "lehis",
+      "term_id": "32335"
+    },
+    {
+      "term": "lehtkuld",
+      "term_id": "32677"
+    },
+    {
+      "term": "lehtpuit",
+      "term_id": "32336"
+    },
+    {
+      "term": "lepp",
+      "term_id": "32355"
+    },
+    {
+      "term": "liim",
+      "term_id": "32713"
+    },
+    {
+      "term": "liimpuit",
+      "term_id": "32311"
+    },
+    {
+      "term": "liimvärv",
+      "term_id": "32727"
+    },
+    {
+      "term": "liiv",
+      "term_id": "32611"
+    },
+    {
+      "term": "liivakivi",
+      "term_id": "32608"
+    },
+    {
+      "term": "lina",
+      "term_id": "32401"
+    },
+    {
+      "term": "linaõli",
+      "term_id": "32750"
+    },
+    {
+      "term": "linnusilmavaher",
+      "term_id": "32341"
+    },
+    {
+      "term": "looduslik kautšuk",
+      "term_id": "32787"
+    },
+    {
+      "term": "looduslik kiud",
+      "term_id": "32398"
+    },
+    {
+      "term": "looduslik liimaine",
+      "term_id": "32714"
+    },
+    {
+      "term": "looduslik materjal",
+      "term_id": "32765"
+    },
+    {
+      "term": "looduslik vaik",
+      "term_id": "32758"
+    },
+    {
+      "term": "loomanahk",
+      "term_id": "32538"
+    },
+    {
+      "term": "loomne kiud",
+      "term_id": "32410"
+    },
+    {
+      "term": "loorpaber",
+      "term_id": "32526"
+    },
+    {
+      "term": "lubjaglasuur",
+      "term_id": "32583"
+    },
+    {
+      "term": "lubjakivi",
+      "term_id": "32605"
+    },
+    {
+      "term": "luga",
+      "term_id": "32778"
+    },
+    {
+      "term": "luu",
+      "term_id": "32766"
+    },
+    {
+      "term": "lyocell",
+      "term_id": "32435"
+    },
+    {
+      "term": "lõuend (riidesort)",
+      "term_id": "32493"
+    },
+    {
+      "term": "lüster",
+      "term_id": "32584"
+    },
+    {
+      "term": "maak",
+      "term_id": "32648"
+    },
+    {
+      "term": "maarjasparknahk",
+      "term_id": "32550"
+    },
+    {
+      "term": "madalkuumuskeraamika",
+      "term_id": "32559"
+    },
+    {
+      "term": "magnetiit",
+      "term_id": "32622"
+    },
+    {
+      "term": "magnetmaterjal",
+      "term_id": "32659"
+    },
+    {
+      "term": "magus kirss",
+      "term_id": "32345"
+    },
+    {
+      "term": "mahagon",
+      "term_id": "32369"
+    },
+    {
+      "term": "majoolika",
+      "term_id": "32561"
+    },
+    {
+      "term": "malahhiit",
+      "term_id": "32637"
+    },
+    {
+      "term": "malm",
+      "term_id": "32658"
+    },
+    {
+      "term": "manillakanep",
+      "term_id": "32407"
+    },
+    {
+      "term": "markisett (riidesort)",
+      "term_id": "32484"
+    },
+    {
+      "term": "marmor",
+      "term_id": "32606"
+    },
+    {
+      "term": "marmorpaber",
+      "term_id": "32536"
+    },
+    {
+      "term": "masoniit",
+      "term_id": "32320"
+    },
+    {
+      "term": "MDF-plaat",
+      "term_id": "32319"
+    },
+    {
+      "term": "melhior",
+      "term_id": "32664"
+    },
+    {
+      "term": "merevaik",
+      "term_id": "32759"
+    },
+    {
+      "term": "mesilasvaha",
+      "term_id": "32755"
+    },
+    {
+      "term": "messing",
+      "term_id": "32661"
+    },
+    {
+      "term": "metall",
+      "term_id": "32649"
+    },
+    {
+      "term": "metallikvärv",
+      "term_id": "32733"
+    },
+    {
+      "term": "metallkiud",
+      "term_id": "32457"
+    },
+    {
+      "term": "metsaklaas",
+      "term_id": "32599"
+    },
+    {
+      "term": "metsiksiid",
+      "term_id": "32428"
+    },
+    {
+      "term": "mineraal",
+      "term_id": "32613"
+    },
+    {
+      "term": "mineraalkiud",
+      "term_id": "32430"
+    },
+    {
+      "term": "mineraalparknahk",
+      "term_id": "32552"
+    },
+    {
+      "term": "modaal",
+      "term_id": "32434"
+    },
+    {
+      "term": "mohäär",
+      "term_id": "32417"
+    },
+    {
+      "term": "molton (riidesort)",
+      "term_id": "32488"
+    },
+    {
+      "term": "muaree (riidesort)",
+      "term_id": "32485"
+    },
+    {
+      "term": "muld",
+      "term_id": "32784"
+    },
+    {
+      "term": "musliin (riidesort)",
+      "term_id": "32486"
+    },
+    {
+      "term": "mänd",
+      "term_id": "32331"
+    },
+    {
+      "term": "määramata",
+      "term_id": "32790"
+    },
+    {
+      "term": "nahk",
+      "term_id": "32537"
+    },
+    {
+      "term": "nailon",
+      "term_id": "32442"
+    },
+    {
+      "term": "nefriit",
+      "term_id": "32638"
+    },
+    {
+      "term": "niin",
+      "term_id": "32306"
+    },
+    {
+      "term": "nikkel",
+      "term_id": "32692"
+    },
+    {
+      "term": "nitrotselluloos",
+      "term_id": "32698"
+    },
+    {
+      "term": "nitrotselluloosfilm",
+      "term_id": "32389"
+    },
+    {
+      "term": "nitrovärv",
+      "term_id": "32731"
+    },
+    {
+      "term": "nubuk",
+      "term_id": "32556"
+    },
+    {
+      "term": "nõges",
+      "term_id": "32405"
+    },
+    {
+      "term": "ofsetpaber",
+      "term_id": "32531"
+    },
+    {
+      "term": "okaspuit",
+      "term_id": "32329"
+    },
+    {
+      "term": "oonüks",
+      "term_id": "32643"
+    },
+    {
+      "term": "opaal",
+      "term_id": "32639"
+    },
+    {
+      "term": "orgaaniline aine",
+      "term_id": "32764"
+    },
+    {
+      "term": "organza (riidesort)",
+      "term_id": "32466"
+    },
+    {
+      "term": "ottoman (riidesort)",
+      "term_id": "32472"
+    },
+    {
+      "term": "paatina",
+      "term_id": "32743"
+    },
+    {
+      "term": "paber",
+      "term_id": "32512"
+    },
+    {
+      "term": "pabersavi",
+      "term_id": "32576"
+    },
+    {
+      "term": "pahk",
+      "term_id": "32305"
+    },
+    {
+      "term": "paju",
+      "term_id": "32347"
+    },
+    {
+      "term": "papjeemašee",
+      "term_id": "32534"
+    },
+    {
+      "term": "papp",
+      "term_id": "32528"
+    },
+    {
+      "term": "pappel",
+      "term_id": "32364"
+    },
+    {
+      "term": "parafiin",
+      "term_id": "32754"
+    },
+    {
+      "term": "parkesiin",
+      "term_id": "32700"
+    },
+    {
+      "term": "parknahk",
+      "term_id": "32546"
+    },
+    {
+      "term": "pastapliiatsi tint",
+      "term_id": "32740"
+    },
+    {
+      "term": "pastell",
+      "term_id": "32734"
+    },
+    {
+      "term": "peegelklaas",
+      "term_id": "32600"
+    },
+    {
+      "term": "peenfajanss",
+      "term_id": "32567"
+    },
+    {
+      "term": "pehmefajanss",
+      "term_id": "32566"
+    },
+    {
+      "term": "pehmeportselan",
+      "term_id": "32572"
+    },
+    {
+      "term": "peits",
+      "term_id": "32752"
+    },
+    {
+      "term": "peitslakk",
+      "term_id": "32746"
+    },
+    {
+      "term": "pepita (riidesort)",
+      "term_id": "32475"
+    },
+    {
+      "term": "pihlakas",
+      "term_id": "32365"
+    },
+    {
+      "term": "piimklaas",
+      "term_id": "32597"
+    },
+    {
+      "term": "pilliroog",
+      "term_id": "32779"
+    },
+    {
+      "term": "pimss",
+      "term_id": "32612"
+    },
+    {
+      "term": "pirn",
+      "term_id": "32337"
+    },
+    {
+      "term": "pits (riidesort)",
+      "term_id": "32511"
+    },
+    {
+      "term": "plaatina",
+      "term_id": "32685"
+    },
+    {
+      "term": "plaatinametalli sulam",
+      "term_id": "32686"
+    },
+    {
+      "term": "plank",
+      "term_id": "32326"
+    },
+    {
+      "term": "plast",
+      "term_id": "32697"
+    },
+    {
+      "term": "plastiliin",
+      "term_id": "32711"
+    },
+    {
+      "term": "pleksiklaas",
+      "term_id": "32710"
+    },
+    {
+      "term": "plii",
+      "term_id": "32689"
+    },
+    {
+      "term": "pliiglasuur",
+      "term_id": "32585"
+    },
+    {
+      "term": "ploom",
+      "term_id": "32346"
+    },
+    {
+      "term": "plüüs (riidesort)",
+      "term_id": "32499"
+    },
+    {
+      "term": "polituur",
+      "term_id": "32747"
+    },
+    {
+      "term": "polüamiid",
+      "term_id": "32441"
+    },
+    {
+      "term": "polüester",
+      "term_id": "32443"
+    },
+    {
+      "term": "polüesterfilm",
+      "term_id": "32390"
+    },
+    {
+      "term": "polüetüleen",
+      "term_id": "32446"
+    },
+    {
+      "term": "polümetüülmetakrülaat",
+      "term_id": "32451"
+    },
+    {
+      "term": "polüpropüleen",
+      "term_id": "32447"
+    },
+    {
+      "term": "polüstüreen",
+      "term_id": "32452"
+    },
+    {
+      "term": "polütetrafluoroetüleen",
+      "term_id": "32448"
+    },
+    {
+      "term": "polüuretaan",
+      "term_id": "32695"
+    },
+    {
+      "term": "polüvinüülatsetaat",
+      "term_id": "32449"
+    },
+    {
+      "term": "polüvinüülkloriid",
+      "term_id": "32708"
+    },
+    {
+      "term": "poolkristall",
+      "term_id": "32595"
+    },
+    {
+      "term": "poolvääriskivi",
+      "term_id": "32631"
+    },
+    {
+      "term": "pop(e)liin (riidesort)",
+      "term_id": "32469"
+    },
+    {
+      "term": "poroloon",
+      "term_id": "32696"
+    },
+    {
+      "term": "portselan",
+      "term_id": "32570"
+    },
+    {
+      "term": "pressklaas",
+      "term_id": "32594"
+    },
+    {
+      "term": "pronks",
+      "term_id": "32666"
+    },
+    {
+      "term": "pronksleht",
+      "term_id": "32667"
+    },
+    {
+      "term": "pruss",
+      "term_id": "32325"
+    },
+    {
+      "term": "prussik",
+      "term_id": "32327"
+    },
+    {
+      "term": "Pt 950",
+      "term_id": "32687"
+    },
+    {
+      "term": "puidutselluloospaber",
+      "term_id": "32514"
+    },
+    {
+      "term": "puit",
+      "term_id": "32303"
+    },
+    {
+      "term": "puitkiudplaat",
+      "term_id": "32318"
+    },
+    {
+      "term": "puitlaastplaat",
+      "term_id": "32317"
+    },
+    {
+      "term": "puitmaterjal",
+      "term_id": "32321"
+    },
+    {
+      "term": "puitplaat",
+      "term_id": "32312"
+    },
+    {
+      "term": "pukspuu",
+      "term_id": "32342"
+    },
+    {
+      "term": "punane puit",
+      "term_id": "32375"
+    },
+    {
+      "term": "purjeriie (riidesort)",
+      "term_id": "32503"
+    },
+    {
+      "term": "puukoor",
+      "term_id": "32307"
+    },
+    {
+      "term": "puuvill",
+      "term_id": "32400"
+    },
+    {
+      "term": "pähkel",
+      "term_id": "32351"
+    },
+    {
+      "term": "pärgament",
+      "term_id": "32540"
+    },
+    {
+      "term": "pärl",
+      "term_id": "32772"
+    },
+    {
+      "term": "pärlmutter",
+      "term_id": "32775"
+    },
+    {
+      "term": "pärn",
+      "term_id": "32339"
+    },
+    {
+      "term": "Põltsamaa portselan",
+      "term_id": "32575"
+    },
+    {
+      "term": "raagnahk",
+      "term_id": "32551"
+    },
+    {
+      "term": "ramjee",
+      "term_id": "32404"
+    },
+    {
+      "term": "rasvparknahk",
+      "term_id": "32553"
+    },
+    {
+      "term": "rauasulam",
+      "term_id": "32654"
+    },
+    {
+      "term": "raud",
+      "term_id": "32653"
+    },
+    {
+      "term": "raudgallustint",
+      "term_id": "32742"
+    },
+    {
+      "term": "RC fotopaber",
+      "term_id": "32379"
+    },
+    {
+      "term": "Reemay",
+      "term_id": "32444"
+    },
+    {
+      "term": "ribiplaat",
+      "term_id": "32316"
+    },
+    {
+      "term": "riidesort",
+      "term_id": "32458"
+    },
+    {
+      "term": "roosipuu",
+      "term_id": "32372"
+    },
+    {
+      "term": "roostevaba teras",
+      "term_id": "32657"
+    },
+    {
+      "term": "rotang",
+      "term_id": "32310"
+    },
+    {
+      "term": "rubiin",
+      "term_id": "32629"
+    },
+    {
+      "term": "saar",
+      "term_id": "32357"
+    },
+    {
+      "term": "saematerjal",
+      "term_id": "32323"
+    },
+    {
+      "term": "safiir",
+      "term_id": "32628"
+    },
+    {
+      "term": "samet (riidesort)",
+      "term_id": "32495"
+    },
+    {
+      "term": "sanglepp",
+      "term_id": "32356"
+    },
+    {
+      "term": "sarapuu",
+      "term_id": "32366"
+    },
+    {
+      "term": "sarv",
+      "term_id": "32770"
+    },
+    {
+      "term": "sarš (riidesort)",
+      "term_id": "32473"
+    },
+    {
+      "term": "satään (riidesort)",
+      "term_id": "32468"
+    },
+    {
+      "term": "savi",
+      "term_id": "32610"
+    },
+    {
+      "term": "saviglasuur",
+      "term_id": "32587"
+    },
+    {
+      "term": "seeder",
+      "term_id": "32332"
+    },
+    {
+      "term": "seemisnahk",
+      "term_id": "32539"
+    },
+    {
+      "term": "segamaterjal",
+      "term_id": "32761"
+    },
+    {
+      "term": "siid",
+      "term_id": "32426"
+    },
+    {
+      "term": "silikoon",
+      "term_id": "32707"
+    },
+    {
+      "term": "silinderklaas",
+      "term_id": "32602"
+    },
+    {
+      "term": "sisal",
+      "term_id": "32406"
+    },
+    {
+      "term": "sits (riidesort)",
+      "term_id": "32461"
+    },
+    {
+      "term": "smaragd",
+      "term_id": "32627"
+    },
+    {
+      "term": "smirgel",
+      "term_id": "32623"
+    },
+    {
+      "term": "soodaglasuur",
+      "term_id": "32588"
+    },
+    {
+      "term": "soolaglasuur",
+      "term_id": "32589"
+    },
+    {
+      "term": "soolapaber",
+      "term_id": "32385"
+    },
+    {
+      "term": "spoon",
+      "term_id": "32313"
+    },
+    {
+      "term": "suitsuklaas",
+      "term_id": "32598"
+    },
+    {
+      "term": "sulg",
+      "term_id": "32424"
+    },
+    {
+      "term": "säsipaber",
+      "term_id": "32535"
+    },
+    {
+      "term": "sügavtrükipaber",
+      "term_id": "32530"
+    },
+    {
+      "term": "sünteeskautšuk",
+      "term_id": "32788"
+    },
+    {
+      "term": "sünteeskiud",
+      "term_id": "32440"
+    },
+    {
+      "term": "sünteetiline vaik",
+      "term_id": "32757"
+    },
+    {
+      "term": "süsi",
+      "term_id": "32737"
+    },
+    {
+      "term": "süsinikkiud",
+      "term_id": "32455"
+    },
+    {
+      "term": "taft (riidesort)",
+      "term_id": "32470"
+    },
+    {
+      "term": "taimne kiud",
+      "term_id": "32399"
+    },
+    {
+      "term": "taimparknahk",
+      "term_id": "32547"
+    },
+    {
+      "term": "takk",
+      "term_id": "32780"
+    },
+    {
+      "term": "talk",
+      "term_id": "32616"
+    },
+    {
+      "term": "tamm",
+      "term_id": "32338"
+    },
+    {
+      "term": "tapeet",
+      "term_id": "32523"
+    },
+    {
+      "term": "tartan (riidesort)",
+      "term_id": "32477"
+    },
+    {
+      "term": "teemant",
+      "term_id": "32626"
+    },
+    {
+      "term": "tehiskarusnahk (riidesort)",
+      "term_id": "32502"
+    },
+    {
+      "term": "tehiskiud",
+      "term_id": "32432"
+    },
+    {
+      "term": "tehismaterjal",
+      "term_id": "32693"
+    },
+    {
+      "term": "tekisteta toornahk",
+      "term_id": "32544"
+    },
+    {
+      "term": "tekstiil",
+      "term_id": "32397"
+    },
+    {
+      "term": "temperavärv",
+      "term_id": "32728"
+    },
+    {
+      "term": "templivärv",
+      "term_id": "32722"
+    },
+    {
+      "term": "teras",
+      "term_id": "32655"
+    },
+    {
+      "term": "terrakota",
+      "term_id": "32560"
+    },
+    {
+      "term": "tina",
+      "term_id": "32688"
+    },
+    {
+      "term": "tinaglasuur",
+      "term_id": "32580"
+    },
+    {
+      "term": "tint",
+      "term_id": "32738"
+    },
+    {
+      "term": "tislerikilp",
+      "term_id": "32315"
+    },
+    {
+      "term": "toht",
+      "term_id": "32304"
+    },
+    {
+      "term": "tombak",
+      "term_id": "32663"
+    },
+    {
+      "term": "toomingas",
+      "term_id": "32367"
+    },
+    {
+      "term": "toornahk",
+      "term_id": "32543"
+    },
+    {
+      "term": "toorsiid",
+      "term_id": "32427"
+    },
+    {
+      "term": "topaas",
+      "term_id": "32632"
+    },
+    {
+      "term": "triatsetaat",
+      "term_id": "32438"
+    },
+    {
+      "term": "trikoo (riidesort)",
+      "term_id": "32506"
+    },
+    {
+      "term": "trikoosamet (riidesort)",
+      "term_id": "32505"
+    },
+    {
+      "term": "troopikapuit",
+      "term_id": "32373"
+    },
+    {
+      "term": "trükivärv",
+      "term_id": "32720"
+    },
+    {
+      "term": "tselluloid",
+      "term_id": "32699"
+    },
+    {
+      "term": "tsement",
+      "term_id": "32646"
+    },
+    {
+      "term": "tsink",
+      "term_id": "32690"
+    },
+    {
+      "term": "tsitriin",
+      "term_id": "32642"
+    },
+    {
+      "term": "tuaal (riidesort)",
+      "term_id": "32465"
+    },
+    {
+      "term": "tualettpaber",
+      "term_id": "32522"
+    },
+    {
+      "term": "tuhaglasuur",
+      "term_id": "32590"
+    },
+    {
+      "term": "tulekivi",
+      "term_id": "33473"
+    },
+    {
+      "term": "turbakiud",
+      "term_id": "32408"
+    },
+    {
+      "term": "turvas",
+      "term_id": "32782"
+    },
+    {
+      "term": "tussorsiid",
+      "term_id": "32429"
+    },
+    {
+      "term": "tušš",
+      "term_id": "32739"
+    },
+    {
+      "term": "tviid (riidesort)",
+      "term_id": "32476"
+    },
+    {
+      "term": "tvill (riidesort)",
+      "term_id": "32474"
+    },
+    {
+      "term": "tärklisliim",
+      "term_id": "32715"
+    },
+    {
+      "term": "tüll (riidesort)",
+      "term_id": "32496"
+    },
+    {
+      "term": "udusulg",
+      "term_id": "32425"
+    },
+    {
+      "term": "ussinahk",
+      "term_id": "32541"
+    },
+    {
+      "term": "uushõbe",
+      "term_id": "32665"
+    },
+    {
+      "term": "vaalakius",
+      "term_id": "32769"
+    },
+    {
+      "term": "vabrikupits (riidesort)",
+      "term_id": "32508"
+    },
+    {
+      "term": "vaha",
+      "term_id": "32753"
+    },
+    {
+      "term": "vahapaber",
+      "term_id": "32529"
+    },
+    {
+      "term": "vahariie (riidesort)",
+      "term_id": "32510"
+    },
+    {
+      "term": "vaher",
+      "term_id": "32340"
+    },
+    {
+      "term": "vaik",
+      "term_id": "32756"
+    },
+    {
+      "term": "valge kuld (Ni)",
+      "term_id": "32674"
+    },
+    {
+      "term": "valge kuld (Pd)",
+      "term_id": "32675"
+    },
+    {
+      "term": "valgeparknahk",
+      "term_id": "32549"
+    },
+    {
+      "term": "valgepöök",
+      "term_id": "32360"
+    },
+    {
+      "term": "valgevask",
+      "term_id": "32662"
+    },
+    {
+      "term": "vask",
+      "term_id": "32660"
+    },
+    {
+      "term": "vaskammoniaakkiud",
+      "term_id": "32436"
+    },
+    {
+      "term": "vatiin (riidesort)",
+      "term_id": "32501"
+    },
+    {
+      "term": "vatman",
+      "term_id": "32516"
+    },
+    {
+      "term": "veluur",
+      "term_id": "32555"
+    },
+    {
+      "term": "veluur (riidesort)",
+      "term_id": "32498"
+    },
+    {
+      "term": "velvet (riidesort)",
+      "term_id": "32497"
+    },
+    {
+      "term": "vesi",
+      "term_id": "32783"
+    },
+    {
+      "term": "viigipuu",
+      "term_id": "32368"
+    },
+    {
+      "term": "vilgukivi",
+      "term_id": "32618"
+    },
+    {
+      "term": "vill",
+      "term_id": "32414"
+    },
+    {
+      "term": "viltpliiatsi tint",
+      "term_id": "32741"
+    },
+    {
+      "term": "vineer",
+      "term_id": "32314"
+    },
+    {
+      "term": "viskoos",
+      "term_id": "32433"
+    },
+    {
+      "term": "vits",
+      "term_id": "32309"
+    },
+    {
+      "term": "vuaal (riidesort)",
+      "term_id": "32464"
+    },
+    {
+      "term": "värnits",
+      "term_id": "32751"
+    },
+    {
+      "term": "värvipaber",
+      "term_id": "32517"
+    },
+    {
+      "term": "värvirastriga emulsioon",
+      "term_id": "32396"
+    },
+    {
+      "term": "vääriskivi",
+      "term_id": "32625"
+    },
+    {
+      "term": "väärispuit",
+      "term_id": "32374"
+    },
+    {
+      "term": "väävel",
+      "term_id": "32620"
+    },
+    {
+      "term": "õlg",
+      "term_id": "32776"
+    },
+    {
+      "term": "õli",
+      "term_id": "32749"
+    },
+    {
+      "term": "õlilakk",
+      "term_id": "32748"
+    },
+    {
+      "term": "õlivärv",
+      "term_id": "32723"
+    },
+    {
+      "term": "õunapuu",
+      "term_id": "33441"
+    },
+    {
+      "term": "õõnesklaas",
+      "term_id": "32601"
+    },
+    {
+      "term": "ümarpuit",
+      "term_id": "32322"
+    },
+    {
+      "term": "šamott",
+      "term_id": "32565"
+    },
+    {
+      "term": "šellaklakk",
+      "term_id": "32745"
+    },
+    {
+      "term": "šifoon (riidesort)",
+      "term_id": "32483"
+    },
+    {
+      "term": "šlakk",
+      "term_id": "32762"
+    },
+    {
+      "term": "žakaar (riidesort)",
+      "term_id": "32478"
+    },
+    {
+      "term": "želatiinliim",
+      "term_id": "32716"
+    }
+  ]
+}

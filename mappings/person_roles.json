@@ -1,0 +1,354 @@
+{
+  "_metadata": {
+    "source_file": "14",
+    "column_count": 2,
+    "entry_count": 86,
+    "vocabulary_name": "person_roles"
+  },
+  "person_roles": [
+    {
+      "term": "adressaat",
+      "term_id": "32264"
+    },
+    {
+      "term": "analüüsija",
+      "term_id": "11379"
+    },
+    {
+      "term": "arheoloog",
+      "term_id": "33411"
+    },
+    {
+      "term": "arhitekt",
+      "term_id": "11530"
+    },
+    {
+      "term": "arranžeerija",
+      "term_id": "32039"
+    },
+    {
+      "term": "autor",
+      "term_id": "11401"
+    },
+    {
+      "term": "avastaja/leidja",
+      "term_id": "33605"
+    },
+    {
+      "term": "dirigent",
+      "term_id": "32255"
+    },
+    {
+      "term": "disainer/ kujundaja",
+      "term_id": "11493"
+    },
+    {
+      "term": "dokumenteerija",
+      "term_id": "11403"
+    },
+    {
+      "term": "dramaturg",
+      "term_id": "33217"
+    },
+    {
+      "term": "eeskuju",
+      "term_id": "11510"
+    },
+    {
+      "term": "ehitaja",
+      "term_id": "11534"
+    },
+    {
+      "term": "emiteerija",
+      "term_id": "11500"
+    },
+    {
+      "term": "esineja",
+      "term_id": "28503"
+    },
+    {
+      "term": "fotograaf",
+      "term_id": "11409"
+    },
+    {
+      "term": "graveerija",
+      "term_id": "11511"
+    },
+    {
+      "term": "helilooja",
+      "term_id": "32035"
+    },
+    {
+      "term": "hindaja",
+      "term_id": "11384"
+    },
+    {
+      "term": "hoiustaja",
+      "term_id": "11390"
+    },
+    {
+      "term": "illustreerija",
+      "term_id": "11523"
+    },
+    {
+      "term": "informant",
+      "term_id": "33603"
+    },
+    {
+      "term": "insener",
+      "term_id": "11532"
+    },
+    {
+      "term": "inspekteerija",
+      "term_id": "11396"
+    },
+    {
+      "term": "interpreet",
+      "term_id": "32038"
+    },
+    {
+      "term": "intervjueerija",
+      "term_id": "11385"
+    },
+    {
+      "term": "intervjueeritav",
+      "term_id": "11501"
+    },
+    {
+      "term": "joonistaja",
+      "term_id": "11512"
+    },
+    {
+      "term": "juhendaja",
+      "term_id": "11386"
+    },
+    {
+      "term": "järelvalve teostaja",
+      "term_id": "11528"
+    },
+    {
+      "term": "kaasautor",
+      "term_id": "11402"
+    },
+    {
+      "term": "kaitse alla võtja",
+      "term_id": "11397"
+    },
+    {
+      "term": "kasutaja/omanik",
+      "term_id": "11389"
+    },
+    {
+      "term": "kavandaja",
+      "term_id": "11407"
+    },
+    {
+      "term": "kirjastaja",
+      "term_id": "11502"
+    },
+    {
+      "term": "kirjeldaja",
+      "term_id": "11522"
+    },
+    {
+      "term": "koguja",
+      "term_id": "33606"
+    },
+    {
+      "term": "konsultant",
+      "term_id": "11525"
+    },
+    {
+      "term": "koostaja",
+      "term_id": "11515"
+    },
+    {
+      "term": "kopeerija",
+      "term_id": "11495"
+    },
+    {
+      "term": "kujutatu",
+      "term_id": "11496"
+    },
+    {
+      "term": "kunstnik",
+      "term_id": "32034"
+    },
+    {
+      "term": "kuraator",
+      "term_id": "30375"
+    },
+    {
+      "term": "laulja",
+      "term_id": "32265"
+    },
+    {
+      "term": "lavastaja",
+      "term_id": "32037"
+    },
+    {
+      "term": "libretist",
+      "term_id": "32041"
+    },
+    {
+      "term": "loeb teksti",
+      "term_id": "11503"
+    },
+    {
+      "term": "maastikuarhitekt",
+      "term_id": "11531"
+    },
+    {
+      "term": "maetav",
+      "term_id": "26427"
+    },
+    {
+      "term": "meister",
+      "term_id": "28566"
+    },
+    {
+      "term": "monteerija",
+      "term_id": "11497"
+    },
+    {
+      "term": "muusik",
+      "term_id": "32036"
+    },
+    {
+      "term": "näitleja",
+      "term_id": "32239"
+    },
+    {
+      "term": "näituse korraldaja",
+      "term_id": "11405"
+    },
+    {
+      "term": "oletatav autor/valmistaja",
+      "term_id": "11509"
+    },
+    {
+      "term": "omanik",
+      "term_id": "11395"
+    },
+    {
+      "term": "omanik/volitaja",
+      "term_id": "11506"
+    },
+    {
+      "term": "operaator",
+      "term_id": "11494"
+    },
+    {
+      "term": "originaali autor",
+      "term_id": "11524"
+    },
+    {
+      "term": "osaleja",
+      "term_id": "11408"
+    },
+    {
+      "term": "Osalejate rollid - KVIS",
+      "term_id": "11372"
+    },
+    {
+      "term": "plaani koostaja",
+      "term_id": "11526"
+    },
+    {
+      "term": "projekteerija",
+      "term_id": "11520"
+    },
+    {
+      "term": "publitseerija",
+      "term_id": "11514"
+    },
+    {
+      "term": "registreerija/vastutaja",
+      "term_id": "11371"
+    },
+    {
+      "term": "retsenseerija",
+      "term_id": "11391"
+    },
+    {
+      "term": "seade autor",
+      "term_id": "11518"
+    },
+    {
+      "term": "seosisik",
+      "term_id": "11505"
+    },
+    {
+      "term": "seosorganisatsioon",
+      "term_id": "32040"
+    },
+    {
+      "term": "sisearhitekt",
+      "term_id": "11504"
+    },
+    {
+      "term": "staatuse muutja",
+      "term_id": "11398"
+    },
+    {
+      "term": "tantsija",
+      "term_id": "32266"
+    },
+    {
+      "term": "teksti autor",
+      "term_id": "11519"
+    },
+    {
+      "term": "tellija",
+      "term_id": "11521"
+    },
+    {
+      "term": "teostaja",
+      "term_id": "11393"
+    },
+    {
+      "term": "toimetaja",
+      "term_id": "11498"
+    },
+    {
+      "term": "trükkija (valmistaja)",
+      "term_id": "11381"
+    },
+    {
+      "term": "tõlkija",
+      "term_id": "11513"
+    },
+    {
+      "term": "valmistaja",
+      "term_id": "11400"
+    },
+    {
+      "term": "varahoidja",
+      "term_id": "11382"
+    },
+    {
+      "term": "vastuvõtja",
+      "term_id": "11373"
+    },
+    {
+      "term": "väljaandja",
+      "term_id": "11499"
+    },
+    {
+      "term": "õpetaja",
+      "term_id": "26428"
+    },
+    {
+      "term": "õpilane",
+      "term_id": "11529"
+    },
+    {
+      "term": "üldjuht",
+      "term_id": "32287"
+    },
+    {
+      "term": "üleandja",
+      "term_id": "11374"
+    }
+  ]
+}

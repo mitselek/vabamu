@@ -1,0 +1,514 @@
+{
+  "_metadata": {
+    "source_file": "20",
+    "column_count": 2,
+    "entry_count": 126,
+    "vocabulary_name": "regions"
+  },
+  "regions": [
+    {
+      "term": "Aafrika",
+      "term_id": "6099"
+    },
+    {
+      "term": "Aasia",
+      "term_id": "6103"
+    },
+    {
+      "term": "Aasia idaosa",
+      "term_id": "6123"
+    },
+    {
+      "term": "Aasia lõunaosa",
+      "term_id": "6124"
+    },
+    {
+      "term": "Abhaasia",
+      "term_id": "30377"
+    },
+    {
+      "term": "Alaska",
+      "term_id": "6172"
+    },
+    {
+      "term": "Albaania",
+      "term_id": "6141"
+    },
+    {
+      "term": "Ameerika piirkond",
+      "term_id": "6104"
+    },
+    {
+      "term": "Ameerika Ühendriigid",
+      "term_id": "6094"
+    },
+    {
+      "term": "Araabia",
+      "term_id": "6095"
+    },
+    {
+      "term": "Argentina",
+      "term_id": "6086"
+    },
+    {
+      "term": "Armeenia",
+      "term_id": "32300"
+    },
+    {
+      "term": "Aserbaidžaan",
+      "term_id": "32119"
+    },
+    {
+      "term": "Aserbaidžaan",
+      "term_id": "32101"
+    },
+    {
+      "term": "Austraalia",
+      "term_id": "6085"
+    },
+    {
+      "term": "Austria",
+      "term_id": "6088"
+    },
+    {
+      "term": "Baltimaad",
+      "term_id": "6171"
+    },
+    {
+      "term": "Belgia",
+      "term_id": "6087"
+    },
+    {
+      "term": "Birma",
+      "term_id": "6132"
+    },
+    {
+      "term": "Boliivia",
+      "term_id": "6115"
+    },
+    {
+      "term": "Brasiilia",
+      "term_id": "6155"
+    },
+    {
+      "term": "Bulgaaria",
+      "term_id": "6143"
+    },
+    {
+      "term": "Colombia",
+      "term_id": "6117"
+    },
+    {
+      "term": "Ecuador",
+      "term_id": "6118"
+    },
+    {
+      "term": "Eesti",
+      "term_id": "6074"
+    },
+    {
+      "term": "Egiptus",
+      "term_id": "33321"
+    },
+    {
+      "term": "Euroopa",
+      "term_id": "6140"
+    },
+    {
+      "term": "Filipiinid",
+      "term_id": "6137"
+    },
+    {
+      "term": "Flaamimaa",
+      "term_id": "6146"
+    },
+    {
+      "term": "Gruusia",
+      "term_id": "6153"
+    },
+    {
+      "term": "Guatemala",
+      "term_id": "6109"
+    },
+    {
+      "term": "Haiti",
+      "term_id": "6111"
+    },
+    {
+      "term": "Hiina",
+      "term_id": "6163"
+    },
+    {
+      "term": "Himaalaja",
+      "term_id": "6128"
+    },
+    {
+      "term": "Hispaania",
+      "term_id": "6148"
+    },
+    {
+      "term": "Hmongi",
+      "term_id": "6134"
+    },
+    {
+      "term": "Holland",
+      "term_id": "6092"
+    },
+    {
+      "term": "Iirimaa",
+      "term_id": "6144"
+    },
+    {
+      "term": "Iisrael",
+      "term_id": "6139"
+    },
+    {
+      "term": "India",
+      "term_id": "6154"
+    },
+    {
+      "term": "Indoneesia",
+      "term_id": "6164"
+    },
+    {
+      "term": "Inglismaa",
+      "term_id": "6089"
+    },
+    {
+      "term": "Island",
+      "term_id": "19227"
+    },
+    {
+      "term": "Itaalia",
+      "term_id": "6080"
+    },
+    {
+      "term": "Jaapan",
+      "term_id": "6161"
+    },
+    {
+      "term": "Jakuutia",
+      "term_id": "32103"
+    },
+    {
+      "term": "Jamaica",
+      "term_id": "6112"
+    },
+    {
+      "term": "Jordaania",
+      "term_id": "32102"
+    },
+    {
+      "term": "Jugoslaavia",
+      "term_id": "6160"
+    },
+    {
+      "term": "Kagu-Aasia",
+      "term_id": "6125"
+    },
+    {
+      "term": "Kambodzha",
+      "term_id": "6133"
+    },
+    {
+      "term": "Kanada",
+      "term_id": "6084"
+    },
+    {
+      "term": "Karakalpakkia",
+      "term_id": "32104"
+    },
+    {
+      "term": "Kariibi mere piirkond",
+      "term_id": "6106"
+    },
+    {
+      "term": "Kasahstan",
+      "term_id": "30379"
+    },
+    {
+      "term": "Kaukaasia",
+      "term_id": "6127"
+    },
+    {
+      "term": "Kesk Aasia",
+      "term_id": "6168"
+    },
+    {
+      "term": "Kesk-Ameerika",
+      "term_id": "6105"
+    },
+    {
+      "term": "Korea",
+      "term_id": "6166"
+    },
+    {
+      "term": "Kreeka",
+      "term_id": "6165"
+    },
+    {
+      "term": "Kuramaa",
+      "term_id": "32105"
+    },
+    {
+      "term": "Kuuba",
+      "term_id": "6100"
+    },
+    {
+      "term": "Kõrgõstan",
+      "term_id": "32106"
+    },
+    {
+      "term": "Laos",
+      "term_id": "6135"
+    },
+    {
+      "term": "Leedu",
+      "term_id": "6091"
+    },
+    {
+      "term": "Liivimaa",
+      "term_id": "6097"
+    },
+    {
+      "term": "Lähis-Ida",
+      "term_id": "6170"
+    },
+    {
+      "term": "Läti",
+      "term_id": "6076"
+    },
+    {
+      "term": "Lääne-Aasia",
+      "term_id": "6126"
+    },
+    {
+      "term": "Lõuna-Ameerika",
+      "term_id": "6108"
+    },
+    {
+      "term": "Maailma mered",
+      "term_id": "6102"
+    },
+    {
+      "term": "Madalmaad",
+      "term_id": "6145"
+    },
+    {
+      "term": "Makao",
+      "term_id": "32107"
+    },
+    {
+      "term": "Malaisia",
+      "term_id": "6136"
+    },
+    {
+      "term": "Malta",
+      "term_id": "33549"
+    },
+    {
+      "term": "Maroko",
+      "term_id": "33547"
+    },
+    {
+      "term": "Mehhiko",
+      "term_id": "6114"
+    },
+    {
+      "term": "Moldaavia",
+      "term_id": "30381"
+    },
+    {
+      "term": "Moldova",
+      "term_id": "19228"
+    },
+    {
+      "term": "Mongoolia",
+      "term_id": "33447"
+    },
+    {
+      "term": "Nepaal",
+      "term_id": "6130"
+    },
+    {
+      "term": "Nicaragua",
+      "term_id": "6110"
+    },
+    {
+      "term": "Norra",
+      "term_id": "6101"
+    },
+    {
+      "term": "NSVL",
+      "term_id": "19229"
+    },
+    {
+      "term": "Paraguai",
+      "term_id": "6119"
+    },
+    {
+      "term": "Peruu",
+      "term_id": "6120"
+    },
+    {
+      "term": "Poola",
+      "term_id": "6082"
+    },
+    {
+      "term": "Portugal",
+      "term_id": "6093"
+    },
+    {
+      "term": "Prantsusmaa",
+      "term_id": "6081"
+    },
+    {
+      "term": "Preisimaa",
+      "term_id": "6098"
+    },
+    {
+      "term": "Puerto Rico",
+      "term_id": "6113"
+    },
+    {
+      "term": "Põhja-Ameerika",
+      "term_id": "6107"
+    },
+    {
+      "term": "Rooma",
+      "term_id": "6096"
+    },
+    {
+      "term": "Rootsi",
+      "term_id": "6079"
+    },
+    {
+      "term": "Rumeenia",
+      "term_id": "6157"
+    },
+    {
+      "term": "Saksa DV",
+      "term_id": "32100"
+    },
+    {
+      "term": "Saksamaa",
+      "term_id": "6078"
+    },
+    {
+      "term": "Shotimaa",
+      "term_id": "6149"
+    },
+    {
+      "term": "Siber",
+      "term_id": "6169"
+    },
+    {
+      "term": "Skandinaavia",
+      "term_id": "6147"
+    },
+    {
+      "term": "Sloveenia",
+      "term_id": "33557"
+    },
+    {
+      "term": "Soome",
+      "term_id": "6077"
+    },
+    {
+      "term": "Sri Lanka",
+      "term_id": "6129"
+    },
+    {
+      "term": "Suurbritannia",
+      "term_id": "6142"
+    },
+    {
+      "term": "Taani",
+      "term_id": "6090"
+    },
+    {
+      "term": "Tadžikistan",
+      "term_id": "30378"
+    },
+    {
+      "term": "Tai",
+      "term_id": "6138"
+    },
+    {
+      "term": "Tiibet",
+      "term_id": "6131"
+    },
+    {
+      "term": "Tuneesia",
+      "term_id": "30101"
+    },
+    {
+      "term": "Turkmeenia",
+      "term_id": "30380"
+    },
+    {
+      "term": "Türgi",
+      "term_id": "6083"
+    },
+    {
+      "term": "Tšehhi",
+      "term_id": "6162"
+    },
+    {
+      "term": "Tšiili",
+      "term_id": "6116"
+    },
+    {
+      "term": "Ukraina",
+      "term_id": "6152"
+    },
+    {
+      "term": "Ungari",
+      "term_id": "6159"
+    },
+    {
+      "term": "Uruguay",
+      "term_id": "6121"
+    },
+    {
+      "term": "Usbeki",
+      "term_id": "6158"
+    },
+    {
+      "term": "Uus-Guinea",
+      "term_id": "19230"
+    },
+    {
+      "term": "Uus-Meremaa",
+      "term_id": "19231"
+    },
+    {
+      "term": "Valgevene",
+      "term_id": "6156"
+    },
+    {
+      "term": "Vanuatu",
+      "term_id": "19232"
+    },
+    {
+      "term": "Venemaa",
+      "term_id": "6075"
+    },
+    {
+      "term": "Venezuela",
+      "term_id": "6122"
+    },
+    {
+      "term": "Vietnam",
+      "term_id": "6167"
+    },
+    {
+      "term": "Wales",
+      "term_id": "6150"
+    },
+    {
+      "term": "Šveits",
+      "term_id": "6151"
+    }
+  ]
+}

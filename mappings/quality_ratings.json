@@ -1,0 +1,30 @@
+{
+  "_metadata": {
+    "source_file": "table_9",
+    "column_count": 2,
+    "entry_count": 6,
+    "vocabulary_name": "quality_ratings"
+  },
+  "quality_ratings": [
+    {
+      "term": "halb",
+      "term_id": "5253"
+    },
+    {
+      "term": "hea",
+      "term_id": "5251"
+    },
+    {
+      "term": "määramata",
+      "term_id": "5249"
+    },
+    {
+      "term": "rahuldav",
+      "term_id": "5250"
+    },
+    {
+      "term": "väga halb",
+      "term_id": "5252"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "_metadata": {
+    "source_file": "table_10",
+    "column_count": 2,
+    "entry_count": 47,
+    "vocabulary_name": "languages"
+  },
+  "languages": [
+    {
+      "term": "abhaasi keel",
+      "term_id": "33"
+    },
+    {
+      "term": "alamsaksa keel",
+      "term_id": "34"
+    },
+    {
+      "term": "araabia keel",
+      "term_id": "35"
+    },
+    {
+      "term": "armeenia keel",
+      "term_id": "36"
+    },
+    {
+      "term": "eesti keel",
+      "term_id": "9"
+    },
+    {
+      "term": "esperanto keel",
+      "term_id": "31"
+    },
+    {
+      "term": "gruusia keel",
+      "term_id": "37"
+    },
+    {
+      "term": "heebrea keel",
+      "term_id": "38"
+    },
+    {
+      "term": "hiina keel",
+      "term_id": "39"
+    },
+    {
+      "term": "hispaania keel",
+      "term_id": "25"
+    },
+    {
+      "term": "hollandi keel",
+      "term_id": "40"
+    },
+    {
+      "term": "inglise keel",
+      "term_id": "10"
+    },
+    {
+      "term": "islandi keel",
+      "term_id": "29"
+    },
+    {
+      "term": "itaalia keel",
+      "term_id": "23"
+    },
+    {
+      "term": "jaapani keel",
+      "term_id": "41"
+    },
+    {
+      "term": "jidiši keel",
+      "term_id": "42"
+    },
+    {
+      "term": "kasahhi keel",
+      "term_id": "43"
+    },
+    {
+      "term": "kirgiisi keel",
+      "term_id": "44"
+    },
+    {
+      "term": "kirikuslaavi keel",
+      "term_id": "45"
+    },
+    {
+      "term": "korea keel",
+      "term_id": "46"
+    },
+    {
+      "term": "kreeka keel",
+      "term_id": "47"
+    },
+    {
+      "term": "ladina keel",
+      "term_id": "14"
+    },
+    {
+      "term": "leedu keel",
+      "term_id": "48"
+    },
+    {
+      "term": "läti keel",
+      "term_id": "27"
+    },
+    {
+      "term": "mongoli keel",
+      "term_id": "49"
+    },
+    {
+      "term": "poola keel",
+      "term_id": "51"
+    },
+    {
+      "term": "prantsuse keel",
+      "term_id": "24"
+    },
+    {
+      "term": "pärsia keel",
+      "term_id": "50"
+    },
+    {
+      "term": "rootsi keel",
+      "term_id": "13"
+    },
+    {
+      "term": "rumeenia keel",
+      "term_id": "52"
+    },
+    {
+      "term": "saksa keel",
+      "term_id": "17"
+    },
+    {
+      "term": "slovaki keel",
+      "term_id": "53"
+    },
+    {
+      "term": "soome keel",
+      "term_id": "26"
+    },
+    {
+      "term": "sünonüüm",
+      "term_id": "1"
+    },
+    {
+      "term": "taani keel",
+      "term_id": "11"
+    },
+    {
+      "term": "türgi keel",
+      "term_id": "55"
+    },
+    {
+      "term": "türkmeeni keel",
+      "term_id": "56"
+    },
+    {
+      "term": "tšehhi keel",
+      "term_id": "54"
+    },
+    {
+      "term": "ukraina keel",
+      "term_id": "57"
+    },
+    {
+      "term": "ungari keel",
+      "term_id": "58"
+    },
+    {
+      "term": "valgevene keel",
+      "term_id": "59"
+    },
+    {
+      "term": "vanaheebrea keel",
+      "term_id": "60"
+    },
+    {
+      "term": "vanakreeka keel",
+      "term_id": "61"
+    },
+    {
+      "term": "vanarootsi keel",
+      "term_id": "62"
+    },
+    {
+      "term": "vanarumeenia keel",
+      "term_id": "63"
+    },
+    {
+      "term": "vene keel",
+      "term_id": "12"
+    }
+  ]
+}
