@@ -21,6 +21,7 @@ import csv
 import random
 import sys
 from pathlib import Path
+from typing import Any
 
 # Add project root to path for imports
 project_root = Path(__file__).parent.parent
@@ -33,12 +34,12 @@ from scripts.muis_writer import write_muis_csv
 
 def load_entu_records(input_path: Path) -> list[dict[str, str]]:
     """Load all records from ENTU eksponaat.csv."""
-    records = []
+    records: list[dict[str, str]] = []
     with open(input_path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)  # Uses comma delimiter (default)
         for row in reader:
             # Filter out any None keys that might appear in malformed rows
-            clean_row = {k: v for k, v in row.items() if k is not None}
+            clean_row: dict[str, str] = {k: v for k, v in row.items() if k is not None}
             records.append(clean_row)
     return records
 
@@ -55,10 +56,10 @@ def save_sample_raw(records: list[dict[str, str]], output_path: Path) -> None:
         writer.writerows(records)
 
 
-def convert_sample(records: list[dict[str, str]]) -> list[dict]:
+def convert_sample(records: list[dict[str, str]]) -> list[dict[str, Any]]:
     """Convert ENTU records to MUIS format using orchestrator."""
-    converted = []
-    errors = []
+    converted: list[dict[str, Any]] = []
+    errors: list[str] = []
     
     for i, record in enumerate(records, 1):
         try:
