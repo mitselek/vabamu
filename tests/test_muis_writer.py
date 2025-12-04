@@ -6,6 +6,7 @@ Tests the conversion from orchestrator output to MUIS import format.
 import csv
 import pytest
 from pathlib import Path
+from typing import Any
 from scripts.muis_writer import (
     write_muis_csv,
     orchestrator_to_muis_row,
@@ -14,7 +15,7 @@ from scripts.muis_writer import (
 
 
 @pytest.fixture
-def sample_orchestrator_output() -> dict:
+def sample_orchestrator_output() -> dict[str, Any]:
     """Sample output from orchestrator for testing."""
     return {
         "acr": "VBM",
@@ -46,7 +47,7 @@ def sample_orchestrator_output() -> dict:
 class TestOrchestratorToMuisRow:
     """Tests for converting orchestrator output to MUIS row."""
 
-    def test_number_structure_conversion(self, sample_orchestrator_output: dict) -> None:
+    def test_number_structure_conversion(self, sample_orchestrator_output: dict[str, Any]) -> None:
         """Number fields should map correctly."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
@@ -55,7 +56,7 @@ class TestOrchestratorToMuisRow:
         assert muis_row["Trs"] == 20027
         assert muis_row["Trj"] == 117
 
-    def test_measurement_conversion(self, sample_orchestrator_output: dict) -> None:
+    def test_measurement_conversion(self, sample_orchestrator_output: dict[str, Any]) -> None:
         """Measurements should expand to separate columns."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
@@ -71,7 +72,9 @@ class TestOrchestratorToMuisRow:
         assert muis_row["Parameeter 3"] is None
         assert muis_row["Parameeter 4"] is None
 
-    def test_material_technique_color_conversion(self, sample_orchestrator_output: dict) -> None:
+    def test_material_technique_color_conversion(
+        self, sample_orchestrator_output: dict[str, Any]
+    ) -> None:
         """Material, technique, and color fields should map."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
@@ -79,13 +82,13 @@ class TestOrchestratorToMuisRow:
         assert muis_row["Tehnika 1"] == "käsitöö"
         assert muis_row["Värvus"] == "pruun"
 
-    def test_person_mapping_conversion(self, sample_orchestrator_output: dict) -> None:
+    def test_person_mapping_conversion(self, sample_orchestrator_output: dict[str, Any]) -> None:
         """Person fields should map correctly."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
         assert muis_row["Üleandja"] == "Miia Jõgiaas"
 
-    def test_system_columns_initialized(self, sample_orchestrator_output: dict) -> None:
+    def test_system_columns_initialized(self, sample_orchestrator_output: dict[str, Any]) -> None:
         """System columns should be initialized as None/empty."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
@@ -93,7 +96,7 @@ class TestOrchestratorToMuisRow:
         assert muis_row["Importimise staatus"] is None
         assert muis_row["Kommentaar"] is None
 
-    def test_all_88_columns_present(self, sample_orchestrator_output: dict) -> None:
+    def test_all_88_columns_present(self, sample_orchestrator_output: dict[str, Any]) -> None:
         """Result should have all 88 MUIS columns."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
@@ -103,7 +106,7 @@ class TestOrchestratorToMuisRow:
 
     def test_empty_fields_handled(self) -> None:
         """Empty orchestrator output should produce valid MUIS row."""
-        empty_output = {
+        empty_output: dict[str, Any] = {
             "acr": None,
             "trt": None,
             "trs": None,
@@ -120,7 +123,7 @@ class TestOrchestratorToMuisRow:
 
     def test_with_4_measurements(self) -> None:
         """Should handle maximum 4 measurements."""
-        output = {
+        output: dict[str, Any] = {
             "acr": "VBM",
             "trt": "_",
             "trs": 1,
@@ -147,7 +150,7 @@ class TestWriteMuisCsv:
     """Tests for CSV file writing."""
 
     def test_write_muis_csv_creates_file(
-        self, tmp_path: Path, sample_orchestrator_output: dict
+        self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
     ) -> None:
         """CSV writer should create output file."""
         output_file = tmp_path / "test_output.csv"
@@ -156,7 +159,9 @@ class TestWriteMuisCsv:
 
         assert output_file.exists()
 
-    def test_muis_csv_structure(self, tmp_path: Path, sample_orchestrator_output: dict) -> None:
+    def test_muis_csv_structure(
+        self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
+    ) -> None:
         """CSV file should have correct structure (3-row header + data)."""
         output_file = tmp_path / "test_output.csv"
 
@@ -169,7 +174,9 @@ class TestWriteMuisCsv:
         # Should have header (3 rows) + data (1 row) = 4 total
         assert len(rows) == 4
 
-    def test_muis_csv_header_rows(self, tmp_path: Path, sample_orchestrator_output: dict) -> None:
+    def test_muis_csv_header_rows(
+        self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
+    ) -> None:
         """CSV header should have 3 rows: metadata, names, validation."""
         output_file = tmp_path / "test_output.csv"
 
@@ -186,7 +193,9 @@ class TestWriteMuisCsv:
         assert len(names_row) == 88
         assert len(validation_row) == 88
 
-    def test_muis_csv_column_names(self, tmp_path: Path, sample_orchestrator_output: dict) -> None:
+    def test_muis_csv_column_names(
+        self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
+    ) -> None:
         """Column names row should match MUIS_COLUMN_NAMES."""
         output_file = tmp_path / "test_output.csv"
 
@@ -204,7 +213,9 @@ class TestWriteMuisCsv:
         assert data_row is not None
         assert len(data_row) == 88
 
-    def test_muis_csv_multiple_rows(self, tmp_path: Path, sample_orchestrator_output: dict) -> None:
+    def test_muis_csv_multiple_rows(
+        self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
+    ) -> None:
         """CSV writer should handle multiple data rows."""
         output_file = tmp_path / "test_multiple.csv"
 
@@ -219,7 +230,9 @@ class TestWriteMuisCsv:
         # 3 header rows + 5 data rows = 8 total
         assert len(rows) == 8
 
-    def test_muis_csv_encoding(self, tmp_path: Path, sample_orchestrator_output: dict) -> None:
+    def test_muis_csv_encoding(
+        self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
+    ) -> None:
         """CSV should handle Estonian characters correctly."""
         output_file = tmp_path / "test_encoding.csv"
 
@@ -232,7 +245,9 @@ class TestWriteMuisCsv:
         assert "Miia Jõgiaas" in content
         assert "käsitöö" in content or "kõrgus" in content
 
-    def test_muis_csv_data_mapping(self, tmp_path: Path, sample_orchestrator_output: dict) -> None:
+    def test_muis_csv_data_mapping(
+        self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
+    ) -> None:
         """Data row should have correctly mapped values."""
         output_file = tmp_path / "test_mapping.csv"
 
