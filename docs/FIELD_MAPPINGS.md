@@ -348,6 +348,85 @@ Same structure as Event 1, typically used for acquisition:
 
 ## Business Rules & Fallback Logic
 
+### Person/Organization Name Extraction (Phase 1 Prerequisite)
+
+**MuIS Import Requirement**: Per MuIS documentation, all person and organization names must exist in the MuIS registry **before** import.
+
+> "Isikute ja asutuste nimed peavad vastama MuISis olemasolevatele. S.t isikud ja asutused peavad olema MuISi osalejatena sisestatud."
+
+This is a **blocking requirement** for Phase 2 production migration.
+
+#### Fields Containing Person/Organization Names
+
+| ENTU Field        | MUIS Field(s)              | Entity Type | Sample Size Statistics |
+| ----------------- | -------------------------- | ----------- | ---------------------- |
+| `donator`         | `Üleandja`, `Osaleja 2`    | Person/Org  | 43 unique (100 sample) |
+| `represseeritu_o` | `Osaleja` (Event context)  | Person      | 8 unique (multiline)   |
+| `represseeritu_t` | `Osaleja` (Event context)  | Person      | 16 unique (multiline)  |
+| `autor`           | `Osaleja 1` (Event 1)      | Person/Org  | 0 in sample (full TBD) |
+
+**Multiline Format**: Some fields (represseeritu_*) contain multiple names separated by newlines:
+
+```text
+Tamm, Jaan, Mihkel
+Kask, Mari, Peeter
+Lepp, Ants, Jüri
+```
+
+#### Entity Classification Heuristics
+
+1. **Person Pattern** (checked first): Contains comma → `"Perekonnanimi, Eesnimi"` → Person
+2. **Organization Keywords**:
+   - Estonian: `muuseum`, `instituut`, `fond`, `arhiiv`, `ülikool`
+   - Company suffixes: `OÜ`, `AS`, `SA`, `MTÜ` (with space prefix to avoid false matches)
+3. **Default**: Person (most common case)
+
+#### Extraction Process
+
+**Script**: `scripts/extract_person_names.py`
+
+```bash
+# Extract from sample data
+python -m scripts.extract_person_names \
+    --input output/sample_100_raw.csv \
+    --output output/person_registry_request_sample.csv
+```
+
+**Output Format**: CSV with columns for MuIS stakeholder to complete
+
+```csv
+entu_field,entu_value,entity_type,frequency,sample_records,muis_participant_id,notes
+donator,Heiki Ahonen,person,11,"019212/002, 015580/006, ...",<TO_BE_FILLED>,
+donator,Valmi Kallion,person,11,"020417/000, 020414/000, ...",<TO_BE_FILLED>,
+represseeritu_t,"Jaosaar, Richard, Mihkel",person,2,"020004/008, 020004/004",<TO_BE_FILLED>,
+```
+
+#### Coordination Steps
+
+1. **Extract**: Run `extract_person_names.py` on full 80K dataset
+2. **Review**: Validate entity classification (person vs organization)
+3. **Submit**: Send CSV to MuIS stakeholder (Liisi Ploom)
+4. **Wait**: MuIS adds entities to participant registry (1-2 weeks estimate)
+5. **Receive**: Get back CSV with `muis_participant_id` column filled
+6. **Implement**: Use IDs in `person_mapper.py` lookup table for final conversion
+
+#### Sample Statistics (100 records)
+
+- **Total unique persons/orgs**: 77
+- **Entity breakdown**: 77 persons, 0 organizations
+- **Total occurrences**: 137
+- **Most frequent**: Heiki Ahonen (11x), Valmi Kallion (11x), Urve Rukki (7x)
+- **Fields used**: donator (100%), represseeritu_o (8%), represseeritu_t (16%)
+
+#### Known Edge Cases
+
+1. **Multiline names**: Handled via `parse_multiline_names()` function
+2. **Estonian characters**: UTF-8 encoding preserved (Jõgiaas, Tikerpäe)
+3. **False matches avoided**: "as" in "Jõgiaas" vs company suffix " AS"
+4. **Empty fields**: Gracefully handled (ignored)
+
+---
+
 ### Required Fields (Must be populated)
 
 1. **Nimetus** (Title): If missing → `"Nimetu objekt"`
