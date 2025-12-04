@@ -2,7 +2,6 @@
 
 import csv
 from pathlib import Path
-from typing import Any
 import pytest
 from scripts.extract_person_names import (
     classify_entity,
