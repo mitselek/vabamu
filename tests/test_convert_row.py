@@ -302,3 +302,92 @@ class TestConvertRowEdgeCases:
         assert result.get("date") == "15.06.1960"
         assert result.get("donator") is not None
         assert result.get("material") is not None
+
+
+class TestVabamuFeedbackRequirements:
+    """Tests for Vabamu feedback requirements (Issue #10)."""
+
+    def test_req1_trj_zero_returns_none(self) -> None:
+        """Requirement 1: Trj=0 should produce empty cell (None).
+
+        Vabamu: "kui ENTUSt tulev väärtus on 0, siis muisi tarvis
+        seda väärtust pole - st veerg jääks sealt tühjaks"
+        """
+        row: dict[str, Any] = {
+            "code": "020082/000",  # trj = 0
+        }
+
+        result = convert_row(row)
+
+        assert result.get("trs") == 20082
+        assert result.get("trj") is None  # 0 → None → empty cell
+
+    def test_req2_nimetus_gets_description(self) -> None:
+        """Requirement 2: Column M (Nimetus) ← description.
+
+        Vabamu: "R veerult peaks see täies mahus liikuma veerule M"
+        """
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "description": "Enne lahkumist poiste maja ees, 28. mai 1956",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("description") == "Enne lahkumist poiste maja ees, 28. mai 1956"
+
+    def test_req3a_vastuvotuakt_mapped(self) -> None:
+        """Requirement 3a: Column Q (Vastuvõtu nr) ← vastuv6tuakt.
+
+        Vabamu: "väga oluline saada täidetud ka veerud Q (vastuvõtu nr)"
+        """
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "vastuv6tuakt": "VVA-2024-001",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("vastuvotuakt") == "VVA-2024-001"
+
+    def test_req3b_registration_date_mapped(self) -> None:
+        """Requirement 3b: Column S ← date in DD.MM.YYYY format.
+
+        Vabamu: "kogusse registreerimise aeg kujul pp.kk.aaaa"
+        """
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "date": "2024-03-15",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("date") == "15.03.2024"
+
+    def test_req7_code_to_alt_number(self) -> None:
+        """Requirement 7: Column CJ (Alt number) ← code.
+
+        Vabamu: "kas on võimalik CJ veergu ehk Teised numbrid -> number
+        veergu saada ENTUs olev 'kood' väli?"
+        """
+        row: dict[str, Any] = {
+            "code": "020027/117",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("code_original") == "020027/117"
+
+    def test_req8_asukoht_mapped(self) -> None:
+        """Requirement 8: Column N (Püsiasukoht) ← asukoht.
+
+        Vabamu: "kas saaksime ka ENTU 'asukoht' sisu veerule N"
+        """
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "asukoht": "Tallinn, Vabamu, Hoidla 1, Riiulid 3-5",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("asukoht") == "Tallinn, Vabamu, Hoidla 1, Riiulid 3-5"

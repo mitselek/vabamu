@@ -280,17 +280,21 @@ def orchestrator_to_muis_row(
     # =====================================================================
     # BASIC INFO (13-16)
     # =====================================================================
-    muis_row["Nimetus"] = orchestrator_output.get("name")
-    muis_row["Püsiasukoht"] = None  # TODO: From asukoht mapping
+    # Req 2: Column M (Nimetus) ← description (per Vabamu: R content → M)
+    muis_row["Nimetus"] = orchestrator_output.get("description")
+    # Req 8: Column N (Püsiasukoht) ← asukoht
+    muis_row["Püsiasukoht"] = orchestrator_output.get("asukoht")
     muis_row["Tulmelegend"] = orchestrator_output.get("description")
     muis_row["Originaal ?"] = ""  # Default empty
 
     # =====================================================================
     # ACQUISITION (17-21)
     # =====================================================================
-    muis_row["Vastuvõtu nr"] = None  # TODO: From vastuv6tuakt
+    # Req 3a: Column Q (Vastuvõtu nr) ← vastuv6tuakt
+    muis_row["Vastuvõtu nr"] = orchestrator_output.get("vastuvotuakt")
     muis_row["Esmane üldinfo"] = orchestrator_output.get("description")
-    muis_row["Koguse registreerimise aeg"] = None  # TODO: From acquisition date
+    # Req 3b: Column S (Kogusse registreerimise aeg) ← date (DD.MM.YYYY)
+    muis_row["Koguse registreerimise aeg"] = orchestrator_output.get("date")
     muis_row["Üleandja"] = orchestrator_output.get("donator")
     muis_row["Muuseumile omandamise viis"] = None  # TODO: From paid field
 
@@ -410,9 +414,10 @@ def orchestrator_to_muis_row(
 
     # =====================================================================
     # ALTERNATIVE NUMBERS (88-89)
+    # Req 7: Column CJ (Alt number) ← code (original ENTU code)
     # =====================================================================
     muis_row["Numbri tyyp"] = None
-    muis_row["Alt number"] = None
+    muis_row["Alt number"] = orchestrator_output.get("code_original")
 
     return muis_row
 

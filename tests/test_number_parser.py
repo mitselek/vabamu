@@ -69,6 +69,19 @@ class TestParseEntuCode:
         assert isinstance(result["trs"], int)
         assert isinstance(result["trj"], int)
 
+    def test_trj_zero_returns_none(self):
+        """
+        GIVEN: ENTU code with sub-series = 000 (zero)
+        WHEN: parse_entu_code is called
+        THEN: Returns trj=None (per Vabamu feedback: 0 → empty cell)
+        
+        Vabamu: "kui ENTUSt tulev väärtus on 0, siis muisi tarvis seda väärtust pole"
+        """
+        result = parse_entu_code("020082/000")
+
+        assert result["trs"] == 20082
+        assert result["trj"] is None  # 0 becomes None → empty cell in CSV
+
     def test_large_numbers(self):
         """
         GIVEN: ENTU code with large numbers

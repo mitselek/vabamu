@@ -66,13 +66,15 @@ def parse_entu_code(code: str) -> Dict[str, Any]:
 
     # Convert to integers, stripping leading zeros
     trs = int(series_str)  # 20027 (leading zero stripped)
-    trj = int(seq_str)  # 117
+    trj_raw = int(seq_str)  # 117 or 0
+    # Per Vabamu feedback: if trj is 0, return None so it outputs as empty cell
+    trj = None if trj_raw == 0 else trj_raw
 
     return {
         "acr": "VBM",  # Always "VBM" for Vabamu
         "trt": "_",  # Always underscore
         "trs": trs,  # Main series (integer, leading zeros stripped)
-        "trj": trj,  # Sub-series (integer)
+        "trj": trj,  # Sub-series (integer, or None if 0)
         "trl": None,  # Not used
         "kt": None,  # Collection type (set by caller based on kuuluvus)
         "ks": None,  # Not used

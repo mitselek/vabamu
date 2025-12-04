@@ -264,3 +264,131 @@ class TestWriteMuisCsv:
         assert data_row["Acr"] == "VBM"
         assert data_row["Trs"] == "20027"
         assert data_row["Üleandja"] == "Miia Jõgiaas"
+
+
+class TestVabamuFeedbackColumnMappings:
+    """Tests for Vabamu feedback column mappings (GitHub issue #10)."""
+
+    def test_nimetus_from_description(self) -> None:
+        """Nimetus column (M) should contain description/kirjeldus content."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Object Name",
+            "description": "Full kirjeldus content goes here",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Nimetus"] == "Full kirjeldus content goes here"
+
+    def test_pusiasukoht_from_asukoht(self) -> None:
+        """Püsiasukoht column (N) should contain asukoht field."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "asukoht": "Storage Room A, Shelf 5",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Püsiasukoht"] == "Storage Room A, Shelf 5"
+
+    def test_vastuvotu_nr_from_vastuvotuakt(self) -> None:
+        """Vastuvõtu nr column (Q) should contain vastuvõtuakt field."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "vastuvotuakt": "VA-2024-001",  # orchestrator output key
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Vastuvõtu nr"] == "VA-2024-001"
+
+    def test_registration_date_from_date(self) -> None:
+        """Koguse registreerimise aeg column (S) should contain date field."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "date": "15.01.2024",  # orchestrator output key
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Koguse registreerimise aeg"] == "15.01.2024"
+
+    def test_alt_number_from_code_original(self) -> None:
+        """Alt number column (CJ) should contain code_original field."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "code_original": "OLD-123-456",  # orchestrator output key
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Alt number"] == "OLD-123-456"
+
+    def test_trj_zero_results_in_empty(self) -> None:
+        """Trj column should be empty when trj=0 or None."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": None,  # This should result in empty
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Trj"] is None
+
+    def test_all_vabamu_fields_together(self) -> None:
+        """All Vabamu feedback fields should work together."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 20027,
+            "trj": 117,
+            "measurements": [],
+            "name": "Object Name",
+            "description": "Full description for Nimetus",
+            "asukoht": "Storage Room B",
+            "vastuvotuakt": "VA-2024-002",  # orchestrator output key
+            "date": "20.02.2024",  # orchestrator output key
+            "code_original": "LEGACY-789",  # orchestrator output key
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Nimetus"] == "Full description for Nimetus"
+        assert muis_row["Püsiasukoht"] == "Storage Room B"
+        assert muis_row["Vastuvõtu nr"] == "VA-2024-002"
+        assert muis_row["Koguse registreerimise aeg"] == "20.02.2024"
+        assert muis_row["Alt number"] == "LEGACY-789"

@@ -119,4 +119,22 @@ def convert_row(entu_row: Dict[str, Any]) -> Dict[str, Any]:
     result["donator_direct"] = entu_row.get("donator", "")
     result["autor_direct"] = entu_row.get("autor", "")
 
+    # =================================================================
+    # PHASE 7: NEW MAPPINGS PER VABAMU FEEDBACK (Issue #10)
+    # =================================================================
+    # Req 2: Column M (Nimetus) ← description (kirjeldus)
+    # Already handled above via description field
+
+    # Req 3a: Column Q (Vastuvõtu nr) ← vastuv6tuakt
+    result["vastuvotuakt"] = entu_row.get("vastuv6tuakt", "")
+
+    # Req 3b: Column S (Kogusse registreerimise aeg) ← date
+    # Already parsed above via date field
+
+    # Req 7: Column CJ (Alt number) ← code (original ENTU code)
+    result["code_original"] = entu_row.get("code", "")
+
+    # Req 8: Column N (Püsiasukoht) ← asukoht
+    result["asukoht"] = entu_row.get("asukoht", "")
+
     return result
