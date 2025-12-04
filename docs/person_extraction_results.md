@@ -13,24 +13,24 @@ Extracted **77 unique persons** from 100 sample ENTU records to prepare for MuIS
 
 ### Key Statistics
 
-| Metric | Value |
-|--------|-------|
-| Unique persons/organizations | 77 |
-| Total occurrences | 137 |
-| ENTU fields processed | 3 |
-| Entity types | 100% persons, 0% organizations |
-| Names with Estonian characters | 12 (15.6%) |
-| Multiline/complex names | 32 (41.6%) |
+| Metric                         | Value                          |
+| ------------------------------ | ------------------------------ |
+| Unique persons/organizations   | 77                             |
+| Total occurrences              | 137                            |
+| ENTU fields processed          | 3                              |
+| Entity types                   | 100% persons, 0% organizations |
+| Names with Estonian characters | 12 (15.6%)                     |
+| Multiline/complex names        | 32 (41.6%)                     |
 
 ---
 
 ## Breakdown by ENTU Field
 
-| ENTU Field | Unique Names | Total Occurrences | Purpose |
-|------------|--------------|-------------------|---------|
-| `donator` | 43 | 100 | Donors/givers (Üleandja in MUIS) |
-| `represseeritu_t` | 19 | 22 | Target repressed persons |
-| `represseeritu_o` | 15 | 15 | Related repressed persons (family/associates) |
+| ENTU Field        | Unique Names | Total Occurrences | Purpose                                       |
+| ----------------- | ------------ | ----------------- | --------------------------------------------- |
+| `donator`         | 43           | 100               | Donors/givers (Üleandja in MUIS)              |
+| `represseeritu_t` | 19           | 22                | Target repressed persons                      |
+| `represseeritu_o` | 15           | 15                | Related repressed persons (family/associates) |
 
 ### Field Mapping to MUIS
 
@@ -42,24 +42,24 @@ Extracted **77 unique persons** from 100 sample ENTU records to prepare for MuIS
 
 ## Top 10 Most Frequent Persons
 
-| Rank | Name | Field | Frequency | Sample Records |
-|------|------|-------|-----------|----------------|
-| 1 | Heiki Ahonen | donator | 11 | 019212/002, 015580/006, 017574/002, ... |
-| 2 | Valmi Kallion | donator | 11 | 020417/000, 020414/000, 020426/000, ... |
-| 3 | Urve Rukki | donator | 7 | 020016/000, 020017/014, 019999/000, ... |
-| 4 | Ester Killar | donator | 6 | 020863/000, 020865/000, 020866/000, ... |
-| 5 | Kaja Kärner | donator | 5 | 020850/000, 020849/000, 020852/000, ... |
-| 6 | Marika Alver | donator | 4 | 021344/000, 021288/000, 021384/000, ... |
-| 7 | Tõnu Lembit | donator | 4 | 020245/003, 020241/004, 020241/006, ... |
-| 8 | Asta Tikerpäe | donator | 3 | 020376/000, 020367/000, 020330/000 |
-| 9 | Jaan Kollist | donator | 3 | 019813/014, 019914/000, 019896/013 |
-| 10 | Miia Jõgiaas | donator | 3 | 020027/117, 020026/029, 020027/000 |
+| Rank | Name          | Field   | Frequency | Sample Records                          |
+| ---- | ------------- | ------- | --------- | --------------------------------------- |
+| 1    | Heiki Ahonen  | donator | 11        | 019212/002, 015580/006, 017574/002, ... |
+| 2    | Valmi Kallion | donator | 11        | 020417/000, 020414/000, 020426/000, ... |
+| 3    | Urve Rukki    | donator | 7         | 020016/000, 020017/014, 019999/000, ... |
+| 4    | Ester Killar  | donator | 6         | 020863/000, 020865/000, 020866/000, ... |
+| 5    | Kaja Kärner   | donator | 5         | 020850/000, 020849/000, 020852/000, ... |
+| 6    | Marika Alver  | donator | 4         | 021344/000, 021288/000, 021384/000, ... |
+| 7    | Tõnu Lembit   | donator | 4         | 020245/003, 020241/004, 020241/006, ... |
+| 8    | Asta Tikerpäe | donator | 3         | 020376/000, 020367/000, 020330/000      |
+| 9    | Jaan Kollist  | donator | 3         | 019813/014, 019914/000, 019896/013      |
+| 10   | Miia Jõgiaas  | donator | 3         | 020027/117, 020026/029, 020027/000      |
 
 ---
 
 ## Frequency Distribution Analysis
 
-```
+```text
 Occurrences per Person:
   11x: 2 persons (Heiki Ahonen, Valmi Kallion)
    7x: 1 person (Urve Rukki)
@@ -84,6 +84,7 @@ Average: 1.8 occurrences per person
 **Count**: 45 names (58.4%)
 
 **Examples**:
+
 - `Jõgiaas, Miia`
 - `Tikerpäe, Asta`
 - `Kollist, Jaan`
@@ -93,6 +94,7 @@ Average: 1.8 occurrences per person
 **Count**: 32 names (41.6%)
 
 **Examples**:
+
 - `Jaosaar, Richard, Mihkel` (represseeritu_t)
 - `Lagle, Salme, Hans` (represseeritu_o)
 - `Hiiesaar, Külli, Rudolf` (represseeritu_t)
@@ -106,6 +108,7 @@ Average: 1.8 occurrences per person
 **Characters found**: õ, ä, ö, ü, š, ž
 
 **Examples**:
+
 - `Miia Jõgiaas` (õ)
 - `Asta Tikerpäe` (ä)
 - `Kaja Kärner` (ä)
@@ -122,11 +125,13 @@ Average: 1.8 occurrences per person
 All 77 entities correctly classified as **persons** (manual review confirmed).
 
 **Classification Heuristics Used**:
+
 1. ✅ Comma-separated format → Person (checked first)
 2. ✅ Organization keywords (museum, institute, OÜ, AS, SA) → Organization
 3. ✅ Default fallback → Person
 
 **No organizations found** in this 100-record sample. Full 80K dataset may contain:
+
 - Museum names (e.g., "Eesti Rahva Muuseum")
 - Cultural institutions
 - Companies (ending in OÜ, AS, SA, MTÜ)
@@ -138,6 +143,7 @@ All 77 entities correctly classified as **persons** (manual review confirmed).
 **File**: `output/person_registry_request.csv`
 
 **Columns**:
+
 1. `entu_field` - Source ENTU field name
 2. `entu_value` - Person/organization name as appears in ENTU
 3. `entity_type` - Classification (person/organization)
@@ -166,6 +172,7 @@ All 77 entities correctly classified as **persons** (manual review confirmed).
 **Recipient**: Liisi Ploom (MuIS coordinator)
 
 **Action**: Send `output/person_registry_request.csv` with instructions:
+
 1. Add all persons to MuIS participant registry
 2. Generate MuIS participant IDs for each entry
 3. Fill in `muis_participant_id` column
@@ -179,6 +186,7 @@ All 77 entities correctly classified as **persons** (manual review confirmed).
 **Expected output**: Same CSV with `muis_participant_id` column populated
 
 **Example row** (after MuIS processing):
+
 ```csv
 donator,Heiki Ahonen,person,11,"019212/002, ...",P123456,✓ Added to registry
 ```
@@ -212,6 +220,7 @@ python -m scripts.extract_person_names \
 ```
 
 **Expected scale**:
+
 - Estimated unique persons: 500-1000 (based on 77 in 100 sample)
 - Processing time: 2-5 minutes
 
@@ -222,10 +231,12 @@ python -m scripts.extract_person_names \
 ### Tools Used
 
 **Scripts**:
+
 - `scripts/analyze_person_fields.py` - Field identification
 - `scripts/extract_person_names.py` - Extraction and classification
 
 **Functions**:
+
 - `parse_multiline_names()` - Split newline-separated names
 - `classify_entity()` - Person vs organization classification
 - `extract_persons()` - Main extraction logic
@@ -240,13 +251,13 @@ python -m scripts.extract_person_names \
 ✅ **Empty fields**: Gracefully ignored  
 ✅ **Whitespace**: Trimmed from all values  
 ✅ **Duplicate detection**: Same name from different fields combined  
-✅ **Frequency counting**: Accurate across all occurrences  
+✅ **Frequency counting**: Accurate across all occurrences
 
 ### Known Limitations
 
 ⚠️ **No organizations in sample**: Classification heuristics not fully tested  
 ⚠️ **Person names only**: No numeric person IDs in this sample (may exist in full dataset)  
-⚠️ **Sample bias**: 100 records may not represent full diversity of 80K dataset  
+⚠️ **Sample bias**: 100 records may not represent full diversity of 80K dataset
 
 ---
 

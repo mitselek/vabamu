@@ -279,7 +279,7 @@ Total: 4-6 weeks from Phase 1 start to final delivery
    - Extract all organization names
    - Generate registry request CSV for MuIS stakeholder
    - Wait for MuIS to add entries and return IDs (1-2 weeks)
-   
+
 2. **Extended dimension patterns** (improves automation rate)
 3. **Batch processing** (enables production scale)
 4. **Error logging** (tracks edge cases for review)

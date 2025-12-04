@@ -2,7 +2,7 @@
 
 ## Context
 
-**MuIS Import Requirement**: Per MuIS documentation, all person and organization names must exist in the MuIS registry **before** import. 
+**MuIS Import Requirement**: Per MuIS documentation, all person and organization names must exist in the MuIS registry **before** import.
 
 > "Isikute ja asutuste nimed peavad vastama MuISis olemasolevatele. S.t isikud ja asutused peavad olema MuISi osalejatena sisestatud."
 
@@ -26,6 +26,7 @@ osaleja_1,"Unknown Person",person,1,"..."
 ```
 
 **Columns**:
+
 - `entu_field`: Which ENTU field the name came from (donator, autor, osaleja_1, etc.)
 - `entu_value`: The actual name/organization as it appears in ENTU
 - `entity_type`: "person" or "organization" (best guess based on format)
@@ -39,6 +40,7 @@ osaleja_1,"Unknown Person",person,1,"..."
 Analyze `output/sample_100_raw.csv` to find all fields that contain person or organization names:
 
 **Known fields**:
+
 - `donator` - Donor/giver (Üleandja in MUIS)
 - `autor` - Author/creator
 - Possibly: `osaleja_*` fields (participants in events)
@@ -63,24 +65,24 @@ import argparse
 def analyze_fields(csv_path: Path) -> dict[str, list[str]]:
     """
     Scan CSV to find fields that likely contain person/org names.
-    
+
     Returns:
         Dict mapping field names to sample values
     """
     field_samples = defaultdict(list)
-    
+
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        
+
         for row in reader:
             for field, value in row.items():
                 if value and value.strip():
                     # Heuristic: likely person/org if contains name-like patterns
-                    if any(keyword in field.lower() for keyword in 
+                    if any(keyword in field.lower() for keyword in
                            ['autor', 'donator', 'osaleja', 'nimi', 'name']):
                         if value not in field_samples[field]:
                             field_samples[field].append(value)
-    
+
     return field_samples
 
 
@@ -88,16 +90,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', type=Path, required=True)
     args = parser.parse_args()
-    
+
     print(f"Analyzing {args.input} for person/org fields...\n")
-    
+
     fields = analyze_fields(args.input)
-    
+
     for field, samples in sorted(fields.items()):
         print(f"\n{field}:")
         for sample in samples[:5]:  # Show first 5
             print(f"  - {sample[:80]}")
-    
+
     print(f"\n✓ Found {len(fields)} potential person/org fields")
 
 
@@ -148,32 +150,32 @@ PERSON_ORG_FIELDS = [
 def classify_entity(name: str) -> Literal['person', 'organization']:
     """
     Classify whether name is a person or organization.
-    
+
     Heuristics:
     - "Lastname, Firstname" pattern → person
     - Contains "Museum", "Institute", "OÜ", "AS" → organization
     - All caps → likely organization
     - Otherwise → person (default)
-    
+
     Args:
         name: The name string
-    
+
     Returns:
         'person' or 'organization'
     """
     name_lower = name.lower()
-    
+
     # Organization indicators
-    org_keywords = ['muuseum', 'museum', 'instituut', 'institute', 
+    org_keywords = ['muuseum', 'museum', 'instituut', 'institute',
                     'oü', 'as', 'sa', 'mtü', 'fond', 'arhiiv']
-    
+
     if any(keyword in name_lower for keyword in org_keywords):
         return 'organization'
-    
+
     # Person pattern: "Lastname, Firstname"
     if ',' in name and len(name.split(',')) == 2:
         return 'person'
-    
+
     # Default to person
     return 'person'
 
@@ -181,25 +183,25 @@ def classify_entity(name: str) -> Literal['person', 'organization']:
 def extract_persons(csv_path: Path) -> list[dict]:
     """
     Extract unique person/org names from ENTU CSV.
-    
+
     Returns:
-        List of dicts with: entu_field, entu_value, entity_type, 
+        List of dicts with: entu_field, entu_value, entity_type,
                             frequency, sample_records
     """
     # Track: (field, name) → [record_ids]
     name_occurrences = defaultdict(list)
-    
+
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        
+
         for row in reader:
             record_id = row.get('code', row.get('_id', ''))
-            
+
             for field in PERSON_ORG_FIELDS:
                 value = row.get(field, '').strip()
                 if value:
                     name_occurrences[(field, value)].append(record_id)
-    
+
     # Build output records
     results = []
     for (field, name), record_ids in sorted(name_occurrences.items()):
@@ -210,24 +212,24 @@ def extract_persons(csv_path: Path) -> list[dict]:
             'frequency': len(record_ids),
             'sample_records': ', '.join(record_ids[:5])  # First 5
         })
-    
+
     # Sort by frequency (most common first)
     results.sort(key=lambda x: x['frequency'], reverse=True)
-    
+
     return results
 
 
 def write_registry_request(results: list[dict], output_path: Path) -> None:
     """Write results to CSV for MuIS stakeholder."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    
+
     with open(output_path, 'w', encoding='utf-8', newline='') as f:
-        fieldnames = ['entu_field', 'entu_value', 'entity_type', 
+        fieldnames = ['entu_field', 'entu_value', 'entity_type',
                       'frequency', 'sample_records', 'muis_participant_id', 'notes']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
-        
+
         writer.writeheader()
-        
+
         for result in results:
             # Add empty columns for MuIS to fill
             result['muis_participant_id'] = ''
@@ -251,30 +253,30 @@ def main():
         default=Path('output/person_registry_request.csv'),
         help='Output CSV for MuIS stakeholder'
     )
-    
+
     args = parser.parse_args()
-    
+
     print(f"Extracting persons/orgs from {args.input}...")
     results = extract_persons(args.input)
-    
+
     print(f"\nExtracted {len(results)} unique persons/organizations:")
-    
+
     # Summary stats
     persons = sum(1 for r in results if r['entity_type'] == 'person')
     orgs = sum(1 for r in results if r['entity_type'] == 'organization')
     total_occurrences = sum(r['frequency'] for r in results)
-    
+
     print(f"  Persons: {persons}")
     print(f"  Organizations: {orgs}")
     print(f"  Total occurrences: {total_occurrences}")
-    
+
     print(f"\nTop 10 most frequent:")
     for result in results[:10]:
         print(f"  {result['frequency']:3d}x  {result['entu_value'][:50]:50s}  ({result['entity_type']})")
-    
+
     print(f"\nWriting to {args.output}")
     write_registry_request(results, args.output)
-    
+
     print(f"\n✓ Complete! Next steps:")
     print(f"  1. Review {args.output}")
     print(f"  2. Send to MuIS stakeholder for registry entry")
@@ -308,15 +310,15 @@ class TestClassifyEntity:
     def test_person_lastname_firstname_format(self):
         assert classify_entity("Tamm, Jaan") == "person"
         assert classify_entity("Jõgiaas, Miia") == "person"
-    
+
     def test_organization_with_museum_keyword(self):
         assert classify_entity("Eesti Rahva Muuseum") == "organization"
         assert classify_entity("Tartu Ülikooli Museum") == "organization"
-    
+
     def test_organization_with_company_suffix(self):
         assert classify_entity("Kultuuripärandi OÜ") == "organization"
         assert classify_entity("Muinsuskaitse AS") == "organization"
-    
+
     def test_default_to_person(self):
         assert classify_entity("Unknown Entity") == "person"
 
@@ -332,28 +334,28 @@ class TestExtractPersons:
             writer.writerow({'code': '002', 'donator': 'Tamm, Jaan', 'autor': 'Kask, Mari'})
             writer.writerow({'code': '003', 'donator': '', 'autor': 'Eesti Rahva Muuseum'})
         return csv_path
-    
+
     def test_extract_unique_names(self, sample_csv: Path):
         results = extract_persons(sample_csv)
-        
+
         # Should have 3 unique entities
         assert len(results) == 3
-        
+
         # Check frequencies
         tamm_record = next(r for r in results if r['entu_value'] == 'Tamm, Jaan')
         assert tamm_record['frequency'] == 2
         assert tamm_record['entity_type'] == 'person'
-        
+
         kask_record = next(r for r in results if r['entu_value'] == 'Kask, Mari')
         assert kask_record['frequency'] == 1
-        
+
         museum_record = next(r for r in results if 'Muuseum' in r['entu_value'])
         assert museum_record['entity_type'] == 'organization'
-    
+
     def test_sample_records_included(self, sample_csv: Path):
         results = extract_persons(sample_csv)
         tamm_record = next(r for r in results if r['entu_value'] == 'Tamm, Jaan')
-        
+
         # Should include both record IDs
         assert '001' in tamm_record['sample_records']
         assert '002' in tamm_record['sample_records']
@@ -379,6 +381,7 @@ cat output/person_registry_request_sample.csv | head -20
 ```
 
 **Expected outcome**:
+
 - CSV with 10-30 unique persons/organizations from sample
 - Entity types classified (person vs organization)
 - Frequency counts show which names are most common
@@ -390,16 +393,16 @@ cat output/person_registry_request_sample.csv | head -20
 
 Update `docs/FIELD_MAPPINGS.md` with findings:
 
-```markdown
+````markdown
 ## Person/Organization Name Extraction
 
 ### Fields Containing Names
 
-| ENTU Field | MUIS Field(s) | Entity Type | Notes |
-|------------|---------------|-------------|-------|
-| `donator` | `Üleandja`, `Osaleja 2` | Person/Org | Donor/giver |
-| `autor` | `Osaleja 1` | Person/Org | Author/creator |
-| [others...] | [...] | [...] | [...] |
+| ENTU Field  | MUIS Field(s)           | Entity Type | Notes          |
+| ----------- | ----------------------- | ----------- | -------------- |
+| `donator`   | `Üleandja`, `Osaleja 2` | Person/Org  | Donor/giver    |
+| `autor`     | `Osaleja 1`             | Person/Org  | Author/creator |
+| [others...] | [...]                   | [...]       | [...]          |
 
 ### MuIS Registry Coordination Process
 
@@ -417,7 +420,7 @@ entu_field,entu_value,entity_type,frequency,sample_records
 donator,"Jõgiaas, Miia",person,15,"020027/117, 020082/000, ..."
 autor,"Eesti Rahva Muuseum",organization,8,"006562/001, ..."
 ```
-```
+````
 
 ---
 
@@ -455,6 +458,7 @@ autor,"Eesti Rahva Muuseum",organization,8,"006562/001, ..."
 **CRITICAL**: This is a **blocking requirement** for MuIS import. Per MuIS documentation, all persons and organizations must be pre-registered in the MuIS participant registry before import will succeed.
 
 The output CSV from this task will be sent to the MuIS stakeholder, who will:
+
 1. Add entities to MuIS registry
 2. Generate MuIS participant IDs
 3. Return the CSV with IDs filled in
