@@ -7,7 +7,7 @@ Converts orchestrator output (dict) to MUIS CSV format with:
 - Row 4+: Data rows
 
 Handles:
-- 88-column MUIS format (all columns from models.py MuisMuseaal)
+- 89-column MUIS format (88 standard + 1 extra for dateering)
 - UTF-8 encoding with proper Estonian characters (õ, ä, ö, ü)
 - Field mapping from orchestrator dict to MUIS columns
 - Measurement/material/technique repetition fields (1-4 measurements, 1-3 materials/techniques)
@@ -128,6 +128,8 @@ MUIS_COLUMN_NAMES = [
     # Alternative number columns (88-89)
     "Numbri tyyp",
     "Alt number",
+    # Dateering column (90) - Issue #11
+    "Dateering",
 ]
 
 MUIS_VALIDATION_RULES = [
@@ -236,6 +238,8 @@ MUIS_VALIDATION_RULES = [
     # Alternative number columns (88-89)
     "",
     "",
+    # Dateering column (90)
+    "",
 ]
 
 
@@ -253,7 +257,7 @@ def orchestrator_to_muis_row(
         orchestrator_output: Dict from convert_row() orchestrator
 
     Returns:
-        Dict with all 88 MUIS columns (aligned with MUIS_COLUMN_NAMES)
+        Dict with all 89 MUIS columns (aligned with MUIS_COLUMN_NAMES)
     """
     muis_row: Dict[str, Any] = {}
 
@@ -418,6 +422,13 @@ def orchestrator_to_muis_row(
     # =====================================================================
     muis_row["Numbri tyyp"] = None
     muis_row["Alt number"] = orchestrator_output.get("code_original")
+
+    # =====================================================================
+    # DATEERING (90) - Issue #11
+    # CK column ← year (dating information from ENTU)
+    # Free text format (e.g., "1980", "1950-ndad", "1940-1945")
+    # =====================================================================
+    muis_row["Dateering"] = orchestrator_output.get("year")
 
     return muis_row
 

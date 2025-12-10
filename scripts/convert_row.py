@@ -137,4 +137,11 @@ def convert_row(entu_row: Dict[str, Any]) -> Dict[str, Any]:
     # Req 8: Column N (Püsiasukoht) ← asukoht
     result["asukoht"] = entu_row.get("asukoht", "")
 
+    # =================================================================
+    # PHASE 8: DATEERING FIELD (Issue #11)
+    # =================================================================
+    # CK column (89th column) ← year (dating information)
+    # Free text format (e.g., "1980", "1950-ndad", "1940-1945")
+    result["year"] = entu_row.get("year", "")
+
     return result

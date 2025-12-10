@@ -96,11 +96,11 @@ class TestOrchestratorToMuisRow:
         assert muis_row["Importimise staatus"] is None
         assert muis_row["Kommentaar"] is None
 
-    def test_all_88_columns_present(self, sample_orchestrator_output: dict[str, Any]) -> None:
-        """Result should have all 88 MUIS columns."""
+    def test_all_89_columns_present(self, sample_orchestrator_output: dict[str, Any]) -> None:
+        """Result should have all 89 MUIS columns."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
-        assert len(muis_row) == 88
+        assert len(muis_row) == 89
         for col in MUIS_COLUMN_NAMES:
             assert col in muis_row
 
@@ -119,7 +119,7 @@ class TestOrchestratorToMuisRow:
         muis_row = orchestrator_to_muis_row(empty_output)
 
         assert isinstance(muis_row, dict)
-        assert len(muis_row) == 88
+        assert len(muis_row) == 89
 
     def test_with_4_measurements(self) -> None:
         """Should handle maximum 4 measurements."""
@@ -188,10 +188,10 @@ class TestWriteMuisCsv:
             names_row = next(reader)
             validation_row = next(reader)
 
-        # All header rows should have 88 columns
-        assert len(metadata_row) == 88
-        assert len(names_row) == 88
-        assert len(validation_row) == 88
+        # All header rows should have 89 columns
+        assert len(metadata_row) == 89
+        assert len(names_row) == 89
+        assert len(validation_row) == 89
 
     def test_muis_csv_column_names(
         self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
@@ -211,7 +211,7 @@ class TestWriteMuisCsv:
 
         # Check that data row is readable
         assert data_row is not None
-        assert len(data_row) == 88
+        assert len(data_row) == 89
 
     def test_muis_csv_multiple_rows(
         self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
@@ -392,3 +392,111 @@ class TestVabamuFeedbackColumnMappings:
         assert muis_row["Vastuvõtu nr"] == "VA-2024-002"
         assert muis_row["Koguse registreerimise aeg"] == "20.02.2024"
         assert muis_row["Alt number"] == "LEGACY-789"
+
+
+class TestDateeringColumnMapping:
+    """Tests for CK column (Dateering) mapping (Issue #11)."""
+
+    def test_dateering_from_year_field(self) -> None:
+        """Dateering column (CK) should contain year field from orchestrator."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "year": "1980",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Dateering"] == "1980"
+
+    def test_dateering_with_range(self) -> None:
+        """Dateering should handle date ranges."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "year": "1940-1945",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Dateering"] == "1940-1945"
+
+    def test_dateering_with_decade(self) -> None:
+        """Dateering should handle decade format."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "year": "1950-ndad",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Dateering"] == "1950-ndad"
+
+    def test_dateering_empty(self) -> None:
+        """Dateering column should be None when year is empty."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "year": "",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Dateering"] == ""
+
+    def test_dateering_missing(self) -> None:
+        """Dateering column should be None when year field is missing."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Dateering"] is None
+
+    def test_all_89_columns_present(self) -> None:
+        """Result should have all 89 MUIS columns (including CK)."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "year": "2000",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert len(muis_row) == 89
+        assert "Dateering" in muis_row
+        for col in MUIS_COLUMN_NAMES:
+            assert col in muis_row

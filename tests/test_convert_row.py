@@ -391,3 +391,64 @@ class TestVabamuFeedbackRequirements:
         result = convert_row(row)
 
         assert result.get("asukoht") == "Tallinn, Vabamu, Hoidla 1, Riiulid 3-5"
+
+
+class TestDateeringField:
+    """Tests for dateering (year) field mapping (Issue #11)."""
+
+    def test_year_field_passthrough(self) -> None:
+        """Year field should pass through to output for CK column.
+
+        Issue #11: CK column should contain ENTU 'year' field
+        """
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "year": "1980",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("year") == "1980"
+
+    def test_year_field_with_range(self) -> None:
+        """Year field should handle date ranges (e.g., 1940-1945)."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "year": "1940-1945",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("year") == "1940-1945"
+
+    def test_year_field_with_decade(self) -> None:
+        """Year field should handle decade format (e.g., 1950-ndad)."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "year": "1950-ndad",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("year") == "1950-ndad"
+
+    def test_year_field_empty(self) -> None:
+        """Empty year field should result in empty string."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "year": "",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("year") == ""
+
+    def test_year_field_missing(self) -> None:
+        """Missing year field should result in empty string."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("year") == ""
