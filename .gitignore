@@ -52,6 +52,8 @@ local_config.py
 # Keep directory structure but ignore contents
 !output/.gitkeep
 !logs/.gitkeep
+output/
+logs/
 
 # Private data
 kirjavahetus/

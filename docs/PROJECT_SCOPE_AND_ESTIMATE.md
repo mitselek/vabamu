@@ -13,10 +13,11 @@ This document provides a comprehensive cost estimate for migrating 80,178 museum
 - **Total records**: 80,178 museum objects
 - **Sample converted**: 100 records (Phase 0.5 complete)
 - **Success rate**: 100% (all sample records converted to valid MUIS format)
-- **Total estimated effort**: 27-38 hours development + coordination
-- **Buffered estimate**: 43 hours (includes contingency)
+- **Output format**: Excel files (.xlsx), max 10,000 rows per file
+- **Total estimated effort**: 34-46 hours development + coordination
+- **Buffered estimate**: 51 hours (includes contingency)
 - **Timeline**: 4-6 weeks (includes stakeholder coordination)
-- **Total cost**: €1,720 (43 hours @ €40/hr)
+- **Total cost**: €2,040 (51 hours @ €40/hr)
 - **Confidence level**: HIGH (proven pipeline, documented edge cases)
 
 ## Proven Capabilities (Phase 0.5 Results)
@@ -61,15 +62,16 @@ This document provides a comprehensive cost estimate for migrating 80,178 museum
 ### Phase 0.5: Validation & Proof of Concept (COMPLETE)
 
 **Status**: ✅ Complete  
-**Duration**: 9 hours  
-**Deliverables**: Conversion scripts, 100 sample records, edge case documentation
+**Duration**: 12 hours  
+**Deliverables**: Conversion scripts, 100 sample records (v1 + v2), edge case documentation
 
-| Task                         | Hours | Status   |
-| ---------------------------- | ----- | -------- |
+| Task                           | Hours | Status   |
+| ------------------------------ | ----- | -------- |
 | Parser development (7 modules) | 6     | ✅ Done |
-| Testing & validation         | 2     | ✅ Done |
-| Documentation                | 1     | ✅ Done |
-| **Phase 0.5 Total**          | **9** | ✅ Done |
+| Testing & validation           | 2     | ✅ Done |
+| Documentation                  | 1     | ✅ Done |
+| **Vabamu feedback (Issue #10)**| 3     | ✅ Done |
+| **Phase 0.5 Total**            | **12**| ✅ Done |
 
 ### Phase 1: Full Automation Development
 
@@ -84,10 +86,11 @@ This document provides a comprehensive cost estimate for migrating 80,178 museum
 | MuIS registry coordination             | 2-3   | + 1-2 weeks MuIS processing     |
 | Extended dimension patterns            | 2-3   | Edge case analysis              |
 | Batch processing                       | 3-4   | -                               |
+| **Excel generation & file splitting**  | 2-3   | MUIS template                   |
 | Error handling & logging               | 2-3   | -                               |
 | Progress tracking & reporting          | 1-2   | -                               |
 | Full validation & QA                   | 3-4   | Person registry complete        |
-| **Phase 1 Total**                      | **14-21** | **+ 1-2 weeks MuIS wait**   |
+| **Phase 1 Total**                      | **16-24** | **+ 1-2 weeks MuIS wait**   |
 
 **Critical Path**: Person/organization extraction and MuIS registry coordination must start immediately. Per MuIS import rules, all persons MUST be pre-registered in MuIS system before import.
 
@@ -96,15 +99,16 @@ This document provides a comprehensive cost estimate for migrating 80,178 museum
 **Objective**: Process all 80,178 records and deliver MUIS-ready import file
 
 **Duration**: 4-8 hours  
-**Deliverables**: Complete MUIS import CSV, validation report, error log
+**Deliverables**: Complete MUIS import Excel files (≈9 files × 10K rows), validation report, error log
 
-| Task                      | Hours | Notes                            |
-| ------------------------- | ----- | -------------------------------- |
-| Process 80K records       | 2-3   | ~1 second per record automated   |
-| Validation sampling       | 1-2   | Check 1% sample (~800 records)   |
-| Error resolution          | 1-2   | Manual review of flagged records |
-| Final delivery prep       | 1     | Documentation, handoff           |
-| **Phase 2 Total**         | **4-8** |                                |
+| Task                      | Hours | Notes                              |
+| ------------------------- | ----- | ---------------------------------- |
+| Process 80K records       | 2-3   | ~1 second per record automated     |
+| Split & generate Excel    | 1-2   | ≈9 files × 10,000 rows each        |
+| Validation sampling       | 1-2   | Check 1% sample (~800 records)     |
+| Error resolution          | 1-2   | Manual review of flagged records   |
+| Final delivery prep       | 1     | Documentation, handoff             |
+| **Phase 2 Total**         | **6-10** |                                 |
 
 ## Total Project Estimate
 
@@ -112,10 +116,10 @@ This document provides a comprehensive cost estimate for migrating 80,178 museum
 
 | Phase        | Development Hours | Coordination Time         | Status      |
 | ------------ | ----------------- | ------------------------- | ----------- |
-| Phase 0.5    | 9                 | -                         | ✅ Complete |
-| Phase 1      | 14-21             | + 1-2 weeks MuIS registry | Pending     |
-| Phase 2      | 4-8               | -                         | Pending     |
-| **TOTAL**    | **27-38 hours**   | **+ 1-2 weeks**           | -           |
+| Phase 0.5    | 12                | -                         | ✅ Complete |
+| Phase 1      | 16-24             | + 1-2 weeks MuIS registry | Pending     |
+| Phase 2      | 6-10              | -                         | Pending     |
+| **TOTAL**    | **34-46 hours**   | **+ 1-2 weeks**           | -           |
 
 ### Timeline
 
@@ -136,23 +140,23 @@ Total: 4-6 weeks from Phase 1 start to final delivery
 
 | Scenario           | Hours | Cost    | Notes                                    |
 | ------------------ | ----- | ------- | ---------------------------------------- |
-| Phase 0.5 (COMPLETE) | 9   | €360    | Already delivered                        |
-| Phase 1 (Low)      | 14    | €560    | Minimum estimate                         |
-| Phase 1 (High)     | 21    | €840    | Maximum estimate                         |
-| Phase 1 (Buffered) | 24    | €960    | **Recommended** (includes contingency)   |
-| Phase 2 (Low)      | 4     | €160    | Minimum estimate                         |
-| Phase 2 (High)     | 8     | €320    | Maximum estimate                         |
-| Phase 2 (Buffered) | 10    | €400    | **Recommended** (includes validation)    |
+| Phase 0.5 (COMPLETE) | 12  | €480    | Already delivered (incl. v2 feedback)    |
+| Phase 1 (Low)      | 16    | €640    | Minimum estimate                         |
+| Phase 1 (High)     | 24    | €960    | Maximum estimate                         |
+| Phase 1 (Buffered) | 27    | €1,080  | **Recommended** (includes contingency)   |
+| Phase 2 (Low)      | 6     | €240    | Minimum estimate                         |
+| Phase 2 (High)     | 10    | €400    | Maximum estimate                         |
+| Phase 2 (Buffered) | 12    | €480    | **Recommended** (includes validation)    |
 
 **Total Project Cost**:
 
 | Scenario | Hours | Cost      | Confidence |
 | -------- | ----- | --------- | ---------- |
-| Best case  | 27  | €1,080    | Low        |
-| Expected   | 38  | €1,520    | Medium     |
-| **Buffered (Recommended)** | **43** | **€1,720** | **High** |
+| Best case  | 34  | €1,360    | Low        |
+| Expected   | 46  | €1,840    | Medium     |
+| **Buffered (Recommended)** | **51** | **€2,040** | **High** |
 
-**Recommended Client Quote**: **€1,720** (43 hours @ €40/hr, fully buffered)
+**Recommended Client Quote**: **€2,040** (51 hours @ €40/hr, fully buffered)
 
 *Note: Does not include stakeholder time for MuIS registry coordination (client responsibility)*
 
@@ -238,11 +242,33 @@ Total: 4-6 weeks from Phase 1 start to final delivery
 
 ### Output
 
-- **Target**: MUIS import CSV
-- **Format**: 88 columns, 3-row header
+- **Target**: MUIS import Excel files (.xlsx)
+- **Format**: 88 columns, 3-row header (MUIS template)
 - **Records**: 80,178 (1:1 mapping)
+- **File splitting**: Max 10,000 rows per file (≈9 files for full dataset)
 - **Encoding**: UTF-8
-- **Estimated size**: ~65MB
+- **Estimated size**: ~8-10MB per file
+
+### Excel Generation Workflow
+
+**Current (manual)**:
+
+1. Import CSV to Google Sheets
+2. Copy rows to MUIS template in Sheets
+3. Download as Excel
+
+**Target (automated)**:
+
+1. Generate CSV with correct structure
+2. Split into chunks (configurable: 100/1,000/10,000 rows)
+3. Convert each chunk to Excel using MUIS template
+4. Validate Excel output
+
+**File Naming Convention**:
+
+- `vabamu_muis_import_001.xlsx` (rows 1-10,000)
+- `vabamu_muis_import_002.xlsx` (rows 10,001-20,000)
+- etc.
 
 ### Transformations
 
@@ -324,13 +350,15 @@ This estimate assumes:
 - [ ] Person ID mapping integration (after MuIS registry update)
 - [ ] Extended dimension parser
 - [ ] Batch processor with progress tracking
+- [ ] **Excel generator with file splitting** (max 10,000 rows per file)
+- [ ] **CSV → Excel conversion** (using MUIS template)
 - [ ] Error logging and reporting system
 - [ ] Full validation on 80K dataset
 - [ ] Updated documentation
 
 ### Phase 2 (Pending)
 
-- [ ] Complete MUIS import file (80,178 records)
+- [ ] **Complete MUIS import Excel files** (≈9 files × 10,000 rows)
 - [ ] Validation report (statistics, error summary)
 - [ ] Error log with flagged records for manual review
 - [ ] Conversion statistics dashboard
@@ -343,6 +371,7 @@ This estimate assumes:
 
 - **Language**: Python 3.11+
 - **Data processing**: pandas 2.0+
+- **Excel generation**: openpyxl (MUIS template-based)
 - **Validation**: Pydantic 2.0+
 - **Testing**: pytest
 - **Code quality**: Black, Flake8, Pylance/Pyright
@@ -369,8 +398,9 @@ vabamu/
 ├── tests/
 │   └── test_*.py (96 tests)
 ├── output/
-│   ├── sample_100_raw.csv (source)
-│   └── manual_sample_100_records.csv (MUIS format)
+│   ├── vabamu_sample_100_v1.csv (first sample, MUIS CSV)
+│   ├── vabamu_sample_100_v2.csv (with Vabamu feedback)
+│   └── vabamu_muis_import_*.xlsx (production Excel files)
 └── docs/
     ├── FIELD_MAPPINGS.md
     ├── edge_cases_discovered.md
@@ -401,9 +431,10 @@ VBM,_,20027,117,"020027/117 /dokument/foto",kõrgus,mm,168,laius,mm,121,28.05.19
 
 **Client Approval**:
 
-- [ ] Approve Phase 1 development (24 hours buffered, €960)
-- [ ] Approve Phase 2 production run (10 hours buffered, €400)
-- [ ] Total project approval: €1,720 (43 hours @ €40/hr)
+- [ ] Approve Phase 0.5 completed (12 hours, €480) ✅
+- [ ] Approve Phase 1 development (27 hours buffered, €1,080)
+- [ ] Approve Phase 2 production run (12 hours buffered, €480)
+- [ ] Total project approval: €2,040 (51 hours @ €40/hr)
 - [ ] Request modifications (specify below)
 
 **Notes**:
