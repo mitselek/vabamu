@@ -5,6 +5,7 @@ from pathlib import Path
 
 import pytest
 from openpyxl import load_workbook
+from openpyxl.worksheet.worksheet import Worksheet
 
 from scripts.csv_to_excel import csv_to_excel
 
@@ -32,7 +33,7 @@ class TestCsvToExcel:
 
         # Verify structure
         wb = load_workbook(excel_file)
-        ws = wb.active
+        ws: Worksheet = wb.active  # type: ignore[assignment]
         assert ws.max_row == 3
         assert ws.max_column == 3
 
@@ -70,7 +71,7 @@ class TestCsvToExcel:
 
         # Check freeze panes
         wb = load_workbook(excel_file)
-        ws = wb.active
+        ws: Worksheet = wb.active  # type: ignore[assignment]
         assert ws.freeze_panes == "A4"  # Frozen at row 4
         wb.close()
 
@@ -84,7 +85,7 @@ class TestCsvToExcel:
         excel_file = csv_to_excel(csv_file, freeze_header_rows=0)
 
         wb = load_workbook(excel_file)
-        ws = wb.active
+        ws: Worksheet = wb.active  # type: ignore[assignment]
         assert ws.freeze_panes is None
         wb.close()
 
@@ -99,7 +100,7 @@ class TestCsvToExcel:
         excel_file = csv_to_excel(csv_file)
 
         wb = load_workbook(excel_file)
-        ws = wb.active
+        ws: Worksheet = wb.active  # type: ignore[assignment]
         assert ws.cell(1, 1).value == estonian_text
         wb.close()
 
@@ -116,15 +117,15 @@ class TestCsvToExcel:
         excel_file = csv_to_excel(csv_file, freeze_header_rows=3)
 
         wb = load_workbook(excel_file)
-        ws = wb.active
+        ws: Worksheet = wb.active  # type: ignore[assignment]
 
         # First 3 rows should be bold
-        assert ws.cell(1, 1).font.bold is True
-        assert ws.cell(2, 1).font.bold is True
-        assert ws.cell(3, 1).font.bold is True
+        assert ws.cell(1, 1).font.bold is True  # type: ignore[misc]
+        assert ws.cell(2, 1).font.bold is True  # type: ignore[misc]
+        assert ws.cell(3, 1).font.bold is True  # type: ignore[misc]
 
         # Data row should not be bold
-        assert ws.cell(4, 1).font.bold is False
+        assert ws.cell(4, 1).font.bold is False  # type: ignore[misc]
 
         wb.close()
 
@@ -138,7 +139,7 @@ class TestCsvToExcel:
         excel_file = csv_to_excel(csv_file, auto_width=True)
 
         wb = load_workbook(excel_file)
-        ws = wb.active
+        ws: Worksheet = wb.active  # type: ignore[assignment]
 
         # Column B should be wider than column A
         col_a_width = ws.column_dimensions["A"].width
@@ -177,7 +178,7 @@ class TestCsvToExcel:
         excel_file = csv_to_excel(csv_file, freeze_header_rows=3)
 
         wb = load_workbook(excel_file)
-        ws = wb.active
+        ws: Worksheet = wb.active  # type: ignore[assignment]
 
         assert ws.max_column == 89
         assert ws.max_row == 4

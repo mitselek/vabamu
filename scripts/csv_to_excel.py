@@ -23,6 +23,7 @@ from typing import Optional
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font
 from openpyxl.utils import get_column_letter
+from openpyxl.worksheet.worksheet import Worksheet
 
 
 def csv_to_excel(
@@ -58,7 +59,7 @@ def csv_to_excel(
 
     # Create new workbook
     wb = Workbook()
-    ws = wb.active
+    ws: Worksheet = wb.active  # type: ignore[assignment]
     ws.title = "MUIS Export"
 
     # Read CSV and write to Excel
@@ -94,7 +95,7 @@ def csv_to_excel(
     if auto_width:
         for column in ws.columns:
             max_length = 0
-            column_letter = get_column_letter(column[0].column)
+            column_letter = get_column_letter(column[0].column)  # type: ignore[arg-type]
 
             for cell in column:
                 if cell.value:
@@ -104,7 +105,8 @@ def csv_to_excel(
 
             # Set adjusted width (add padding, cap at reasonable max)
             adjusted_width = min(max_length + 2, 50)
-            ws.column_dimensions[column_letter].width = adjusted_width
+            if column[0].column is not None:
+                ws.column_dimensions[column_letter].width = adjusted_width
 
     # Save workbook
     wb.save(excel_path)
