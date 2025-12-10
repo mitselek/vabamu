@@ -16,6 +16,7 @@ Alljärgnevalt mõned statistilised andmed, mis tekkisid andmete töötlemise k�
 CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. See selgitab erinevust 80,179 rea ja 41,913 kirje vahel. Python'i `csv.DictReader` töötleb need õigesti.
 
 **Top 5 väljad kõige rohkemate reavahetustega**:
+
 1. `photo_orig`: 12,268 reavahetust (pildi URL-id, üks rea kohta)
 2. `photo`: 11,869 reavahetust (pildi URL-id)
 3. `repr_memento`: 3,414 reavahetust (represseerimise mälestused)
@@ -24,25 +25,25 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 
 ## Kuuluvuste jaotus
 
-| Kuuluvus | Arv | Protsent |
-|---|---:|---:|
-| Dokumendikogu | 10247 | 12.78% |
-| Ajaloolised esemed | 7159 | 8.93% |
-| Kasutuskogu | 5241 | 6.54% |
-| Fotokogu | 3990 | 4.98% |
-| Pisitrükised | 2856 | 3.56% |
-| Maha kantud | 2591 | 3.23% |
-| Arhiivraamatukogu | 2223 | 2.77% |
-| Tekstiilikogu | 2219 | 2.77% |
-| Märgikogu | 2169 | 2.71% |
-| Plakatikogu | 918 | 1.14% |
-| Auviste kogu | 603 | 0.75% |
-| Numismaatikakogu | 537 | 0.67% |
-| Kunstikogu | 358 | 0.45% |
-| Digifotokogu | 349 | 0.44% |
-| Militaaria | 338 | 0.42% |
-| Digidokumendikogu | 103 | 0.13% |
-| Ajaloolised esemed | 4 | 0.00% |
+| Kuuluvus           |   Arv | Protsent |
+| ------------------ | ----: | -------: |
+| Dokumendikogu      | 10247 |   12.78% |
+| Ajaloolised esemed |  7159 |    8.93% |
+| Kasutuskogu        |  5241 |    6.54% |
+| Fotokogu           |  3990 |    4.98% |
+| Pisitrükised       |  2856 |    3.56% |
+| Maha kantud        |  2591 |    3.23% |
+| Arhiivraamatukogu  |  2223 |    2.77% |
+| Tekstiilikogu      |  2219 |    2.77% |
+| Märgikogu          |  2169 |    2.71% |
+| Plakatikogu        |   918 |    1.14% |
+| Auviste kogu       |   603 |    0.75% |
+| Numismaatikakogu   |   537 |    0.67% |
+| Kunstikogu         |   358 |    0.45% |
+| Digifotokogu       |   349 |    0.44% |
+| Militaaria         |   338 |    0.42% |
+| Digidokumendikogu  |   103 |    0.13% |
+| Ajaloolised esemed |     4 |    0.00% |
 
 **Kokku**: 41,912 kirjet kuuluvusega (1 kirje ilma kuuluvuseta)
 
@@ -50,19 +51,19 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 
 ### Põhiväljad
 
-| Väli | Täidetud kirjeid | Protsent |
-|---|---:|---:|
-| `code` | 41,896 | 99.96% |
-| `description` | 41,747 | 99.60% |
-| `donator` | 41,623 | 99.31% |
-| `asukoht` | 40,463 | 96.54% |
-| `year` | 38,054 | 90.79% |
-| `photo_orig` | 36,997 | 88.27% |
-| `photo` | 36,583 | 87.28% |
-| `date` | 35,986 | 85.85% |
-| `dimensions` | 34,141 | 81.46% |
-| `koht` | 33,525 | 79.99% |
-| `autor` | 875 | 2.09% |
+| Väli          | Täidetud kirjeid | Protsent |
+| ------------- | ---------------: | -------: |
+| `code`        |           41,896 |   99.96% |
+| `description` |           41,747 |   99.60% |
+| `donator`     |           41,623 |   99.31% |
+| `asukoht`     |           40,463 |   96.54% |
+| `year`        |           38,054 |   90.79% |
+| `photo_orig`  |           36,997 |   88.27% |
+| `photo`       |           36,583 |   87.28% |
+| `date`        |           35,986 |   85.85% |
+| `dimensions`  |           34,141 |   81.46% |
+| `koht`        |           33,525 |   79.99% |
+| `autor`       |              875 |    2.09% |
 
 ### Pildid
 
