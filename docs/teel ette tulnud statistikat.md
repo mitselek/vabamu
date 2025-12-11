@@ -2,7 +2,7 @@
 
 Alljärgnevalt mõned statistilised andmed, mis tekkisid andmete töötlemise käigus.
 
-**Viimati uuendatud**: 10. detsember 2025
+**Viimati uuendatud**: 11. detsember 2025
 
 ## Koguarvud
 
@@ -91,3 +91,17 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 - **Kirjeid koodiga**: 41,896
 - **Unikaalseid koode**: 41,887
 - **Duplikaatkoodid**: 9 koodi (mõnel koodil mitu kirjet)
+
+**Duplikaatkoodide nimekiri**:
+
+1. `018906/000` - 2 kirjet
+2. `017692/047` - 2 kirjet
+3. `019623/000` - 2 kirjet
+4. `kasutuskogu` - 2 kirjet (tõenäoliselt viga)
+5. `021521/001` - 2 kirjet
+6. `021521/002` - 2 kirjet
+7. `021521/003` - 2 kirjet
+8. `021522/001` - 2 kirjet
+9. `021522/002` - 2 kirjet
+
+**Märkus**: Seeria `021521/XXX` ja `021522/XXX` (6 koodi) näib olevat süsteemne duplikatsioon - võimalik, et sama objekt erinevates registrites.

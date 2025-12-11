@@ -164,7 +164,7 @@ def split_large_collection(
     if len(records) <= max_rows:
         return [records]
     
-    chunks = []
+    chunks: list[list[dict[str, Any]]] = []
     for i in range(0, len(records), max_rows):
         chunks.append(records[i : i + max_rows])
     
@@ -205,7 +205,7 @@ def convert_collection(
     logger.info(f"Converting {collection_name}: {len(records)} records -> {excel_path.name}")
     
     # Convert records
-    converted_records = []
+    converted_records: list[dict[str, Any]] = []
     error_count = 0
     
     for record in tqdm(records, desc=f"Converting {collection_name}", unit=" records", leave=False):
@@ -327,7 +327,7 @@ def generate_summary_report(
         results.items(), key=lambda x: sum(len(g) for g in groups.values() if g), reverse=True
     )
     
-    for collection_name, (files, success, errors) in sorted_collections:
+    for collection_name, (files, _success, errors) in sorted_collections:
         input_count = len(groups[collection_name])
         report.append(
             f"  {collection_name:<30} {input_count:>6,} records -> {len(files):>2} file(s)"
@@ -422,7 +422,7 @@ def main() -> int:
             if total_chunks > 1:
                 logger.info(f"  Splitting into {total_chunks} files ({args.max_rows_per_file:,} rows each)")
             
-            collection_files = []
+            collection_files: list[Path] = []
             collection_success = 0
             collection_errors = 0
             
