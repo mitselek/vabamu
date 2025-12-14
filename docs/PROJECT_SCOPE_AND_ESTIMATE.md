@@ -1,16 +1,18 @@
 # ENTU → MUIS Migration: Project Scope & Cost Estimate
 
-**Date**: December 4, 2025  
-**Version**: 1.0  
+**Date**: December 4, 2025 (Updated: December 14, 2025)  
+**Version**: 1.1  
 **Status**: Phase 0.5 Complete - Ready for Client Proposal
 
 ## Executive Summary
 
-This document provides a comprehensive cost estimate for migrating 80,178 museum collection records from the legacy ENTU database to the modern MUIS (Estonian Museum Information System) format. The estimate is based on proven results from Phase 0.5, where 100 representative records were successfully converted using semi-automatic scripts.
+This document provides a comprehensive cost estimate for migrating 41,913 museum collection records from the legacy ENTU database to the modern MUIS (Estonian Museum Information System) format. The estimate is based on proven results from Phase 0.5, where 100 representative records were successfully converted using semi-automatic scripts.
+
+**Note**: Original estimate referenced 80,178 records based on file line count. Actual record count is 41,913 (the file contains 80,179 lines due to 38,265 embedded newlines within quoted CSV fields). See `docs/teel ette tulnud statistikat.md` for details.
 
 **Key Metrics**:
 
-- **Total records**: 80,178 museum objects
+- **Total records**: 41,913 museum objects (80,179 file lines with embedded newlines)
 - **Sample converted**: 100 records (Phase 0.5 complete)
 - **Success rate**: 100% (all sample records converted to valid MUIS format)
 - **Output format**: Excel files (.xlsx), max 10,000 rows per file
@@ -96,16 +98,16 @@ This document provides a comprehensive cost estimate for migrating 80,178 museum
 
 ### Phase 2: Production Migration
 
-**Objective**: Process all 80,178 records and deliver MUIS-ready import file
+**Objective**: Process all 41,913 records and deliver MUIS-ready import file
 
 **Duration**: 4-8 hours  
-**Deliverables**: Complete MUIS import Excel files (≈9 files × 10K rows), validation report, error log
+**Deliverables**: Complete MUIS import Excel files (≈5 files × 10K rows), validation report, error log
 
 | Task                      | Hours | Notes                              |
 | ------------------------- | ----- | ---------------------------------- |
-| Process 80K records       | 2-3   | ~1 second per record automated     |
-| Split & generate Excel    | 1-2   | ≈9 files × 10,000 rows each        |
-| Validation sampling       | 1-2   | Check 1% sample (~800 records)     |
+| Process 41K records       | 2-3   | ~1 second per record automated     |
+| Split & generate Excel    | 1-2   | ≈5 files × 10,000 rows each        |
+| Validation sampling       | 1-2   | Check 1% sample (~420 records)     |
 | Error resolution          | 1-2   | Manual review of flagged records   |
 | Final delivery prep       | 1     | Documentation, handoff             |
 | **Phase 2 Total**         | **6-10** |                                 |
@@ -224,7 +226,7 @@ Total: 4-6 weeks from Phase 1 start to final delivery
 
 ### Phase 2 Complete When
 
-- [ ] All 80,178 records converted to MUIS format
+- [ ] All 41,913 records converted to MUIS format
 - [ ] Output file passes MUIS import validation
 - [ ] Required fields >95% populated
 - [ ] Error report delivered with resolution recommendations
@@ -235,7 +237,7 @@ Total: 4-6 weeks from Phase 1 start to final delivery
 ### Input
 
 - **Source**: ENTU database export (38 CSV files)
-- **Primary table**: eksponaat.csv (80,178 records)
+- **Primary table**: eksponaat.csv (41,913 records, 80,179 file lines)
 - **Format**: CSV with 42 columns
 - **Encoding**: UTF-8
 - **Size**: ~50MB
@@ -244,8 +246,8 @@ Total: 4-6 weeks from Phase 1 start to final delivery
 
 - **Target**: MUIS import Excel files (.xlsx)
 - **Format**: 88 columns, 3-row header (MUIS template)
-- **Records**: 80,178 (1:1 mapping)
-- **File splitting**: Max 10,000 rows per file (≈9 files for full dataset)
+- **Records**: 41,913 (1:1 mapping)
+- **File splitting**: Max 10,000 rows per file (≈5 files for full dataset)
 - **Encoding**: UTF-8
 - **Estimated size**: ~8-10MB per file
 
@@ -443,7 +445,7 @@ VBM,_,20027,117,"020027/117 /dokument/foto",kõrgus,mm,168,laius,mm,121,28.05.19
 
 ## Conclusion
 
-Phase 0.5 has successfully proven the technical feasibility of migrating all 80,178 ENTU records to MUIS format. The conversion pipeline is working, edge cases are documented, and quality gates are established. We recommend proceeding with Phase 1 development immediately, starting with person ID coordination to avoid timeline delays.
+Phase 0.5 has successfully proven the technical feasibility of migrating all 41,913 ENTU records to MUIS format. The conversion pipeline is working, edge cases are documented, and quality gates are established. We recommend proceeding with Phase 1 development immediately, starting with person ID coordination to avoid timeline delays.
 
 **Confidence Level**: HIGH  
 **Recommended Action**: Approve and proceed with Phase 1
