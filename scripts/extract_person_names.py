@@ -19,11 +19,12 @@ from typing import Literal
 import argparse
 
 
-# Fields that contain person/organization names (from Task 1 analysis)
+# Fields that contain person/organization names (from full dataset analysis)
 PERSON_ORG_FIELDS = [
-    "donator",
-    "represseeritu_o",
-    "represseeritu_t",
+    "autor",        # Creators/authors
+    "donator",      # Donors
+    "represseeritu_o",  # Repressed persons (victims)
+    "represseeritu_t",  # Repressed persons (perpetrators/related)
 ]
 
 
@@ -68,25 +69,36 @@ def classify_entity(name: str) -> Literal["person", "organization"]:
     name_lower = name.lower()
 
     # Organization indicators (Estonian and English)
-    # Use word boundaries to avoid false matches (e.g., "as" in "Jõgiaas")
+    # Must have word boundaries to avoid matching in surnames (e.g., "Saks", "Saul")
     org_keywords = [
         "muuseum",
         "museum",
         "instituut",
         "institute",
-        " oü",
-        " as",
-        " sa",
-        " mtü",
+        " mtü",  # NGO (must have space before)
         "fond",
         "arhiiv",
         "archive",
         "ülikool",
         "university",
     ]
-
+    
+    # Company suffixes must be at word boundaries or end of string
+    # Check these separately to avoid false matches
+    org_suffixes = [" oü", " as", " sa"]
+    
+    # Check general org keywords
     if any(keyword in name_lower for keyword in org_keywords):
         return "organization"
+    
+    # Check company suffixes (must be at end or followed by non-letter)
+    for suffix in org_suffixes:
+        # Check if suffix is at end of string
+        if name_lower.endswith(suffix):
+            return "organization"
+        # Check if suffix is followed by space or punctuation
+        if suffix + " " in name_lower or suffix + "," in name_lower:
+            return "organization"
 
     # Default to person (most common case)
     return "person"
