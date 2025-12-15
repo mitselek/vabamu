@@ -144,4 +144,13 @@ def convert_row(entu_row: Dict[str, Any]) -> Dict[str, Any]:
     # Free text format (e.g., "1980", "1950-ndad", "1940-1945")
     result["year"] = entu_row.get("year", "")
 
+    # =================================================================
+    # PHASE 9: LEGEND FIELDS (Issue #14)
+    # =================================================================
+    # Column 90 (Avalik legend) ← public_legend (avalik legend)
+    # Column 91 (Mitteavaliku legend) ← legend (mitteavaliku legend)
+    # Free text format, pass-through from ENTU
+    result["public_legend"] = entu_row.get("public_legend", "")
+    result["legend"] = entu_row.get("legend", "")
+
     return result

@@ -452,3 +452,99 @@ class TestDateeringField:
         result = convert_row(row)
 
         assert result.get("year") == ""
+
+
+class TestLegendFields:
+    """Tests for legend fields mapping (Issue #14)."""
+
+    def test_both_legend_fields_passthrough(self) -> None:
+        """Both legend fields should pass through to output for legend columns.
+
+        Issue #14:
+        - Column 90 (Avalik legend) should contain ENTU 'public_legend' field
+        - Column 91 (Mitteavaliku legend) should contain ENTU 'legend' field
+        """
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "public_legend": "This object was donated in 1985",
+            "legend": "Internal note: needs conservation",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("public_legend") == "This object was donated in 1985"
+        assert result.get("legend") == "Internal note: needs conservation"
+
+    def test_only_public_legend(self) -> None:
+        """Public legend field should work independently."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "public_legend": "Avalik informatsioon",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("public_legend") == "Avalik informatsioon"
+        assert result.get("legend") == ""
+
+    def test_only_private_legend(self) -> None:
+        """Private legend field should work independently."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "legend": "Sisemised märkused",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("public_legend") == ""
+        assert result.get("legend") == "Sisemised märkused"
+
+    def test_legend_fields_with_multiline_text(self) -> None:
+        """Legend fields should handle multiline text."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "public_legend": "Line 1\nLine 2\nLine 3",
+            "legend": "Internal note\nwith multiple lines",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("public_legend") == "Line 1\nLine 2\nLine 3"
+        assert result.get("legend") == "Internal note\nwith multiple lines"
+
+    def test_legend_fields_empty(self) -> None:
+        """Empty legend fields should result in empty strings."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "public_legend": "",
+            "legend": "",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("public_legend") == ""
+        assert result.get("legend") == ""
+
+    def test_legend_fields_missing(self) -> None:
+        """Missing legend fields should result in empty strings."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("public_legend") == ""
+        assert result.get("legend") == ""
+
+    def test_legend_fields_with_special_characters(self) -> None:
+        """Legend fields should handle Estonian characters and special symbols."""
+        row: dict[str, Any] = {
+            "code": "000001/001",
+            "public_legend": "Õpilaste töö (1950-ndad) – väga oluline!",
+            "legend": "Märkus: säilitada +4°C juures",
+        }
+
+        result = convert_row(row)
+
+        assert result.get("public_legend") == "Õpilaste töö (1950-ndad) – väga oluline!"
+        assert result.get("legend") == "Märkus: säilitada +4°C juures"

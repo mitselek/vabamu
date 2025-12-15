@@ -51,19 +51,42 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 
 ### Põhiväljad
 
-| Väli          | Täidetud kirjeid | Protsent |
-| ------------- | ---------------: | -------: |
-| `code`        |           41,896 |   99.96% |
-| `description` |           41,747 |   99.60% |
-| `donator`     |           41,623 |   99.31% |
-| `asukoht`     |           40,463 |   96.54% |
-| `year`        |           38,054 |   90.79% |
-| `photo_orig`  |           36,997 |   88.27% |
-| `photo`       |           36,583 |   87.28% |
-| `date`        |           35,986 |   85.85% |
-| `dimensions`  |           34,141 |   81.46% |
-| `koht`        |           33,525 |   79.99% |
-| `autor`       |              875 |    2.09% |
+| Väli            | Täidetud kirjeid | Protsent |
+| --------------- | ---------------: | -------: |
+| `code`          |           41,896 |   99.96% |
+| `description`   |           41,747 |   99.60% |
+| `donator`       |           41,623 |   99.31% |
+| `asukoht`       |           40,463 |   96.54% |
+| `year`          |           38,054 |   90.79% |
+| `photo_orig`    |           36,997 |   88.27% |
+| `photo`         |           36,583 |   87.28% |
+| `date`          |           35,986 |   85.85% |
+| `dimensions`    |           34,141 |   81.46% |
+| `koht`          |           33,525 |   79.99% |
+| `public_legend` |            4,284 |   10.22% |
+| `legend`        |            1,392 |    3.32% |
+| `autor`         |              875 |    2.09% |
+
+### Legendväljad (Issue #14)
+
+**Legend-väljad lisatud MUIS eksporti (v2.2)**:
+
+- **Column 90**: `public_legend` (avalik legend) - nähtav avalikkusele
+- **Column 91**: `legend` (mitteavaliku legend) - sisemiseks kasutuseks
+
+| Väli            | Täidetud kirjeid | Protsent | Märkus                       |
+| --------------- | ---------------: | -------: | ---------------------------- |
+| `public_legend` |            4,284 |   10.22% | Avalik informatsioon         |
+| `legend`        |            1,392 |    3.32% | Sisemised märkused           |
+| Mõlemad         |              209 |    0.50% | Kirjed kus mõlemad väljad on |
+| Vähemalt üks    |            5,467 |   13.04% | Kirjed vähemalt ühe väljaga  |
+
+**Kasutusjuhtumid**:
+
+- Kogu hooldja on jaganud info erinevate väljade vahel
+- `description` - peamine kirjeldus
+- `public_legend` - avalik legend (näitustel kasutatav tekst)
+- `legend` - mitteavaliku legend (konserveerimise märkused, päritolu info)
 
 ### Pildid
 
@@ -94,7 +117,7 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 
 **Duplikaatkoodide nimekiri**:
 
-1. `018906/000` - 2 kirjet
+1. `018906/000` - 2 kirjet (5422b150bdf9203d66cc9291, 542e678dbdf9203d66cc93a8)
 2. `017692/047` - 2 kirjet
 3. `019623/000` - 2 kirjet
 4. `kasutuskogu` - 2 kirjet (tõenäoliselt viga)

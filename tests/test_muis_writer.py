@@ -96,11 +96,11 @@ class TestOrchestratorToMuisRow:
         assert muis_row["Importimise staatus"] is None
         assert muis_row["Kommentaar"] is None
 
-    def test_all_89_columns_present(self, sample_orchestrator_output: dict[str, Any]) -> None:
-        """Result should have all 89 MUIS columns."""
+    def test_all_92_columns_present(self, sample_orchestrator_output: dict[str, Any]) -> None:
+        """Result should have all 91 MUIS columns."""
         muis_row = orchestrator_to_muis_row(sample_orchestrator_output)
 
-        assert len(muis_row) == 89
+        assert len(muis_row) == 91
         for col in MUIS_COLUMN_NAMES:
             assert col in muis_row
 
@@ -119,7 +119,7 @@ class TestOrchestratorToMuisRow:
         muis_row = orchestrator_to_muis_row(empty_output)
 
         assert isinstance(muis_row, dict)
-        assert len(muis_row) == 89
+        assert len(muis_row) == 91
 
     def test_with_4_measurements(self) -> None:
         """Should handle maximum 4 measurements."""
@@ -188,10 +188,10 @@ class TestWriteMuisCsv:
             names_row = next(reader)
             validation_row = next(reader)
 
-        # All header rows should have 89 columns
-        assert len(metadata_row) == 89
-        assert len(names_row) == 89
-        assert len(validation_row) == 89
+        # All header rows should have 91 columns
+        assert len(metadata_row) == 91
+        assert len(names_row) == 91
+        assert len(validation_row) == 91
 
     def test_muis_csv_column_names(
         self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
@@ -211,7 +211,7 @@ class TestWriteMuisCsv:
 
         # Check that data row is readable
         assert data_row is not None
-        assert len(data_row) == 89
+        assert len(data_row) == 91
 
     def test_muis_csv_multiple_rows(
         self, tmp_path: Path, sample_orchestrator_output: dict[str, Any]
@@ -481,8 +481,8 @@ class TestDateeringColumnMapping:
 
         assert muis_row["Dateering"] is None
 
-    def test_all_89_columns_present(self) -> None:
-        """Result should have all 89 MUIS columns (including CK)."""
+    def test_all_92_columns_present(self) -> None:
+        """Result should have all 91 MUIS columns (including CK, CL, CM)."""
         output: dict[str, Any] = {
             "acr": "VBM",
             "trt": "_",
@@ -496,7 +496,133 @@ class TestDateeringColumnMapping:
 
         muis_row = orchestrator_to_muis_row(output)
 
-        assert len(muis_row) == 89
+        assert len(muis_row) == 91
         assert "Dateering" in muis_row
+        for col in MUIS_COLUMN_NAMES:
+            assert col in muis_row
+
+
+class TestLegendColumns:
+    """Tests for CL (Avalik legend) and CM (Mitteavaliku legend) columns - Issue #14."""
+
+    def test_both_legend_fields_present(self) -> None:
+        """Both legend fields should map to CL and CM columns."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "public_legend": "This is visible to the public",
+            "legend": "This is internal information",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Avalik legend"] == "This is visible to the public"
+        assert muis_row["Mitteavaliku legend"] == "This is internal information"
+
+    def test_only_public_legend(self) -> None:
+        """Only public_legend field should map to CL column."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "public_legend": "Public information only",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Avalik legend"] == "Public information only"
+        assert muis_row["Mitteavaliku legend"] is None
+
+    def test_only_private_legend(self) -> None:
+        """Only legend field should map to CM column."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "legend": "Internal notes only",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Avalik legend"] is None
+        assert muis_row["Mitteavaliku legend"] == "Internal notes only"
+
+    def test_both_legend_fields_empty(self) -> None:
+        """Empty legend fields should result in None values."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "public_legend": "",
+            "legend": "",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Avalik legend"] == ""
+        assert muis_row["Mitteavaliku legend"] == ""
+
+    def test_both_legend_fields_missing(self) -> None:
+        """Missing legend fields should result in None values."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert muis_row["Avalik legend"] is None
+        assert muis_row["Mitteavaliku legend"] is None
+
+    def test_legend_columns_in_column_names(self) -> None:
+        """CL and CM columns should be in MUIS_COLUMN_NAMES."""
+        assert "Avalik legend" in MUIS_COLUMN_NAMES
+        assert "Mitteavaliku legend" in MUIS_COLUMN_NAMES
+
+        # Check positions (90 and 91, 0-indexed 89 and 90)
+        assert MUIS_COLUMN_NAMES[89] == "Avalik legend"
+        assert MUIS_COLUMN_NAMES[90] == "Mitteavaliku legend"
+
+    def test_all_92_columns_with_legends(self) -> None:
+        """Result should have all 91 MUIS columns including legend columns."""
+        output: dict[str, Any] = {
+            "acr": "VBM",
+            "trt": "_",
+            "trs": 1,
+            "trj": 1,
+            "measurements": [],
+            "name": "Test",
+            "description": None,
+            "public_legend": "Public",
+            "legend": "Private",
+        }
+
+        muis_row = orchestrator_to_muis_row(output)
+
+        assert len(muis_row) == 91
+        assert "Avalik legend" in muis_row
+        assert "Mitteavaliku legend" in muis_row
         for col in MUIS_COLUMN_NAMES:
             assert col in muis_row

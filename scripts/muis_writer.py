@@ -7,7 +7,7 @@ Converts orchestrator output (dict) to MUIS CSV format with:
 - Row 4+: Data rows
 
 Handles:
-- 89-column MUIS format (88 standard + 1 extra for dateering)
+- 91-column MUIS format (89 standard + 2 legend fields: avalik_legend, mitteavaliku_legend)
 - UTF-8 encoding with proper Estonian characters (õ, ä, ö, ü)
 - Field mapping from orchestrator dict to MUIS columns
 - Measurement/material/technique repetition fields (1-4 measurements, 1-3 materials/techniques)
@@ -128,8 +128,11 @@ MUIS_COLUMN_NAMES = [
     # Alternative number columns (88-89)
     "Numbri tyyp",
     "Alt number",
-    # Dateering column (90) - Issue #11
+    # Dateering column (89) - Issue #11
     "Dateering",
+    # Legend columns (90-91) - Issue #14
+    "Avalik legend",
+    "Mitteavaliku legend",
 ]
 
 MUIS_VALIDATION_RULES = [
@@ -238,7 +241,10 @@ MUIS_VALIDATION_RULES = [
     # Alternative number columns (88-89)
     "",
     "",
-    # Dateering column (90)
+    # Dateering column (89)
+    "",
+    # Legend columns (90-91)
+    "",
     "",
 ]
 
@@ -429,6 +435,15 @@ def orchestrator_to_muis_row(
     # Free text format (e.g., "1980", "1950-ndad", "1940-1945")
     # =====================================================================
     muis_row["Dateering"] = orchestrator_output.get("year")
+
+    # =====================================================================
+    # LEGEND FIELDS (90-91) - Issue #14
+    # Avalik legend column ← public_legend (avalik legend - visible to public)
+    # Mitteavaliku legend column ← legend (mitteavaliku legend - internal use only)
+    # Free text format, pass-through from ENTU
+    # =====================================================================
+    muis_row["Avalik legend"] = orchestrator_output.get("public_legend")
+    muis_row["Mitteavaliku legend"] = orchestrator_output.get("legend")
 
     return muis_row
 

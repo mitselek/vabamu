@@ -1,0 +1,40 @@
+---
+
+$ .venv/bin/python -c "
+import csv
+from collections import Counter
+
+codes = []
+code_to_ids = {}
+
+with open('entust/eksponaat.csv', 'r', encoding='utf-8') as f:
+    reader = csv.reader(f)
+    next(reader)  # Skip header
+    for row in reader:
+        entu_id = row[0] if len(row) > 0 else ''
+        code = row[5] if len(row) > 5 else ''
+        if code:
+            codes.append(code)
+            if code not in code_to_ids:
+                code_to_ids[code] = []
+            code_to_ids[code].append(entu_id)
+
+# Find duplicates
+code_counts = Counter(codes)
+duplicates = {code: count for code, count in code_counts.items() if count > 1}
+
+# Print with ENTU IDs
+for code in sorted(duplicates.keys()):
+"   print(f'{code},{count},\"{\";\".join(ids)}\"')
+
+---
+
+"017692/047",2,"56715a31bdf9203d66cca05f","56715a32bdf9203d66cca078"
+"018906/000",2,"5422b150bdf9203d66cc9291","542e678dbdf9203d66cc93a8"
+"019623/000",2,"56d8094dbdf9203d66cca1c1","56d80aabbdf9203d66cca1c2"
+"021521/001",2,"6270a25dbdf9203d66ccb3fe","63105193bdf9203d66ccb550"
+"021521/002",2,"6270a2b6bdf9203d66ccb3ff","63105194bdf9203d66ccb551"
+"021521/003",2,"6270a2d6bdf9203d66ccb400","63105194bdf9203d66ccb552"
+"021522/001",2,"6270a2f7bdf9203d66ccb401","63105194bdf9203d66ccb553"
+"021522/002",2,"6270a321bdf9203d66ccb402","63105195bdf9203d66ccb554"
+"kasutuskogu",2,"58088722bdf9203d66cca4e4","583fc9a8bdf9203d66cca658"
