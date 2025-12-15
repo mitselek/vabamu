@@ -2,7 +2,7 @@
 
 Alljärgnevalt mõned statistilised andmed, mis tekkisid andmete töötlemise käigus.
 
-**Viimati uuendatud**: 11. detsember 2025
+**Viimati uuendatud**: 15. detsember 2025
 
 ## Koguarvud
 
@@ -83,10 +83,49 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 
 **Kasutusjuhtumid**:
 
-- Kogu hooldja on jaganud info erinevate väljade vahel
+- Kogu hooldaja on jaganud info erinevate väljade vahel
 - `description` - peamine kirjeldus
 - `public_legend` - avalik legend (näitustel kasutatav tekst)
 - `legend` - mitteavaliku legend (konserveerimise märkused, päritolu info)
+
+### Isikud ja organisatsioonid (Phase 1)
+
+**Ekstrakteeritud andmed** (`scripts/extract_person_names.py`, 15. detsember 2025):
+
+| Kategooria              |   Arv | Protsent |
+| ----------------------- | ----: | -------: |
+| Unikaalseid isikuid     | 2,438 |   99.92% |
+| Unikaalseid organisatsioone |     2 |    0.08% |
+| **Kokku entiteete**     | **2,440** | **100%** |
+| Kirjeid isikute/org-dega | 48,883 |   61.0% (kogust) |
+
+**Väljade jaotus**:
+
+| Väli              | Kirjeldus                           | Hinnanguline arv |
+| ----------------- | ----------------------------------- | ---------------: |
+| `donator`         | Annetajad                           | ~40,000+         |
+| `autor`           | Autorid/loojad                      | ~10,000+         |
+| `represseeritu_o` | Represseeritud isikud (ohvrid)      | ~2,000+          |
+| `represseeritu_t` | Represseeritud isikud (seotud)      | ~2,000+          |
+
+**Kõige sagedamini esinevad**:
+
+1. **Heiki Ahonen** - 13,944 kirjet (17.4% andmebaasist)
+2. **Aime Pärnakivi** - 1,740 kirjet (2.2%)
+3. **Arvo Pesti** - 1,324 kirjet (1.7%)
+4. **Ülle Michelson** - 1,102 kirjet (1.4%)
+5. **Eino Sandström** - 774 kirjet (1.0%)
+
+**Top 10 hõlmab**: 21,257 esinemist (43.5% kõigist isikute/org viidetest)
+
+**Tuvastatud organisatsioonid**:
+
+1. **Rannarahva Muuseum** - 32 kirjet (Rannarahva muuseum)
+2. **Unitas MTÜ** - 12 kirjet (mittetulundusühing)
+
+**Väljund**: `output/person_registry_request.csv` (171 KB, 2,441 rida) - valmis MuIS-i koordineerimiseks
+
+**Järgmised sammud**: Fail saadetakse MuIS-i sidusisikule, kes lisab `muis_participant_id` veeru ja tagastab registreerimise järel.
 
 ### Pildid
 
