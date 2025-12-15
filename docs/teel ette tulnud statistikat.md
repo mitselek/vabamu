@@ -10,10 +10,11 @@ Alljärgnevalt mõned statistilised andmed, mis tekkisid andmete töötlemise k�
 - **Faili ridu kokku**: 80,179 rida (1 päis + 41,913 kirjet + 38,265 põimitud reavahetust)
 - **Väljade arv kirje kohta**: 44 välja
 - **Unikaalseid koode**: 41,887 (41,896 kirjel on kood)
+- **Persoone/organisatsioone**: 2,438 isikut + 2 organisatsiooni
 
 ### Märkus: Põimitud reavahetused
 
-CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. See selgitab erinevust 80,179 rea ja 41,913 kirje vahel. Python'i `csv.DictReader` töötleb need õigesti.
+CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. See selgitab erinevust 80,179 rea ja 41,913 kirje vahel.
 
 **Top 5 väljad kõige rohkemate reavahetustega**:
 
@@ -86,11 +87,11 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 - Kogu hooldaja on jaganud info erinevate väljade vahel
 - `description` - peamine kirjeldus
 - `public_legend` - avalik legend (näitustel kasutatav tekst)
-- `legend` - mitteavaliku legend (konserveerimise märkused, päritolu info)
+- `legend` - mitteavalik legend (konserveerimise märkused, päritolu info)
 
 ### Isikud ja organisatsioonid (Phase 1)
 
-**Ekstrakteeritud andmed** (`scripts/extract_person_names.py`, 15. detsember 2025):
+**Eraldatud andmed** (`scripts/extract_person_names.py`, 15. detsember 2025):
 
 | Kategooria              |   Arv | Protsent |
 | ----------------------- | ----: | -------: |
@@ -123,7 +124,7 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 1. **Rannarahva Muuseum** - 32 kirjet (Rannarahva muuseum)
 2. **Unitas MTÜ** - 12 kirjet (mittetulundusühing)
 
-**Väljund**: `output/person_registry_request.csv` (171 KB, 2,441 rida) - valmis MuIS-i koordineerimiseks
+**Väljund**: `output/person_registry_request.csv` ja `output/person_registry_request.xlsx` (2,441 rida) - valmis MuIS-i koordineerimiseks
 
 **Järgmised sammud**: Fail saadetakse MuIS-i sidusisikule, kes lisab `muis_participant_id` veeru ja tagastab registreerimise järel.
 
@@ -141,11 +142,11 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 
 ## Tehnilised märkused
 
-### CSV failistruktuur
+### CSV sisend failistruktuur
 
 - **Välju kokku**: 44 välja kirje kohta
 - **Kodeering**: UTF-8
-- **Faili suurus**: 29.74 MB
+- **Failide suurus**: 29.74 MB
 - **Põimitud reavahetused**: 38,265 reavahetust 27 erineva välja sees
 
 ### Koodide unikaalsus
@@ -156,14 +157,52 @@ CSV fail sisaldab **38,265 põimitud reavahetust** tsiteeritud väljade sees. Se
 
 **Duplikaatkoodide nimekiri**:
 
-1. `018906/000` - 2 kirjet (5422b150bdf9203d66cc9291, 542e678dbdf9203d66cc93a8)
+1. `018906/000` - 2 kirjet
 2. `017692/047` - 2 kirjet
 3. `019623/000` - 2 kirjet
-4. `kasutuskogu` - 2 kirjet (tõenäoliselt viga)
+4. `kasutuskogu` - 2 kirjet
 5. `021521/001` - 2 kirjet
 6. `021521/002` - 2 kirjet
 7. `021521/003` - 2 kirjet
 8. `021522/001` - 2 kirjet
 9. `021522/002` - 2 kirjet
 
-**Märkus**: Seeria `021521/XXX` ja `021522/XXX` (6 koodi) näib olevat süsteemne duplikatsioon - võimalik, et sama objekt erinevates registrites.
+## Duplikaatkoodide detailne analüüs
+
+Allpool on kõigi duplikaatkoodide detailne ülevaade koos ENTU linkidega ja võtmeväljade võrdlusega.
+
+| Kood | Kirje 1 | Kirje 2 | Peamised erinevused |
+|------|---------|---------|---------------------|
+| `018906/000` | [5422b150bdf9203d66cc9291](https://entu.app/vabamu/5422b150bdf9203d66cc9291)<br>**Nimi**: 018906/000 /kunst/maal<br>**Kirjeldus**: Maal, maalil kujutatud tehnikadoktor Johannes Hint<br>**Kuuluvus**: Kunstikogu<br>**Annetaja**: Veljo Vask | [542e678dbdf9203d66cc93a8](https://entu.app/vabamu/542e678dbdf9203d66cc93a8)<br>**Nimi**: 018906/000 /dokument/foto<br>**Kirjeldus**: Foto Johannes Kaivust<br>**Kuuluvus**: Fotokogu<br>**Annetaja**: Peeter Kaiv | **Erinev objekt**: Üks on maal (Kunstikogu), teine foto (Fotokogu). Erinevad annetajad. Tõenäoliselt viga koodi määramisel - sama kood kasutatud kahele erinevale objektile. |
+| `017692/047` | [56715a31bdf9203d66cca05f](https://entu.app/vabamu/56715a31bdf9203d66cca05f)<br>**Nimi**: 017692/047 /dokument/kiri<br>**Kirjeldus**: 30.06.1967 Johannes Lindermannilt, vennasele<br>**Kuuluvus**: Dokumendikogu<br>**Annetaja**: Laine Reinberg | [56715a32bdf9203d66cca078](https://entu.app/vabamu/56715a32bdf9203d66cca078)<br>**Nimi**: 017692/047 /dokument/kiri<br>**Kirjeldus**: 04.02.1971 Johannes Lindermannilt<br>**Kuuluvus**: Dokumendikogu<br>**Annetaja**: Laine Reinberg | **Erinevad dokumendid**: Kaks erinevat kirja samalt saatjalt, erinevatel kuupäevadel (1967 vs 1971). Sama kood kasutatud seeria kirjadele. |
+| `019623/000` | [56d8094dbdf9203d66cca1c1](https://entu.app/vabamu/56d8094dbdf9203d66cca1c1)<br>**Nimi**: 019623/000 /dokument/order<br>**Kirjeldus**: Tallinna Linna TSN TK Elamispinna arvestuse ja jaotamise osakonna order 13.06.1973<br>**Kuuluvus**: Dokumendikogu<br>**Annetaja**: Jüri Pert | [56d80aabbdf9203d66cca1c2](https://entu.app/vabamu/56d80aabbdf9203d66cca1c2)<br>**Nimi**: 019623/000 /dokument/tunnistus<br>**Kirjeldus**: Ratsionaliseerimisettepanekute tunnistused, venekeelsed, 6 tk<br>**Kuuluvus**: Dokumendikogu<br>**Annetaja**: Jüri Pert | **Erinevad dokumendid**: Üks on order, teine tunnistused. Erinevad dokumenditüübid, sama annetaja. Tõenäoliselt viga koodi määramisel. |
+| `kasutuskogu` | [58088722bdf9203d66cca4e4](https://entu.app/vabamu/58088722bdf9203d66cca4e4)<br>**Nimi**: kasutuskogu /varia/illustreeriv materja<br>**Kirjeldus**: Seinalehe tarbeks propagandistlikud fotod ja trükitud materjalid Leninist<br>**Kuuluvus**: Kasutuskogu<br>**Annetaja**: Heldi Veedler | [583fc9a8bdf9203d66cca658](https://entu.app/vabamu/583fc9a8bdf9203d66cca658)<br>**Nimi**: kasutuskogu /dokument/liikmepilet<br>**Kirjeldus**: Komsomolipilet, Raissa Ploštšik<br>**Kuuluvus**: Kasutuskogu<br>**Annetaja**: Heldi Veedler | **Viga**: "kasutuskogu" on kasutatud koodina, mitte kuuluvusena. Mõlemad on Kasutuskogus, kuid puudub õige kood. See on selge andmete sisestamise viga. |
+| `021521/001` | [6270a25dbdf9203d66ccb3fe](https://entu.app/vabamu/6270a25dbdf9203d66ccb3fe)<br>**Nimi**: 021521/001 /dokument/foto<br>**Kirjeldus**: Fotokoopia metsavennast Olev Turust koos emaga<br>**Kuuluvus**: Fotokogu<br>**Annetaja**: Krete Kruusmaa | [63105193bdf9203d66ccb550](https://entu.app/vabamu/63105193bdf9203d66ccb550)<br>**Nimi**: 021521/001<br>**Kirjeldus**: /aparaat/föön<br>**Kuuluvus**: Maha kantud<br>**Annetaja**: (tühi) | **Süsteemne duplikatsioon**: Üks on aktiivne foto Fotokogus, teine on maha kantud objekt (föön). Sama kood kasutatud erinevate objektidele - võimalik, et kood taaskasutatud pärast esimese objekti mahakandmist. |
+| `021521/002` | [6270a2b6bdf9203d66ccb3ff](https://entu.app/vabamu/6270a2b6bdf9203d66ccb3ff)<br>**Nimi**: 021521/002 /dokument/foto<br>**Kirjeldus**: Fotokoopia metsavennast Olev Turust koos vanematega<br>**Kuuluvus**: Fotokogu<br>**Annetaja**: Krete Kruusmaa | [63105194bdf9203d66ccb551](https://entu.app/vabamu/63105194bdf9203d66ccb551)<br>**Nimi**: 021521/002<br>**Kirjeldus**: /aparaat/föön<br>**Kuuluvus**: Maha kantud<br>**Annetaja**: (tühi) | **Süsteemne duplikatsioon**: Sama muster - aktiivne foto vs maha kantud objekt. |
+| `021521/003` | [6270a2d6bdf9203d66ccb400](https://entu.app/vabamu/6270a2d6bdf9203d66ccb400)<br>**Nimi**: 021521/003 /dokument/foto<br>**Kirjeldus**: Fotokoopia metsavennast Olev Turust koos vanematega<br>**Kuuluvus**: Fotokogu<br>**Annetaja**: Krete Kruusmaa | [63105194bdf9203d66ccb552](https://entu.app/vabamu/63105194bdf9203d66ccb552)<br>**Nimi**: 021521/003<br>**Kirjeldus**: /aparaat/elektronlamp<br>**Kuuluvus**: Maha kantud<br>**Annetaja**: (tühi) | **Süsteemne duplikatsioon**: Sama muster - aktiivne foto vs maha kantud objekt (elektronlamp). |
+| `021522/001` | [6270a2f7bdf9203d66ccb401](https://entu.app/vabamu/6270a2f7bdf9203d66ccb401)<br>**Nimi**: 021522/001 /dokument/foto<br>**Kirjeldus**: Foto metsavennast Olev Turust koos vanematega<br>**Kuuluvus**: Fotokogu<br>**Annetaja**: Krete Kruusmaa | [63105194bdf9203d66ccb553](https://entu.app/vabamu/63105194bdf9203d66ccb553)<br>**Nimi**: 021522/001<br>**Kirjeldus**: /aparaat/elektronlamp<br>**Kuuluvus**: Maha kantud<br>**Annetaja**: (tühi) | **Süsteemne duplikatsioon**: Sama muster - aktiivne foto vs maha kantud objekt. |
+| `021522/002` | [6270a321bdf9203d66ccb402](https://entu.app/vabamu/6270a321bdf9203d66ccb402)<br>**Nimi**: 021522/002 /dokument/foto<br>**Kirjeldus**: Foto metsavennast Olev Turust koos emaga<br>**Kuuluvus**: Fotokogu<br>**Annetaja**: Krete Kruusmaa | [63105195bdf9203d66ccb554](https://entu.app/vabamu/63105195bdf9203d66ccb554)<br>**Nimi**: 021522/002<br>**Kirjeldus**: /aparaat/elektronlamp<br>**Kuuluvus**: Maha kantud<br>**Annetaja**: (tühi) | **Süsteemne duplikatsioon**: Sama muster - aktiivne foto vs maha kantud objekt. |
+
+### Duplikaatide põhjused ja soovitused
+
+**Kategooriad**:
+
+1. **Koodi taaskasutus pärast mahakandmist** (`021521/XXX`, `021522/XXX`):
+   - 6 koodi, kus sama kood on kasutatud nii aktiivsele objektile (Fotokogu) kui ka maha kantud objektile
+   - Tõenäoliselt on koodid taaskasutatud pärast esimese objekti mahakandmist
+   - **Soovitus**: Kontrollida, kas koodide taaskasutus on lubatud või peaks olema keelatud
+
+2. **Vale koodi määramine** (`018906/000`, `019623/000`):
+   - Sama kood kasutatud erinevate objektidele
+   - Erinevad kuuluvused või dokumenditüübid
+   - **Soovitus**: Üks kirjeid vajab uut koodi
+
+3. **Seeria kirjete koodid** (`017692/047`):
+   - Kaks erinevat kirja samalt saatjalt, erinevatel kuupäevadel
+   - **Soovitus**: Võib olla õige, kui on tegu seeriaga, kuid võiks kasutada järjenumbreid (nt `017692/047-1`, `017692/047-2`)
+
+4. **Andmete sisestamise viga** (`kasutuskogu`):
+   - "kasutuskogu" on kasutatud koodina, mitte kuuluvusena
+   - **Soovitus**: Mõlemad kirjed vajavad õigeid koode
+
+**Kokkuvõte**: 9 duplikaatkoodi, millest 6 on süsteemne probleem (koodide taaskasutus), 2 on tõenäoliselt viga, ja 1 võib olla õige seeria kood.
