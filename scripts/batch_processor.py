@@ -32,7 +32,7 @@ from scripts.muis_writer import write_muis_csv
 DEFAULT_INPUT_FILE = Path("entust/eksponaat.csv")
 DEFAULT_OUTPUT_DIR = Path("output")
 DEFAULT_LOG_DIR = Path("logs")
-DEFAULT_MAX_ROWS = 10_000
+DEFAULT_MAX_ROWS = 15_000
 
 
 def setup_logging(log_dir: Path) -> logging.Logger:
@@ -68,6 +68,37 @@ def setup_logging(log_dir: Path) -> logging.Logger:
     logger.addHandler(console_handler)
 
     return logger
+
+
+def clean_kuuluvus(value: str) -> str:
+    """Clean kuuluvus field by removing duplicate collection names.
+    
+    Some ENTU records have kuuluvus with duplicate lines like:
+        Fotokogu
+        Fotokogu
+    
+    This function removes duplicates and returns the clean collection name.
+    
+    Args:
+        value: Raw kuuluvus value from ENTU
+    
+    Returns:
+        Cleaned collection name
+    """
+    if not value or '\n' not in value:
+        return value
+    
+    # Split by newline, remove duplicates while preserving order
+    lines = [line.strip() for line in value.split('\n') if line.strip()]
+    
+    # Remove duplicates
+    unique_lines = []
+    for line in lines:
+        if line not in unique_lines:
+            unique_lines.append(line)
+    
+    # Return first unique line (primary collection)
+    return unique_lines[0] if unique_lines else value
 
 
 def sanitize_filename(name: str) -> str:
@@ -131,6 +162,9 @@ def read_and_group_records(
         for row in tqdm(reader, desc="Reading records", unit=" records"):
             try:
                 kuuluvus = row.get("kuuluvus", "").strip()
+                
+                # Clean duplicate collection names
+                kuuluvus = clean_kuuluvus(kuuluvus)
                 
                 if not kuuluvus:
                     kuuluvus = "(no_collection)"
