@@ -7,15 +7,15 @@
 
 ## Sisu
 
-```
-Tere! Saame me siinpool nüüd õigesti aru, et person_registry fail tahab 
-muis_participant_id asemele unikaalset koodi, jah? Meil andmekandeks 
-rohkem tarvis pole, kui nn donator= annetaja. Seega ma eeldan, et piisab, 
-kui need täidaksime? Muus osas saaksime RIKi tarvis kasutada neid siis, 
-kui mass-kirjeldamise võimekus muisi tekiks ja saaksime sündmusesse need 
+```text
+Tere! Saame me siinpool nüüd õigesti aru, et person_registry fail tahab
+muis_participant_id asemele unikaalset koodi, jah? Meil andmekandeks
+rohkem tarvis pole, kui nn donator= annetaja. Seega ma eeldan, et piisab,
+kui need täidaksime? Muus osas saaksime RIKi tarvis kasutada neid siis,
+kui mass-kirjeldamise võimekus muisi tekiks ja saaksime sündmusesse need
 lisada.
 
-Lasin praegu üle lugeda süsteemil ja ta väidab, et unikaalseid "annetaja 
+Lasin praegu üle lugeda süsteemil ja ta väidab, et unikaalseid "annetaja
 koode" võiks tulla 804?
 
 Liisi Ploom
@@ -32,6 +32,7 @@ Peavarahoidja/Head of Collections
 ## Kontekst
 
 Person_registry_request.xlsx sisaldab 4 välja:
+
 - `donator` - annetajad (804 unikaalset)
 - `autor` - autorid/loojad
 - `represseeritu_o` - represseeritud isikud (ohvrid)

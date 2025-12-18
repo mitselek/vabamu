@@ -7,13 +7,13 @@
 
 ## Sisu
 
-```
-Tere, 
+```text
+Tere,
 
 Arve manuses
 
-Lugupidamisega  
-Mihkel Putrinš  
+Lugupidamisega
+Mihkel Putrinš
 +372 5656 0978
 ```
 
@@ -24,6 +24,7 @@ Mihkel Putrinš
 ## Kontekst
 
 Arve #002 saadetud Phase 1 tööde eest:
+
 - Isikute/organisatsioonide ekstraheerimine (2,440 entiteeti)
 - Legend-väljad (Issue #14: veerud 90-91)
 - Dateering-veerg (Issue #11: veerg CK)
