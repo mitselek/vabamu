@@ -19,11 +19,11 @@ Phase 3 laieneb Phase 2 ulatust (41,913 eksponaati) kahe täiendava ekspordi võ
 
 #### Koosseis
 
-| Kategooria        | Arv   | % |
-|-------------------|------:|--:|
-| Raamatukogu kuuluvusega | 2,806 | 61.2% |
+| Kategooria                      |   Arv |     % |
+| ------------------------------- | ----: | ----: |
+| Raamatukogu kuuluvusega         | 2,806 | 61.2% |
 | Kuuluvuseta (vastuvõtuaktidest) | 1,776 | 38.7% |
-| Auviste kogu | 1 | 0.02% |
+| Auviste kogu                    |     1 | 0.02% |
 
 #### Andmeallikas
 
@@ -50,6 +50,7 @@ Eksemplar sisaldab raamatutele omaseid välju, mida eksponaadil ei ole:
 #### Kuuluvuseta Eksemplarid
 
 **Märkus**: 1,776 kuuluvuseta eksemplari:
+
 - 99% (1,757 kirjet) on pärit **"Estri import" aktist** (2015-08-09)
 - Kõik on seotud vastuvõtuaktidega (`vastuv6tuakt`)
 - **Eesmärk**: Tuleviku kontroll ja paberkandjate kokku viimine (~5 aasta perspektiivis)
@@ -83,13 +84,14 @@ F-prefiksiga koodid on vanad fotokogu koodid formaadis `f000XXX/YYY`:
 
 F-prefiksiga koodide puhul on vaja teisendada:
 
-```
+```text
 ENTU:  f000046/001
 MuIS:  TRT="F", TRS="46", TRN="001"
 ```
 
 **Väljad**:
-- **TRT** (kolmas veerg): "F" (mitte "_")
+
+- **TRT** (kolmas veerg): "F" (mitte "\_")
 - **TRS** (neljas veerg): Number ilma nullideta
 - **TRN** (viies veerg): Alamüksuse number
 
@@ -102,6 +104,7 @@ MuIS:  TRT="F", TRS="46", TRN="001"
 #### Mõju Fotokogu Failile
 
 **Fotokogu fail uuendatud**:
+
 - **Enne**: 3,990 kirjet (sisaldas f-koode)
 - **Pärast**: 3,161 kirjet (f-koodid eemaldatud)
 - **Eraldatud**: 829 f-koodi
@@ -120,9 +123,9 @@ Mõlemad failid kasutavad **91-veeru MUIS formaati**:
 
 ### Konversioonitorustik
 
-```
-entust/eksemplar.csv 
-  → convert_row() (Phase 1-9)
+```text
+entust/eksemplar.csv
+  → convert_row()
   → orchestrator format (dict)
   → muis_writer() (91 columns)
   → vabamu_Raamatukogu.csv
@@ -130,7 +133,7 @@ entust/eksemplar.csv
   → vabamu_Raamatukogu.xlsx
 ```
 
-```
+```text
 entust/eksponaat.csv (Fotokogu filter)
   → regex filter: ^f\d{6}/\d{3}$
   → convert_row()
@@ -143,18 +146,20 @@ entust/eksponaat.csv (Fotokogu filter)
 
 ### 1. Eksemplar Eksport
 
-✅ **OTSUS**: Eksportida eraldi MUISi tabelisse
+**OTSUS**: Eksportida eraldi MUISi tabelisse
 
 **Põhjendused**:
+
 - Kuuluvuseta kirjete arv (1,776) on kasulik tuleviku kontrolliks
 - Aitab paberil olevate dokumentide ja digitaalsete kirjete kokku viimisel
 - Bonus: Leiti üks Auvis 😄
 
 ### 2. F-esiliitega Kirjed
 
-✅ **OTSUS**: Eraldi tabel (Option A)
+**OTSUS**: Eraldi tabel (Option A)
 
 **Põhjendused**:
+
 - Palju käsitööd enne RIKi massimporti
 - Pakendamisel selgus: fotokogusse mittekuuluv pabermaterjal
 - Ei pea ümber tegema juba valmis Fotokogu eksport-tabelit
@@ -164,8 +169,8 @@ entust/eksponaat.csv (Fotokogu filter)
 ### Raamatukogu
 
 1. [ ] Liisi ülevaatamine ja kinnitamine
-2. [ ] RIK-ile edastamine koos teiste Phase 2 failidega
-3. [ ] Kuuluvuseta kirjete käsitlus (~5 aasta perspektiivis)
+2. [ ] RIK-ile edastamine koos teiste *Phase 2* failidega
+3. [ ] Kuuluvuseta kirjete käitlus (~5 aasta perspektiivis)
 
 ### F-koodid
 
@@ -178,7 +183,7 @@ entust/eksponaat.csv (Fotokogu filter)
 
 - `scripts/process_eksemplar.py` - Eksemplar töötlus
 - `scripts/extract_f_codes.py` - F-koodide eraldamine
-- `scripts/convert_row.py` - Ühtne konversioonitorustik (phases 1-9)
+- `scripts/convert_row.py` - Ühtne konversioonitorustik
 - `scripts/muis_writer.py` - 91-veeru MUIS CSV kirjutaja
 
 ## Viited
@@ -189,5 +194,4 @@ entust/eksponaat.csv (Fotokogu filter)
 
 ---
 
-**Märkus**: See on Phase 3 täiendus Phase 2 tarnele (41,913 eksponaati 17 failis).
-
+**Märkus**: See on *Phase 3* täiendus *Phase 2* tarnele (41,913 eksponaati 17 failis).
